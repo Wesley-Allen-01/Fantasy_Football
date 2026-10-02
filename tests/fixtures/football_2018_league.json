@@ -1,0 +1,4542 @@
+{
+  "gameId": 1,
+  "id": 368876,
+  "members": [],
+  "schedule": [
+    {
+      "away": {
+        "teamId": 11,
+        "totalPoints": 163.56
+      },
+      "home": {
+        "teamId": 9,
+        "totalPoints": 125.5
+      },
+      "id": 0,
+      "matchupPeriodId": 1,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 3,
+        "totalPoints": 185.06
+      },
+      "home": {
+        "teamId": 5,
+        "totalPoints": 134.86
+      },
+      "id": 1,
+      "matchupPeriodId": 1,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 10,
+        "totalPoints": 140.24
+      },
+      "home": {
+        "teamId": 4,
+        "totalPoints": 139.34
+      },
+      "id": 2,
+      "matchupPeriodId": 1,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 2,
+        "totalPoints": 160.64
+      },
+      "home": {
+        "teamId": 8,
+        "totalPoints": 145.56
+      },
+      "id": 3,
+      "matchupPeriodId": 1,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 7,
+        "totalPoints": 115.98
+      },
+      "home": {
+        "teamId": 1,
+        "totalPoints": 75.54
+      },
+      "id": 4,
+      "matchupPeriodId": 1,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 3,
+        "totalPoints": 110.42
+      },
+      "home": {
+        "teamId": 11,
+        "totalPoints": 123.54
+      },
+      "id": 5,
+      "matchupPeriodId": 2,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 9,
+        "totalPoints": 146.68
+      },
+      "home": {
+        "teamId": 10,
+        "totalPoints": 127.88
+      },
+      "id": 6,
+      "matchupPeriodId": 2,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 5,
+        "totalPoints": 141.26
+      },
+      "home": {
+        "teamId": 2,
+        "totalPoints": 165.84
+      },
+      "id": 7,
+      "matchupPeriodId": 2,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 4,
+        "totalPoints": 150.64
+      },
+      "home": {
+        "teamId": 7,
+        "totalPoints": 154.18
+      },
+      "id": 8,
+      "matchupPeriodId": 2,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 8,
+        "totalPoints": 145.9
+      },
+      "home": {
+        "teamId": 1,
+        "totalPoints": 148.1
+      },
+      "id": 9,
+      "matchupPeriodId": 2,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 11,
+        "totalPoints": 94.3
+      },
+      "home": {
+        "teamId": 10,
+        "totalPoints": 83.38
+      },
+      "id": 10,
+      "matchupPeriodId": 3,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 2,
+        "totalPoints": 135.66
+      },
+      "home": {
+        "teamId": 3,
+        "totalPoints": 156.74
+      },
+      "id": 11,
+      "matchupPeriodId": 3,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 7,
+        "totalPoints": 92.92
+      },
+      "home": {
+        "teamId": 9,
+        "totalPoints": 168.36
+      },
+      "id": 12,
+      "matchupPeriodId": 3,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 1,
+        "totalPoints": 128.5
+      },
+      "home": {
+        "teamId": 5,
+        "totalPoints": 143.54
+      },
+      "id": 13,
+      "matchupPeriodId": 3,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 8,
+        "totalPoints": 131.94
+      },
+      "home": {
+        "teamId": 4,
+        "totalPoints": 132.94
+      },
+      "id": 14,
+      "matchupPeriodId": 3,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 2,
+        "totalPoints": 147.66
+      },
+      "home": {
+        "teamId": 11,
+        "totalPoints": 132.7
+      },
+      "id": 15,
+      "matchupPeriodId": 4,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 10,
+        "totalPoints": 150.8
+      },
+      "home": {
+        "teamId": 7,
+        "totalPoints": 187.16
+      },
+      "id": 16,
+      "matchupPeriodId": 4,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 3,
+        "totalPoints": 129.98
+      },
+      "home": {
+        "teamId": 1,
+        "totalPoints": 155.26
+      },
+      "id": 17,
+      "matchupPeriodId": 4,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 9,
+        "totalPoints": 129.86
+      },
+      "home": {
+        "teamId": 8,
+        "totalPoints": 142.68
+      },
+      "id": 18,
+      "matchupPeriodId": 4,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 5,
+        "totalPoints": 145.28
+      },
+      "home": {
+        "teamId": 4,
+        "totalPoints": 170.92
+      },
+      "id": 19,
+      "matchupPeriodId": 4,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 11,
+        "totalPoints": 166.66
+      },
+      "home": {
+        "teamId": 7,
+        "totalPoints": 134.74
+      },
+      "id": 20,
+      "matchupPeriodId": 5,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 1,
+        "totalPoints": 152.38
+      },
+      "home": {
+        "teamId": 2,
+        "totalPoints": 103.18
+      },
+      "id": 21,
+      "matchupPeriodId": 5,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 8,
+        "totalPoints": 121.34
+      },
+      "home": {
+        "teamId": 10,
+        "totalPoints": 114.82
+      },
+      "id": 22,
+      "matchupPeriodId": 5,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 4,
+        "totalPoints": 111.22
+      },
+      "home": {
+        "teamId": 3,
+        "totalPoints": 96.02
+      },
+      "id": 23,
+      "matchupPeriodId": 5,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 5,
+        "totalPoints": 137.0
+      },
+      "home": {
+        "teamId": 9,
+        "totalPoints": 173.8
+      },
+      "id": 24,
+      "matchupPeriodId": 5,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 1,
+        "totalPoints": 143.6
+      },
+      "home": {
+        "teamId": 11,
+        "totalPoints": 172.68
+      },
+      "id": 25,
+      "matchupPeriodId": 6,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 7,
+        "totalPoints": 117.2
+      },
+      "home": {
+        "teamId": 8,
+        "totalPoints": 134.92
+      },
+      "id": 26,
+      "matchupPeriodId": 6,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 2,
+        "totalPoints": 111.1
+      },
+      "home": {
+        "teamId": 4,
+        "totalPoints": 152.16
+      },
+      "id": 27,
+      "matchupPeriodId": 6,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 10,
+        "totalPoints": 54.34
+      },
+      "home": {
+        "teamId": 5,
+        "totalPoints": 142.58
+      },
+      "id": 28,
+      "matchupPeriodId": 6,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 3,
+        "totalPoints": 101.36
+      },
+      "home": {
+        "teamId": 9,
+        "totalPoints": 183.4
+      },
+      "id": 29,
+      "matchupPeriodId": 6,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 11,
+        "totalPoints": 134.54
+      },
+      "home": {
+        "teamId": 8,
+        "totalPoints": 136.64
+      },
+      "id": 30,
+      "matchupPeriodId": 7,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 4,
+        "totalPoints": 143.1
+      },
+      "home": {
+        "teamId": 1,
+        "totalPoints": 118.86
+      },
+      "id": 31,
+      "matchupPeriodId": 7,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 5,
+        "totalPoints": 177.26
+      },
+      "home": {
+        "teamId": 7,
+        "totalPoints": 148.78
+      },
+      "id": 32,
+      "matchupPeriodId": 7,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 9,
+        "totalPoints": 99.06
+      },
+      "home": {
+        "teamId": 2,
+        "totalPoints": 140.12
+      },
+      "id": 33,
+      "matchupPeriodId": 7,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 3,
+        "totalPoints": 150.8
+      },
+      "home": {
+        "teamId": 10,
+        "totalPoints": 138.28
+      },
+      "id": 34,
+      "matchupPeriodId": 7,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 4,
+        "totalPoints": 135.9
+      },
+      "home": {
+        "teamId": 11,
+        "totalPoints": 163.44
+      },
+      "id": 35,
+      "matchupPeriodId": 8,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 8,
+        "totalPoints": 132.96
+      },
+      "home": {
+        "teamId": 5,
+        "totalPoints": 171.56
+      },
+      "id": 36,
+      "matchupPeriodId": 8,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 1,
+        "totalPoints": 159.86
+      },
+      "home": {
+        "teamId": 9,
+        "totalPoints": 136.28
+      },
+      "id": 37,
+      "matchupPeriodId": 8,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 7,
+        "totalPoints": 157.26
+      },
+      "home": {
+        "teamId": 3,
+        "totalPoints": 80.1
+      },
+      "id": 38,
+      "matchupPeriodId": 8,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 2,
+        "totalPoints": 118.72
+      },
+      "home": {
+        "teamId": 10,
+        "totalPoints": 155.5
+      },
+      "id": 39,
+      "matchupPeriodId": 8,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 11,
+        "totalPoints": 106.42
+      },
+      "home": {
+        "teamId": 5,
+        "totalPoints": 116.76
+      },
+      "id": 40,
+      "matchupPeriodId": 9,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 9,
+        "totalPoints": 163.6
+      },
+      "home": {
+        "teamId": 4,
+        "totalPoints": 102.7
+      },
+      "id": 41,
+      "matchupPeriodId": 9,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 3,
+        "totalPoints": 124.92
+      },
+      "home": {
+        "teamId": 8,
+        "totalPoints": 105.56
+      },
+      "id": 42,
+      "matchupPeriodId": 9,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 10,
+        "totalPoints": 107.22
+      },
+      "home": {
+        "teamId": 1,
+        "totalPoints": 187.68
+      },
+      "id": 43,
+      "matchupPeriodId": 9,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 2,
+        "totalPoints": 192.2
+      },
+      "home": {
+        "teamId": 7,
+        "totalPoints": 134.86
+      },
+      "id": 44,
+      "matchupPeriodId": 9,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 9,
+        "totalPoints": 133.8
+      },
+      "home": {
+        "teamId": 11,
+        "totalPoints": 176.32
+      },
+      "id": 45,
+      "matchupPeriodId": 10,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 5,
+        "totalPoints": 108.76
+      },
+      "home": {
+        "teamId": 3,
+        "totalPoints": 147.8
+      },
+      "id": 46,
+      "matchupPeriodId": 10,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 4,
+        "totalPoints": 128.1
+      },
+      "home": {
+        "teamId": 10,
+        "totalPoints": 120.36
+      },
+      "id": 47,
+      "matchupPeriodId": 10,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 8,
+        "totalPoints": 184.44
+      },
+      "home": {
+        "teamId": 2,
+        "totalPoints": 143.26
+      },
+      "id": 48,
+      "matchupPeriodId": 10,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 1,
+        "totalPoints": 180.32
+      },
+      "home": {
+        "teamId": 7,
+        "totalPoints": 87.06
+      },
+      "id": 49,
+      "matchupPeriodId": 10,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 11,
+        "totalPoints": 141.44
+      },
+      "home": {
+        "teamId": 3,
+        "totalPoints": 105.02
+      },
+      "id": 50,
+      "matchupPeriodId": 11,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 10,
+        "totalPoints": 117.72
+      },
+      "home": {
+        "teamId": 9,
+        "totalPoints": 137.86
+      },
+      "id": 51,
+      "matchupPeriodId": 11,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 2,
+        "totalPoints": 146.72
+      },
+      "home": {
+        "teamId": 5,
+        "totalPoints": 212.28
+      },
+      "id": 52,
+      "matchupPeriodId": 11,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 7,
+        "totalPoints": 127.82
+      },
+      "home": {
+        "teamId": 4,
+        "totalPoints": 127.6
+      },
+      "id": 53,
+      "matchupPeriodId": 11,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 1,
+        "totalPoints": 182.88
+      },
+      "home": {
+        "teamId": 8,
+        "totalPoints": 111.88
+      },
+      "id": 54,
+      "matchupPeriodId": 11,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 10,
+        "totalPoints": 99.74
+      },
+      "home": {
+        "teamId": 11,
+        "totalPoints": 159.96
+      },
+      "id": 55,
+      "matchupPeriodId": 12,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 3,
+        "totalPoints": 132.54
+      },
+      "home": {
+        "teamId": 2,
+        "totalPoints": 149.36
+      },
+      "id": 56,
+      "matchupPeriodId": 12,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 9,
+        "totalPoints": 159.88
+      },
+      "home": {
+        "teamId": 7,
+        "totalPoints": 121.52
+      },
+      "id": 57,
+      "matchupPeriodId": 12,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 5,
+        "totalPoints": 148.92
+      },
+      "home": {
+        "teamId": 1,
+        "totalPoints": 148.14
+      },
+      "id": 58,
+      "matchupPeriodId": 12,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 4,
+        "totalPoints": 159.8
+      },
+      "home": {
+        "teamId": 8,
+        "totalPoints": 130.72
+      },
+      "id": 59,
+      "matchupPeriodId": 12,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 11,
+        "totalPoints": 128.0
+      },
+      "home": {
+        "teamId": 2,
+        "totalPoints": 151.8
+      },
+      "id": 60,
+      "matchupPeriodId": 13,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 7,
+        "totalPoints": 155.86
+      },
+      "home": {
+        "teamId": 10,
+        "totalPoints": 137.04
+      },
+      "id": 61,
+      "matchupPeriodId": 13,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 1,
+        "totalPoints": 156.4
+      },
+      "home": {
+        "teamId": 3,
+        "totalPoints": 94.88
+      },
+      "id": 62,
+      "matchupPeriodId": 13,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 8,
+        "totalPoints": 101.3
+      },
+      "home": {
+        "teamId": 9,
+        "totalPoints": 154.54
+      },
+      "id": 63,
+      "matchupPeriodId": 13,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 4,
+        "totalPoints": 116.94
+      },
+      "home": {
+        "teamId": 5,
+        "totalPoints": 109.02
+      },
+      "id": 64,
+      "matchupPeriodId": 13,
+      "winner": "AWAY"
+    },
+    {
+      "home": {
+        "teamId": 11,
+        "totalPoints": 139.4
+      },
+      "id": 65,
+      "matchupPeriodId": 14,
+      "winner": "UNDECIDED"
+    },
+    {
+      "away": {
+        "teamId": 5,
+        "totalPoints": 165.64
+      },
+      "home": {
+        "teamId": 4,
+        "totalPoints": 93.7
+      },
+      "id": 66,
+      "matchupPeriodId": 14,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 2,
+        "totalPoints": 172.98
+      },
+      "home": {
+        "teamId": 9,
+        "totalPoints": 138.88
+      },
+      "id": 67,
+      "matchupPeriodId": 14,
+      "winner": "AWAY"
+    },
+    {
+      "home": {
+        "teamId": 1,
+        "totalPoints": 112.4
+      },
+      "id": 68,
+      "matchupPeriodId": 14,
+      "winner": "UNDECIDED"
+    },
+    {
+      "away": {
+        "teamId": 8,
+        "totalPoints": 108.72
+      },
+      "home": {
+        "teamId": 7,
+        "totalPoints": 124.7
+      },
+      "id": 69,
+      "matchupPeriodId": 14,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 10,
+        "totalPoints": 103.9
+      },
+      "home": {
+        "teamId": 3,
+        "totalPoints": 101.74
+      },
+      "id": 70,
+      "matchupPeriodId": 14,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 5,
+        "totalPoints": 145.76
+      },
+      "home": {
+        "teamId": 11,
+        "totalPoints": 137.02
+      },
+      "id": 71,
+      "matchupPeriodId": 15,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 2,
+        "totalPoints": 130.42
+      },
+      "home": {
+        "teamId": 1,
+        "totalPoints": 120.14
+      },
+      "id": 72,
+      "matchupPeriodId": 15,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 4,
+        "totalPoints": 96.8
+      },
+      "home": {
+        "teamId": 9,
+        "totalPoints": 96.1
+      },
+      "id": 73,
+      "matchupPeriodId": 15,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 10,
+        "totalPoints": 111.26
+      },
+      "home": {
+        "teamId": 7,
+        "totalPoints": 98.44
+      },
+      "id": 74,
+      "matchupPeriodId": 15,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 3,
+        "totalPoints": 87.22
+      },
+      "home": {
+        "teamId": 8,
+        "totalPoints": 123.86
+      },
+      "id": 75,
+      "matchupPeriodId": 15,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 2,
+        "totalPoints": 161.12
+      },
+      "home": {
+        "teamId": 5,
+        "totalPoints": 174.56
+      },
+      "id": 76,
+      "matchupPeriodId": 16,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 1,
+        "totalPoints": 181.48
+      },
+      "home": {
+        "teamId": 11,
+        "totalPoints": 97.34
+      },
+      "id": 77,
+      "matchupPeriodId": 16,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 4,
+        "totalPoints": 149.64
+      },
+      "home": {
+        "teamId": 9,
+        "totalPoints": 152.0
+      },
+      "id": 78,
+      "matchupPeriodId": 16,
+      "winner": "HOME"
+    },
+    {
+      "away": {
+        "teamId": 7,
+        "totalPoints": 125.54
+      },
+      "home": {
+        "teamId": 8,
+        "totalPoints": 125.18
+      },
+      "id": 79,
+      "matchupPeriodId": 16,
+      "winner": "AWAY"
+    },
+    {
+      "away": {
+        "teamId": 3,
+        "totalPoints": 108.64
+      },
+      "home": {
+        "teamId": 10,
+        "totalPoints": 103.34
+      },
+      "id": 80,
+      "matchupPeriodId": 16,
+      "winner": "HOME"
+    }
+  ],
+  "scoringPeriodId": 18,
+  "seasonId": 2018,
+  "segmentId": 0,
+  "settings": {
+    "acquisitionSettings": {
+      "acquisitionBudget": 100,
+      "acquisitionLimit": -1,
+      "acquisitionType": "WAIVERS_TRADITIONAL",
+      "isUsingAcquisitionBudget": false,
+      "isUsingVickeryRules": false,
+      "matchupAcquisitionLimit": 0.0,
+      "matchupLimitPerScoringPeriod": false,
+      "minimumBid": 1,
+      "waiverHours": 24,
+      "waiverOrderReset": true,
+      "waiverProcessDays": [
+        "MONDAY",
+        "WEDNESDAY",
+        "THURSDAY",
+        "FRIDAY",
+        "SATURDAY",
+        "SUNDAY"
+      ],
+      "waiverProcessHour": 11
+    },
+    "draftSettings": {
+      "auctionBudget": 200,
+      "isTradingEnabled": false,
+      "keeperCount": 0,
+      "keeperCountFuture": 0,
+      "keeperOrderType": "TRADITIONAL",
+      "leagueSubType": "NONE",
+      "orderType": "MANUAL",
+      "pickOrder": [
+        2,
+        8,
+        1,
+        9,
+        4,
+        3,
+        10,
+        5,
+        7,
+        11
+      ],
+      "timePerSelection": 90,
+      "type": "OFFLINE"
+    },
+    "financeSettings": {
+      "entryFee": 0.0,
+      "miscFee": 0.0,
+      "perLoss": 0.0,
+      "perTrade": 0.0,
+      "playerAcquisition": 0.0,
+      "playerDrop": 0.0,
+      "playerMoveToActive": 0.0,
+      "playerMoveToIR": 0.0
+    },
+    "isCustomizable": true,
+    "isPublic": false,
+    "name": "FXBG League",
+    "restrictionType": "NONE",
+    "rosterSettings": {
+      "isBenchUnlimited": true,
+      "isUsingUndroppableList": true,
+      "lineupLocktimeType": "INDIVIDUAL_GAME",
+      "lineupSlotCounts": {
+        "0": 1,
+        "1": 0,
+        "2": 2,
+        "3": 0,
+        "4": 2,
+        "5": 0,
+        "6": 1,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 1,
+        "17": 1,
+        "18": 0,
+        "19": 0,
+        "20": 6,
+        "21": 0,
+        "22": 0,
+        "23": 1,
+        "24": 0
+      },
+      "moveLimit": -1,
+      "positionLimits": {
+        "0": 0,
+        "1": 4,
+        "2": 8,
+        "3": 8,
+        "4": 3,
+        "5": 3,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 3,
+        "17": -1
+      },
+      "rosterLocktimeType": "INDIVIDUAL_GAME",
+      "universeIds": [
+        0
+      ]
+    },
+    "scheduleSettings": {
+      "divisions": [
+        {
+          "id": 0,
+          "name": "The League",
+          "size": 10
+        }
+      ],
+      "matchupPeriodCount": 13,
+      "matchupPeriodLength": 1,
+      "matchupPeriods": {
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ],
+        "3": [
+          3
+        ],
+        "4": [
+          4
+        ],
+        "5": [
+          5
+        ],
+        "6": [
+          6
+        ],
+        "7": [
+          7
+        ],
+        "8": [
+          8
+        ],
+        "9": [
+          9
+        ],
+        "10": [
+          10
+        ],
+        "11": [
+          11
+        ],
+        "12": [
+          12
+        ],
+        "13": [
+          13
+        ],
+        "14": [
+          14
+        ],
+        "15": [
+          15
+        ],
+        "16": [
+          16
+        ]
+      },
+      "periodTypeId": 1,
+      "playoffMatchupPeriodLength": 1,
+      "playoffSeedingRule": "TOTAL_POINTS_SCORED",
+      "playoffSeedingRuleBy": 0,
+      "playoffTeamCount": 6
+    },
+    "scoringSettings": {
+      "allowOutOfPositionScoring": false,
+      "homeTeamBonus": 0,
+      "matchupTieRule": "NONE",
+      "matchupTieRuleBy": -1,
+      "playerRankType": "STANDARD",
+      "playoffHomeTeamBonus": 0,
+      "playoffMatchupTieRule": "NONE",
+      "playoffMatchupTieRuleBy": 0,
+      "scoringItems": [
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 6.0,
+          "pointsOverrides": {
+            "16": 6.0
+          },
+          "statId": 93
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 4.0
+          },
+          "statId": 121
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 2.0
+          },
+          "statId": 122
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 1.0
+          },
+          "statId": 123
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": -2.0
+          },
+          "statId": 125
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 5.0
+          },
+          "statId": 128
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 6.0,
+          "statId": 25
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 1.0,
+          "pointsOverrides": {
+            "16": 1.0
+          },
+          "statId": 209
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 4.0
+          },
+          "statId": 129
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 3.0
+          },
+          "statId": 130
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 2.0
+          },
+          "statId": 131
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 1.0
+          },
+          "statId": 132
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 1.0,
+          "statId": 53
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": -2.0
+          },
+          "statId": 133
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": -4.0
+          },
+          "statId": 134
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": -6.0
+          },
+          "statId": 135
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": -2.0,
+          "statId": 72
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": -8.0
+          },
+          "statId": 136
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 6.0,
+          "pointsOverrides": {
+            "16": 6.0
+          },
+          "statId": 101
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 6.0,
+          "pointsOverrides": {
+            "16": 6.0
+          },
+          "statId": 102
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 2.0,
+          "pointsOverrides": {
+            "16": 2.0
+          },
+          "statId": 206
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 6.0,
+          "pointsOverrides": {
+            "16": 6.0
+          },
+          "statId": 103
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 6.0,
+          "pointsOverrides": {
+            "16": 6.0
+          },
+          "statId": 104
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 2.0,
+          "statId": 19
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 6.0,
+          "statId": 43
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": -2.0,
+          "statId": 20
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.1,
+          "statId": 24
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 6.0,
+          "statId": 63
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 3.0,
+          "statId": 80
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 10.0
+          },
+          "statId": 89
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 2.0,
+          "statId": 26
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 9.0
+          },
+          "statId": 90
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 8.0
+          },
+          "statId": 91
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 6.0
+          },
+          "statId": 92
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 4.0,
+          "statId": 77
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 2.0
+          },
+          "statId": 95
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 2.0
+          },
+          "statId": 96
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 2.0
+          },
+          "statId": 97
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 2.0
+          },
+          "statId": 98
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.0,
+          "pointsOverrides": {
+            "16": 1.0
+          },
+          "statId": 99
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.04,
+          "statId": 3
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": -1.0,
+          "statId": 85
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 1.0,
+          "statId": 86
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 0.1,
+          "statId": 42
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": -1.0,
+          "statId": 88
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 6.0,
+          "statId": 4
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 2.0,
+          "statId": 44
+        },
+        {
+          "isReverseItem": false,
+          "leagueRanking": 0.0,
+          "leagueTotal": 0.0,
+          "points": 5.0,
+          "statId": 74
+        }
+      ],
+      "scoringType": "H2H_POINTS"
+    },
+    "size": 10,
+    "tradeSettings": {
+      "allowOutOfUniverse": false,
+      "deadlineDate": 1543395600000,
+      "max": -1,
+      "revisionHours": 24,
+      "vetoVotesRequired": 5
+    }
+  },
+  "status": {
+    "activatedDate": 1526023857070,
+    "createdAsLeagueType": 0,
+    "currentLeagueType": 0,
+    "currentMatchupPeriod": 16,
+    "finalScoringPeriod": 16,
+    "firstScoringPeriod": 1,
+    "isActive": true,
+    "isExpired": false,
+    "isFull": true,
+    "isPlayoffMatchupEdited": false,
+    "isToBeDeleted": false,
+    "isViewable": false,
+    "isWaiverOrderEdited": false,
+    "latestScoringPeriod": 18,
+    "previousSeasons": [
+      2015,
+      2016,
+      2017
+    ],
+    "standingsUpdateDate": 1546567827627,
+    "teamsJoined": 10,
+    "transactionScoringPeriod": 18,
+    "waiverLastExecutionDate": 1549330323490,
+    "waiverProcessStatus": {
+      "2018-09-26T08:00:00.000+0000": 11,
+      "2018-10-31T08:00:00.000+0000": 7,
+      "2018-10-06T08:00:00.000+0000": 1,
+      "2018-12-05T08:00:00.000+0000": 10,
+      "2018-12-15T08:00:00.000+0000": 1,
+      "2018-11-07T08:00:00.000+0000": 10,
+      "2018-11-22T08:00:00.000+0000": 2,
+      "2018-12-02T08:00:00.000+0000": 1,
+      "2018-12-12T08:00:00.000+0000": 7,
+      "2018-10-03T08:00:00.000+0000": 10,
+      "2018-10-18T08:00:00.000+0000": 3,
+      "2018-08-29T08:00:00.000+0000": 1,
+      "2018-11-09T08:00:00.000+0000": 1,
+      "2018-09-15T08:00:00.000+0000": 1,
+      "2018-09-20T08:00:00.000+0000": 1,
+      "2018-10-10T08:00:00.000+0000": 8,
+      "2018-11-14T08:00:00.000+0000": 8,
+      "2018-12-19T08:00:00.000+0000": 8,
+      "2018-12-06T08:00:00.000+0000": 2,
+      "2018-09-27T08:00:00.000+0000": 1,
+      "2018-09-12T08:00:00.000+0000": 5,
+      "2018-10-17T08:00:00.000+0000": 14,
+      "2018-11-01T08:00:00.000+0000": 1,
+      "2018-11-21T08:00:00.000+0000": 9,
+      "2018-10-24T08:00:00.000+0000": 7,
+      "2018-09-19T08:00:00.000+0000": 10,
+      "2018-11-08T08:00:00.000+0000": 1,
+      "2018-11-28T08:00:00.000+0000": 7
+    }
+  },
+  "teams": [
+    {
+      "abbrev": "GHN",
+      "currentProjectedRank": 2,
+      "divisionId": 0,
+      "draftDayProjectedRank": 0,
+      "draftStrategy": {},
+      "id": 1,
+      "isActive": false,
+      "location": "Goin'",
+      "logo": "https://media.tenor.com/images/77f95390793163ddbfb2258d81b95b97/tenor.gif",
+      "logoType": "CUSTOM_VALID",
+      "nickname": "HAM Newton",
+      "owners": [],
+      "playoffSeed": 2,
+      "points": 2239.14,
+      "pointsAdjusted": 0.0,
+      "pointsDelta": 0.0,
+      "primaryOwner": "{6863-6934-3455}",
+      "rankCalculatedFinal": 3,
+      "rankFinal": 0,
+      "record": {
+        "away": {
+          "gamesBack": 0.0,
+          "losses": 2,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 5
+        },
+        "division": {
+          "gamesBack": 0.0,
+          "losses": 5,
+          "percentage": 0.6153846153846154,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 8
+        },
+        "home": {
+          "gamesBack": 0.0,
+          "losses": 3,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 3
+        },
+        "overall": {
+          "gamesBack": 0.0,
+          "losses": 5,
+          "percentage": 0.6153846153846154,
+          "pointsAgainst": 1640.6000000000004,
+          "pointsFor": 1937.52,
+          "streakLength": 1,
+          "streakType": "WIN",
+          "ties": 0,
+          "wins": 8
+        }
+      },
+      "roster": {
+        "entries": [
+          {
+            "acquisitionDate": 1535222961688,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 4,
+            "pendingTransactionIds": null,
+            "playerId": 13934,
+            "playerPoolEntry": {
+              "appliedStatTotal": 0.0,
+              "id": 13934,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 1,
+              "player": {
+                "defaultPositionId": 3,
+                "eligibleSlots": [
+                  3,
+                  4,
+                  5,
+                  7,
+                  20,
+                  21,
+                  23
+                ],
+                "fullName": "Antonio Brown",
+                "id": 13934,
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": {
+                  "auctionValueAverage": 60.1895,
+                  "averageDraftPosition": 5.5,
+                  "percentChange": -0.152805349493,
+                  "percentOwned": 99.111900532859,
+                  "percentStarted": 86.500888099467
+                },
+                "proTeamId": 23,
+                "stats": [
+                  {
+                    "appliedAverage": 21.458380569333332,
+                    "appliedTotal": 321.87570854,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 0.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 21.580000000000002,
+                    "appliedTotal": 323.70000000000005,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 0.017627216,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 26.693043954400004,
+                    "appliedTotal": 400.39565931600004,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 5,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 24,
+                  "totalRating": 323.7
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          },
+          {
+            "acquisitionDate": 1536741158567,
+            "acquisitionType": "ADD",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 16,
+            "pendingTransactionIds": null,
+            "playerId": -16003,
+            "playerPoolEntry": {
+              "appliedStatTotal": 16.0,
+              "id": -16003,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 1,
+              "player": {
+                "defaultPositionId": 16,
+                "eligibleSlots": [
+                  16,
+                  20,
+                  21
+                ],
+                "fullName": "Bears D/ST",
+                "id": -16003,
+                "injured": false,
+                "ownership": {
+                  "auctionValueAverage": 1.7386253630203292,
+                  "averageDraftPosition": 131.2,
+                  "percentChange": -0.113090189426,
+                  "percentOwned": 96.18320610687,
+                  "percentStarted": 81.374045801526
+                },
+                "proTeamId": 3,
+                "stats": [
+                  {
+                    "appliedAverage": 11.974131244125001,
+                    "appliedTotal": 191.58609990600002,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 12.46429455,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 17.1875,
+                    "appliedTotal": 275.0,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 16.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 0.7764454124999999,
+                    "appliedTotal": 12.423126599999998,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 1,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 1,
+                  "totalRating": 275.0
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          }
+        ]
+      },
+      "tradeBlock": {},
+      "transactionCounter": {
+        "acquisitionBudgetSpent": 0,
+        "acquisitions": 24,
+        "drops": 22,
+        "matchupAcquisitionTotals": {
+          "1": 0,
+          "2": 2,
+          "3": 2,
+          "4": 2,
+          "5": 1,
+          "6": 1,
+          "7": 3,
+          "8": 1,
+          "9": 0,
+          "10": 1,
+          "11": 1,
+          "12": 0,
+          "13": 2,
+          "14": 3,
+          "15": 1,
+          "16": 2
+        },
+        "misc": 0,
+        "moveToActive": 76,
+        "moveToIR": 0,
+        "paid": 0.0,
+        "teamCharges": 0.0,
+        "trades": 2
+      },
+      "waiverRank": 9
+    },
+    {
+      "abbrev": "RWM",
+      "currentProjectedRank": 6,
+      "divisionId": 0,
+      "draftDayProjectedRank": 0,
+      "draftStrategy": {},
+      "id": 2,
+      "isActive": false,
+      "location": "Rollin' With",
+      "logo": "https://i.etsystatic.com/13817491/c/500/397/266/233/il/04d655/1674551237/il_340x270.1674551237_d8w2.jpg",
+      "logoType": "CUSTOM_VALID",
+      "nickname": "Mahomies",
+      "owners": [],
+      "playoffSeed": 6,
+      "points": 2330.78,
+      "pointsAdjusted": 0.0,
+      "pointsDelta": 0.0,
+      "primaryOwner": "{55791-3368-10456}",
+      "rankCalculatedFinal": 2,
+      "rankFinal": 0,
+      "record": {
+        "away": {
+          "gamesBack": 0.0,
+          "losses": 4,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 3
+        },
+        "division": {
+          "gamesBack": 0.0,
+          "losses": 6,
+          "percentage": 0.5384615384615384,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 7
+        },
+        "home": {
+          "gamesBack": 0.0,
+          "losses": 2,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 4
+        },
+        "overall": {
+          "gamesBack": 0.0,
+          "losses": 6,
+          "percentage": 0.5384615384615384,
+          "pointsAgainst": 1927.4799999999998,
+          "pointsFor": 1866.26,
+          "streakLength": 2,
+          "streakType": "WIN",
+          "ties": 0,
+          "wins": 7
+        }
+      },
+      "roster": {
+        "entries": [
+          {
+            "acquisitionDate": 1535222590494,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 4,
+            "pendingTransactionIds": null,
+            "playerId": 2976316,
+            "playerPoolEntry": {
+              "appliedStatTotal": 7.9,
+              "id": 2976316,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 2,
+              "player": {
+                "defaultPositionId": 3,
+                "eligibleSlots": [
+                  3,
+                  4,
+                  5,
+                  7,
+                  20,
+                  21,
+                  23
+                ],
+                "fullName": "Michael Thomas",
+                "id": 2976316,
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": {
+                  "auctionValueAverage": 41.6255,
+                  "averageDraftPosition": 17.9,
+                  "percentChange": -0.030534351145,
+                  "percentOwned": 99.333333333333,
+                  "percentStarted": 87.0
+                },
+                "proTeamId": 18,
+                "stats": [
+                  {
+                    "appliedAverage": 17.381989167375,
+                    "appliedTotal": 278.111826678,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 2.8937827016,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 7.9,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 19.71875,
+                    "appliedTotal": 315.5,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 14.590457900000002,
+                    "appliedTotal": 233.44732640000004,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 6,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 25,
+                  "totalRating": 315.5
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          },
+          {
+            "acquisitionDate": 1544607127298,
+            "acquisitionType": "ADD",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 16,
+            "pendingTransactionIds": null,
+            "playerId": -16030,
+            "playerPoolEntry": {
+              "appliedStatTotal": 14.0,
+              "id": -16030,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 2,
+              "player": {
+                "defaultPositionId": 16,
+                "eligibleSlots": [
+                  16,
+                  20,
+                  21
+                ],
+                "fullName": "Jaguars D/ST",
+                "id": -16030,
+                "injured": false,
+                "ownership": {
+                  "auctionValueAverage": 5.44342037890425,
+                  "averageDraftPosition": 66.6,
+                  "percentChange": -0.62337202539,
+                  "percentOwned": 68.707482993197,
+                  "percentStarted": 38.321995464852
+                },
+                "proTeamId": 30,
+                "stats": [
+                  {
+                    "appliedAverage": 13.622551774875001,
+                    "appliedTotal": 217.96082839800002,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 14.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 8.025962245,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 12.0,
+                    "appliedTotal": 192.0,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 0.74047659375,
+                    "appliedTotal": 11.8476255,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 8,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 8,
+                  "totalRating": 192.0
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          }
+        ]
+      },
+      "tradeBlock": {
+        "comment": ""
+      },
+      "transactionCounter": {
+        "acquisitionBudgetSpent": 0,
+        "acquisitions": 33,
+        "drops": 32,
+        "matchupAcquisitionTotals": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 3,
+          "6": 3,
+          "7": 3,
+          "8": 2,
+          "9": 2,
+          "10": 1,
+          "11": 1,
+          "12": 1,
+          "13": 5,
+          "14": 2,
+          "15": 3,
+          "16": 2
+        },
+        "misc": 0,
+        "moveToActive": 53,
+        "moveToIR": 0,
+        "paid": 0.0,
+        "teamCharges": 0.0,
+        "trades": 2
+      },
+      "waiverRank": 5
+    },
+    {
+      "abbrev": "FtB",
+      "currentProjectedRank": 9,
+      "divisionId": 0,
+      "draftDayProjectedRank": 0,
+      "draftStrategy": {},
+      "id": 3,
+      "isActive": false,
+      "location": "Feel the ",
+      "logo": "https://i.imgur.com/cWNHf_d.jpg?maxwidth=640&shape=thumb&fidelity=medium",
+      "logoType": "CUSTOM_VALID",
+      "nickname": "Brees",
+      "owners": [],
+      "playoffSeed": 9,
+      "points": 2102.14,
+      "pointsAdjusted": 0.0,
+      "pointsDelta": 0.0,
+      "primaryOwner": "{79345-777-333}",
+      "rankCalculatedFinal": 10,
+      "rankFinal": 0,
+      "record": {
+        "away": {
+          "gamesBack": 0.0,
+          "losses": 4,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 3
+        },
+        "division": {
+          "gamesBack": 0.0,
+          "losses": 8,
+          "percentage": 0.38461538461538464,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 5
+        },
+        "home": {
+          "gamesBack": 0.0,
+          "losses": 4,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 2
+        },
+        "overall": {
+          "gamesBack": 0.0,
+          "losses": 8,
+          "percentage": 0.38461538461538464,
+          "pointsAgainst": 1801.0,
+          "pointsFor": 1615.6399999999999,
+          "streakLength": 3,
+          "streakType": "LOSS",
+          "ties": 0,
+          "wins": 5
+        }
+      },
+      "roster": {
+        "entries": [
+          {
+            "acquisitionDate": 1535224020871,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 0,
+            "pendingTransactionIds": null,
+            "playerId": 2580,
+            "playerPoolEntry": {
+              "appliedStatTotal": 0.0,
+              "id": 2580,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 3,
+              "player": {
+                "defaultPositionId": 1,
+                "eligibleSlots": [
+                  0,
+                  7,
+                  20,
+                  21
+                ],
+                "fullName": "Drew Brees",
+                "id": 2580,
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": {
+                  "auctionValueAverage": 7.608958228485154,
+                  "averageDraftPosition": 67.2,
+                  "percentChange": -0.450892439959,
+                  "percentOwned": 94.061302681992,
+                  "percentStarted": 57.471264367816
+                },
+                "proTeamId": 18,
+                "stats": [
+                  {
+                    "appliedAverage": 21.670037218466668,
+                    "appliedTotal": 325.050558277,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 0.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 0.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 24.598666666666666,
+                    "appliedTotal": 368.98,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 0.426162154,
+                    "appliedTotal": 6.39243231,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 8,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 11,
+                  "totalRating": 368.98
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          },
+          {
+            "acquisitionDate": 1535224020871,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 16,
+            "pendingTransactionIds": null,
+            "playerId": -16016,
+            "playerPoolEntry": {
+              "appliedStatTotal": 4.0,
+              "id": -16016,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 3,
+              "player": {
+                "defaultPositionId": 16,
+                "eligibleSlots": [
+                  16,
+                  20,
+                  21
+                ],
+                "fullName": "Vikings D/ST",
+                "id": -16016,
+                "injured": false,
+                "ownership": {
+                  "auctionValueAverage": 2.8489503328213006,
+                  "averageDraftPosition": 94.5,
+                  "percentChange": 0.115564894133,
+                  "percentOwned": 84.130434782608,
+                  "percentStarted": 55.217391304347
+                },
+                "proTeamId": 16,
+                "stats": [
+                  {
+                    "appliedAverage": 12.81351619775,
+                    "appliedTotal": 205.016259164,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 11.669561115,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 12.8125,
+                    "appliedTotal": 205.0,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 4.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 0.8183766937500001,
+                    "appliedTotal": 13.094027100000002,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 5,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 5,
+                  "totalRating": 205.0
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          }
+        ]
+      },
+      "tradeBlock": {},
+      "transactionCounter": {
+        "acquisitionBudgetSpent": 0,
+        "acquisitions": 64,
+        "drops": 65,
+        "matchupAcquisitionTotals": {
+          "1": 0,
+          "2": 3,
+          "3": 3,
+          "4": 6,
+          "5": 6,
+          "6": 6,
+          "7": 4,
+          "8": 3,
+          "9": 5,
+          "10": 4,
+          "11": 3,
+          "12": 5,
+          "13": 3,
+          "14": 5,
+          "15": 3,
+          "16": 5
+        },
+        "misc": 0,
+        "moveToActive": 125,
+        "moveToIR": 0,
+        "paid": 0.0,
+        "teamCharges": 0.0,
+        "trades": 3
+      },
+      "waiverRank": 10
+    },
+    {
+      "abbrev": "SINE",
+      "currentProjectedRank": 4,
+      "divisionId": 0,
+      "draftDayProjectedRank": 0,
+      "draftStrategy": {},
+      "id": 4,
+      "isActive": false,
+      "location": "Its always",
+      "logo": "https://i.imgur.com/8KpTRB0.png",
+      "logoType": "CUSTOM_VALID",
+      "nickname": "Sony in NE",
+      "owners": [],
+      "playoffSeed": 4,
+      "points": 2111.5,
+      "pointsAdjusted": 0.0,
+      "pointsDelta": 0.0,
+      "primaryOwner": "{4899-74322-677}",
+      "rankCalculatedFinal": 6,
+      "rankFinal": 0,
+      "record": {
+        "away": {
+          "gamesBack": 0.0,
+          "losses": 2,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 5
+        },
+        "division": {
+          "gamesBack": 0.0,
+          "losses": 5,
+          "percentage": 0.6153846153846154,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 8
+        },
+        "home": {
+          "gamesBack": 0.0,
+          "losses": 3,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 3
+        },
+        "overall": {
+          "gamesBack": 0.0,
+          "losses": 5,
+          "percentage": 0.6153846153846154,
+          "pointsAgainst": 1712.5799999999997,
+          "pointsFor": 1771.36,
+          "streakLength": 2,
+          "streakType": "WIN",
+          "ties": 0,
+          "wins": 8
+        }
+      },
+      "roster": {
+        "entries": [
+          {
+            "acquisitionDate": 1535223668285,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 2,
+            "pendingTransactionIds": null,
+            "playerId": 3051392,
+            "playerPoolEntry": {
+              "appliedStatTotal": 0.0,
+              "id": 3051392,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 4,
+              "player": {
+                "defaultPositionId": 2,
+                "eligibleSlots": [
+                  2,
+                  3,
+                  7,
+                  20,
+                  21,
+                  23
+                ],
+                "fullName": "Ezekiel Elliott",
+                "id": 3051392,
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": {
+                  "auctionValueAverage": 59.1455,
+                  "averageDraftPosition": 4.0,
+                  "percentChange": 0.009780907668,
+                  "percentOwned": 99.305555555555,
+                  "percentStarted": 90.451388888888
+                },
+                "proTeamId": 6,
+                "stats": [
+                  {
+                    "appliedAverage": 20.101181058133328,
+                    "appliedTotal": 301.51771587199994,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 0.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 0.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 21.939999999999998,
+                    "appliedTotal": 329.09999999999997,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 21.4916726,
+                    "appliedTotal": 322.375089,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 5,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 22,
+                  "totalRating": 329.09998
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          },
+          {
+            "acquisitionDate": 1542200560331,
+            "acquisitionType": "ADD",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 16,
+            "pendingTransactionIds": null,
+            "playerId": -16033,
+            "playerPoolEntry": {
+              "appliedStatTotal": 6.0,
+              "id": -16033,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 4,
+              "player": {
+                "defaultPositionId": 16,
+                "eligibleSlots": [
+                  16,
+                  20,
+                  21
+                ],
+                "fullName": "Ravens D/ST",
+                "id": -16033,
+                "injured": false,
+                "ownership": {
+                  "auctionValueAverage": 1.7091097308488612,
+                  "averageDraftPosition": 108.9,
+                  "percentChange": 0.043031675054,
+                  "percentOwned": 75.264270613107,
+                  "percentStarted": 46.30021141649
+                },
+                "proTeamId": 33,
+                "stats": [
+                  {
+                    "appliedAverage": 12.772967484375002,
+                    "appliedTotal": 204.36747975000003,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 6.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 13.3125,
+                    "appliedTotal": 213.0,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 10.923205942000001,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 0.8124027675,
+                    "appliedTotal": 12.99844428,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 2,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 2,
+                  "totalRating": 213.0
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          }
+        ]
+      },
+      "tradeBlock": {},
+      "transactionCounter": {
+        "acquisitionBudgetSpent": 0,
+        "acquisitions": 23,
+        "drops": 23,
+        "matchupAcquisitionTotals": {
+          "1": 0,
+          "2": 1,
+          "3": 1,
+          "4": 3,
+          "5": 1,
+          "6": 1,
+          "7": 4,
+          "8": 2,
+          "9": 1,
+          "10": 1,
+          "11": 2,
+          "12": 1,
+          "13": 2,
+          "14": 1,
+          "15": 0,
+          "16": 0
+        },
+        "misc": 0,
+        "moveToActive": 51,
+        "moveToIR": 0,
+        "paid": 0.0,
+        "teamCharges": 0.0,
+        "trades": 1
+      },
+      "waiverRank": 2
+    },
+    {
+      "abbrev": "SAQU",
+      "currentProjectedRank": 5,
+      "divisionId": 0,
+      "draftDayProjectedRank": 0,
+      "draftStrategy": {},
+      "id": 5,
+      "isActive": false,
+      "location": "Watch What ",
+      "logo": "http://g.espncdn.com/s/ffllm/logos/AtTheStadium-RobbHarskamp/At_The_Stadium_01.svg",
+      "logoType": "VECTOR",
+      "nickname": "You Saquon",
+      "owners": [],
+      "playoffSeed": 5,
+      "points": 2375.04,
+      "pointsAdjusted": 0.0,
+      "pointsDelta": 0.0,
+      "primaryOwner": "{1234-5678-9101}",
+      "rankCalculatedFinal": 1,
+      "rankFinal": 0,
+      "record": {
+        "away": {
+          "gamesBack": 0.0,
+          "losses": 4,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 2
+        },
+        "division": {
+          "gamesBack": 0.0,
+          "losses": 6,
+          "percentage": 0.5384615384615384,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 7
+        },
+        "home": {
+          "gamesBack": 0.0,
+          "losses": 2,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 5
+        },
+        "overall": {
+          "gamesBack": 0.0,
+          "losses": 6,
+          "percentage": 0.5384615384615384,
+          "pointsAgainst": 1826.2200000000003,
+          "pointsFor": 1889.08,
+          "streakLength": 1,
+          "streakType": "LOSS",
+          "ties": 0,
+          "wins": 7
+        }
+      },
+      "roster": {
+        "entries": [
+          {
+            "acquisitionDate": 1535224643316,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 2,
+            "pendingTransactionIds": null,
+            "playerId": 3929630,
+            "playerPoolEntry": {
+              "appliedStatTotal": 24.2,
+              "id": 3929630,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 5,
+              "player": {
+                "defaultPositionId": 2,
+                "eligibleSlots": [
+                  2,
+                  3,
+                  7,
+                  20,
+                  21,
+                  23
+                ],
+                "fullName": "Saquon Barkley",
+                "id": 3929630,
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": {
+                  "auctionValueAverage": 57.709354677338666,
+                  "averageDraftPosition": 5.3,
+                  "percentChange": -0.018327677936,
+                  "percentOwned": 99.828767123287,
+                  "percentStarted": 94.86301369863
+                },
+                "proTeamId": 19,
+                "stats": [
+                  {
+                    "appliedAverage": 17.550990152375,
+                    "appliedTotal": 280.815842438,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 22.697589707,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 24.2,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 24.112500000000004,
+                    "appliedTotal": 385.80000000000007,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 23.1342181875,
+                    "appliedTotal": 370.147491,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 2,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 6,
+                  "totalRating": 385.8
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          },
+          {
+            "acquisitionDate": 1543397549820,
+            "acquisitionType": "ADD",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 16,
+            "pendingTransactionIds": null,
+            "playerId": -16010,
+            "playerPoolEntry": {
+              "appliedStatTotal": 10.0,
+              "id": -16010,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 5,
+              "player": {
+                "defaultPositionId": 16,
+                "eligibleSlots": [
+                  16,
+                  20,
+                  21
+                ],
+                "fullName": "Titans D/ST",
+                "id": -16010,
+                "injured": false,
+                "ownership": {
+                  "auctionValueAverage": 1.1346938775510205,
+                  "averageDraftPosition": 145.1,
+                  "percentChange": 2.166560136359,
+                  "percentOwned": 59.507829977628,
+                  "percentStarted": 34.675615212527
+                },
+                "proTeamId": 10,
+                "stats": [
+                  {
+                    "appliedAverage": 12.7084426085,
+                    "appliedTotal": 203.335081736,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 8.087432972,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 10.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 12.0,
+                    "appliedTotal": 192.0,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 0.68365003,
+                    "appliedTotal": 10.93840048,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 8,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 8,
+                  "totalRating": 192.0
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          }
+        ]
+      },
+      "tradeBlock": {},
+      "transactionCounter": {
+        "acquisitionBudgetSpent": 0,
+        "acquisitions": 28,
+        "drops": 27,
+        "matchupAcquisitionTotals": {
+          "1": 0,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 2,
+          "6": 2,
+          "7": 2,
+          "8": 1,
+          "9": 1,
+          "10": 4,
+          "11": 1,
+          "12": 2,
+          "13": 4,
+          "14": 4,
+          "15": 1,
+          "16": 0
+        },
+        "misc": 0,
+        "moveToActive": 49,
+        "moveToIR": 0,
+        "paid": 0.0,
+        "teamCharges": 0.0,
+        "trades": 3
+      },
+      "waiverRank": 4
+    },
+    {
+      "abbrev": "TWH",
+      "currentProjectedRank": 7,
+      "divisionId": 0,
+      "draftDayProjectedRank": 0,
+      "draftStrategy": {},
+      "id": 7,
+      "isActive": false,
+      "location": "THE",
+      "logo": "http://g.espncdn.com/lm-static/logo-packs/ffl/SmackTalk-LeoEspinosa/the_damn_ball-11.svg",
+      "logoType": "VECTOR",
+      "nickname": "White House",
+      "owners": [],
+      "playoffSeed": 7,
+      "points": 2337.12,
+      "pointsAdjusted": 0.0,
+      "pointsDelta": 0.0,
+      "primaryOwner": "{3456-789-1112}",
+      "rankCalculatedFinal": 7,
+      "rankFinal": 0,
+      "record": {
+        "away": {
+          "gamesBack": 0.0,
+          "losses": 2,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 4
+        },
+        "division": {
+          "gamesBack": 0.0,
+          "losses": 7,
+          "percentage": 0.46153846153846156,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 6
+        },
+        "home": {
+          "gamesBack": 0.0,
+          "losses": 5,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 2
+        },
+        "overall": {
+          "gamesBack": 0.0,
+          "losses": 7,
+          "percentage": 0.46153846153846156,
+          "pointsAgainst": 1901.3199999999997,
+          "pointsFor": 1735.3399999999997,
+          "streakLength": 1,
+          "streakType": "WIN",
+          "ties": 0,
+          "wins": 6
+        }
+      },
+      "roster": {
+        "entries": [
+          {
+            "acquisitionDate": 1535224843566,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 4,
+            "pendingTransactionIds": null,
+            "playerId": 15795,
+            "playerPoolEntry": {
+              "appliedStatTotal": 26.700000000000003,
+              "id": 15795,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 7,
+              "player": {
+                "defaultPositionId": 3,
+                "eligibleSlots": [
+                  3,
+                  4,
+                  5,
+                  7,
+                  20,
+                  21,
+                  23
+                ],
+                "fullName": "DeAndre Hopkins",
+                "id": 15795,
+                "injured": false,
+                "injuryStatus": "QUESTIONABLE",
+                "ownership": {
+                  "auctionValueAverage": 50.647,
+                  "averageDraftPosition": 11.5,
+                  "percentChange": -0.03853712069,
+                  "percentOwned": 99.819819819819,
+                  "percentStarted": 93.333333333333
+                },
+                "proTeamId": 34,
+                "stats": [
+                  {
+                    "appliedAverage": 17.580265478624998,
+                    "appliedTotal": 281.28424765799997,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 26.700000000000003,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 18.995046754700002,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 20.84375,
+                    "appliedTotal": 333.5,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 15.039553456250003,
+                    "appliedTotal": 240.63285530000005,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 2,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 18,
+                  "totalRating": 333.5
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          },
+          {
+            "acquisitionDate": 1542811573840,
+            "acquisitionType": "ADD",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 16,
+            "pendingTransactionIds": null,
+            "playerId": -16002,
+            "playerPoolEntry": {
+              "appliedStatTotal": 23.0,
+              "id": -16002,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 7,
+              "player": {
+                "defaultPositionId": 16,
+                "eligibleSlots": [
+                  16,
+                  20,
+                  21
+                ],
+                "fullName": "Bills D/ST",
+                "id": -16002,
+                "injured": false,
+                "ownership": {
+                  "auctionValueAverage": 0.0,
+                  "averageDraftPosition": 170.0,
+                  "percentChange": 2.093320253938,
+                  "percentOwned": 45.360824742268,
+                  "percentStarted": 25.154639175257
+                },
+                "proTeamId": 2,
+                "stats": [
+                  {
+                    "appliedAverage": 11.339961738124998,
+                    "appliedTotal": 181.43938780999997,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 15.912681838000001,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 23.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 12.0,
+                    "appliedTotal": 192.0,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 0.7221760250000001,
+                    "appliedTotal": 11.554816400000002,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 8,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 8,
+                  "totalRating": 192.0
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          }
+        ]
+      },
+      "tradeBlock": {},
+      "transactionCounter": {
+        "acquisitionBudgetSpent": 0,
+        "acquisitions": 20,
+        "drops": 20,
+        "matchupAcquisitionTotals": {
+          "1": 0,
+          "2": 5,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 2,
+          "8": 1,
+          "9": 2,
+          "10": 1,
+          "11": 3,
+          "12": 4,
+          "13": 0,
+          "14": 0,
+          "15": 0,
+          "16": 0
+        },
+        "misc": 0,
+        "moveToActive": 45,
+        "moveToIR": 0,
+        "paid": 0.0,
+        "teamCharges": 0.0,
+        "trades": 0
+      },
+      "waiverRank": 1
+    },
+    {
+      "abbrev": "LUTZ",
+      "currentProjectedRank": 8,
+      "divisionId": 0,
+      "draftDayProjectedRank": 0,
+      "draftStrategy": {},
+      "id": 8,
+      "isActive": false,
+      "location": "Lutz Get",
+      "logo": "https://pbs.twimg.com/profile_images/874438262055718912/BWj7M6_4.jpg",
+      "logoType": "CUSTOM_VALID",
+      "nickname": "Weird",
+      "owners": [],
+      "playoffSeed": 8,
+      "points": 2331.2,
+      "pointsAdjusted": 0.0,
+      "pointsDelta": 0.0,
+      "primaryOwner": "{0009-3468-72}",
+      "rankCalculatedFinal": 8,
+      "rankFinal": 0,
+      "record": {
+        "away": {
+          "gamesBack": 0.0,
+          "losses": 4,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 2
+        },
+        "division": {
+          "gamesBack": 0.0,
+          "losses": 8,
+          "percentage": 0.38461538461538464,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 5
+        },
+        "home": {
+          "gamesBack": 0.0,
+          "losses": 4,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 3
+        },
+        "overall": {
+          "gamesBack": 0.0,
+          "losses": 8,
+          "percentage": 0.38461538461538464,
+          "pointsAgainst": 1875.0599999999997,
+          "pointsFor": 1725.8400000000001,
+          "streakLength": 3,
+          "streakType": "LOSS",
+          "ties": 0,
+          "wins": 5
+        }
+      },
+      "roster": {
+        "entries": [
+          {
+            "acquisitionDate": 1535222535328,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 20,
+            "pendingTransactionIds": null,
+            "playerId": 2977644,
+            "playerPoolEntry": {
+              "appliedStatTotal": 0.0,
+              "id": 2977644,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 8,
+              "player": {
+                "defaultPositionId": 2,
+                "eligibleSlots": [
+                  2,
+                  3,
+                  7,
+                  20,
+                  21,
+                  23
+                ],
+                "fullName": "Todd Gurley II",
+                "id": 2977644,
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": {
+                  "auctionValueAverage": 63.3135,
+                  "averageDraftPosition": 1.4,
+                  "percentChange": 0.112865271192,
+                  "percentOwned": 97.662976629766,
+                  "percentStarted": 82.90282902829
+                },
+                "proTeamId": 14,
+                "stats": [
+                  {
+                    "appliedAverage": 23.233647489285715,
+                    "appliedTotal": 325.27106485,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 0.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 0.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 26.57857142857143,
+                    "appliedTotal": 372.1,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 37.43359596871428,
+                    "appliedTotal": 524.070343562,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 3,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 9,
+                  "totalRating": 372.1
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          },
+          {
+            "acquisitionDate": 1544002341937,
+            "acquisitionType": "ADD",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 16,
+            "pendingTransactionIds": null,
+            "playerId": -16006,
+            "playerPoolEntry": {
+              "appliedStatTotal": 3.0,
+              "id": -16006,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 8,
+              "player": {
+                "defaultPositionId": 16,
+                "eligibleSlots": [
+                  16,
+                  20,
+                  21
+                ],
+                "fullName": "Cowboys D/ST",
+                "id": -16006,
+                "injured": false,
+                "ownership": {
+                  "auctionValueAverage": 0.0,
+                  "averageDraftPosition": 170.0,
+                  "percentChange": -0.017023187755,
+                  "percentOwned": 34.303534303534,
+                  "percentStarted": 21.205821205821
+                },
+                "proTeamId": 6,
+                "stats": [
+                  {
+                    "appliedAverage": 9.497527488,
+                    "appliedTotal": 151.960439808,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 9.522448618999999,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 3.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 10.5625,
+                    "appliedTotal": 169.0,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 0.6020701575,
+                    "appliedTotal": 9.63312252,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 17,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 17,
+                  "totalRating": 169.0
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          }
+        ]
+      },
+      "tradeBlock": {},
+      "transactionCounter": {
+        "acquisitionBudgetSpent": 0,
+        "acquisitions": 38,
+        "drops": 38,
+        "matchupAcquisitionTotals": {
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 1,
+          "5": 2,
+          "6": 3,
+          "7": 5,
+          "8": 1,
+          "9": 4,
+          "10": 2,
+          "11": 2,
+          "12": 3,
+          "13": 1,
+          "14": 3,
+          "15": 2,
+          "16": 4
+        },
+        "misc": 0,
+        "moveToActive": 72,
+        "moveToIR": 0,
+        "paid": 0.0,
+        "teamCharges": 0.0,
+        "trades": 2
+      },
+      "waiverRank": 8
+    },
+    {
+      "abbrev": "LEAG",
+      "currentProjectedRank": 3,
+      "divisionId": 0,
+      "draftDayProjectedRank": 0,
+      "draftStrategy": {},
+      "id": 9,
+      "isActive": false,
+      "location": "Misunderstood ",
+      "logo": "http://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-08.svg",
+      "logoType": "VECTOR",
+      "nickname": "Mistfits ",
+      "owners": [],
+      "playoffSeed": 3,
+      "points": 2299.6,
+      "pointsAdjusted": 0.0,
+      "pointsDelta": 0.0,
+      "primaryOwner": "{4C6935DA-0CBA-4AF9-BB08-06E583265D96}",
+      "rankCalculatedFinal": 5,
+      "rankFinal": 0,
+      "record": {
+        "away": {
+          "gamesBack": 0.0,
+          "losses": 3,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 3
+        },
+        "division": {
+          "gamesBack": 0.0,
+          "losses": 5,
+          "percentage": 0.6153846153846154,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 8
+        },
+        "home": {
+          "gamesBack": 0.0,
+          "losses": 2,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 5
+        },
+        "overall": {
+          "gamesBack": 0.0,
+          "losses": 5,
+          "percentage": 0.6153846153846154,
+          "pointsAgainst": 1684.94,
+          "pointsFor": 1912.62,
+          "streakLength": 3,
+          "streakType": "WIN",
+          "ties": 0,
+          "wins": 8
+        }
+      },
+      "roster": {
+        "entries": [
+          {
+            "acquisitionDate": 1535223373958,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 2,
+            "pendingTransactionIds": null,
+            "playerId": 3115364,
+            "playerPoolEntry": {
+              "appliedStatTotal": 0.0,
+              "id": 3115364,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 9,
+              "player": {
+                "defaultPositionId": 2,
+                "eligibleSlots": [
+                  2,
+                  3,
+                  7,
+                  20,
+                  21,
+                  23
+                ],
+                "fullName": "Leonard Fournette",
+                "id": 3115364,
+                "injured": false,
+                "injuryStatus": "QUESTIONABLE",
+                "ownership": {
+                  "auctionValueAverage": 49.2245,
+                  "averageDraftPosition": 13.1,
+                  "percentChange": -0.301277308827,
+                  "percentOwned": 95.551257253384,
+                  "percentStarted": 64.2166344294
+                },
+                "proTeamId": 30,
+                "stats": [
+                  {
+                    "appliedAverage": 32.632250252,
+                    "appliedTotal": 261.058002016,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 0.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 0.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 15.05,
+                    "appliedTotal": 120.4,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 33.535957625,
+                    "appliedTotal": 268.287661,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 40,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 147,
+                  "totalRating": 120.4
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          },
+          {
+            "acquisitionDate": 1543535893653,
+            "acquisitionType": "ADD",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 16,
+            "pendingTransactionIds": null,
+            "playerId": -16007,
+            "playerPoolEntry": {
+              "appliedStatTotal": 18.0,
+              "id": -16007,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 9,
+              "player": {
+                "defaultPositionId": 16,
+                "eligibleSlots": [
+                  16,
+                  20,
+                  21
+                ],
+                "fullName": "Broncos D/ST",
+                "id": -16007,
+                "injured": false,
+                "ownership": {
+                  "auctionValueAverage": 1.398876404494382,
+                  "averageDraftPosition": 136.7,
+                  "percentChange": 1.797063533232,
+                  "percentOwned": 50.1138952164,
+                  "percentStarted": 26.195899772209
+                },
+                "proTeamId": 7,
+                "stats": [
+                  {
+                    "appliedAverage": 12.362344972875,
+                    "appliedTotal": 197.797519566,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 8.753987745,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 18.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 11.375,
+                    "appliedTotal": 182.0,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 0.7870008162500001,
+                    "appliedTotal": 12.592013060000001,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 12,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 12,
+                  "totalRating": 182.0
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          }
+        ]
+      },
+      "tradeBlock": {},
+      "transactionCounter": {
+        "acquisitionBudgetSpent": 0,
+        "acquisitions": 26,
+        "drops": 27,
+        "matchupAcquisitionTotals": {
+          "1": 0,
+          "2": 2,
+          "3": 4,
+          "4": 2,
+          "5": 4,
+          "6": 0,
+          "7": 4,
+          "8": 2,
+          "9": 2,
+          "10": 0,
+          "11": 2,
+          "12": 2,
+          "13": 1,
+          "14": 1,
+          "15": 0,
+          "16": 0
+        },
+        "misc": 0,
+        "moveToActive": 51,
+        "moveToIR": 0,
+        "paid": 0.0,
+        "teamCharges": 0.0,
+        "trades": 3
+      },
+      "waiverRank": 3
+    },
+    {
+      "abbrev": "TheD",
+      "currentProjectedRank": 10,
+      "divisionId": 0,
+      "draftDayProjectedRank": 0,
+      "draftStrategy": {},
+      "id": 10,
+      "isActive": false,
+      "location": "Jacking Goff ",
+      "logo": "http://g.espncdn.com/s/ffllm/logos/SmackTalk-LeoEspinosa/u_mad_bro-09.svg",
+      "logoType": "VECTOR",
+      "nickname": "On Sundays",
+      "owners": [],
+      "playoffSeed": 10,
+      "points": 2081.02,
+      "pointsAdjusted": 0.0,
+      "pointsDelta": 0.0,
+      "primaryOwner": "{3FAC78F0-4AA2-4982-AC78-F04AA2798222}",
+      "rankCalculatedFinal": 9,
+      "rankFinal": 0,
+      "record": {
+        "away": {
+          "gamesBack": 0.0,
+          "losses": 5,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 1
+        },
+        "division": {
+          "gamesBack": 0.0,
+          "losses": 11,
+          "percentage": 0.15384615384615385,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 2
+        },
+        "home": {
+          "gamesBack": 0.0,
+          "losses": 6,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 1
+        },
+        "overall": {
+          "gamesBack": 0.0,
+          "losses": 11,
+          "percentage": 0.15384615384615385,
+          "pointsAgainst": 1870.38,
+          "pointsFor": 1547.32,
+          "streakLength": 5,
+          "streakType": "LOSS",
+          "ties": 0,
+          "wins": 2
+        }
+      },
+      "roster": {
+        "entries": [
+          {
+            "acquisitionDate": 1535224433376,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 2,
+            "pendingTransactionIds": null,
+            "playerId": 3116593,
+            "playerPoolEntry": {
+              "appliedStatTotal": 10.0,
+              "id": 3116593,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 10,
+              "player": {
+                "defaultPositionId": 2,
+                "eligibleSlots": [
+                  2,
+                  3,
+                  7,
+                  20,
+                  21,
+                  23
+                ],
+                "fullName": "Dalvin Cook",
+                "id": 3116593,
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": {
+                  "auctionValueAverage": 45.1625,
+                  "averageDraftPosition": 13.6,
+                  "percentChange": -0.110826185634,
+                  "percentOwned": 97.718631178707,
+                  "percentStarted": 76.045627376425
+                },
+                "proTeamId": 16,
+                "stats": [
+                  {
+                    "appliedAverage": 23.822350895272724,
+                    "appliedTotal": 262.04585984799996,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 14.588285297,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 13.818181818181818,
+                    "appliedTotal": 152.0,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 10.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 20.03952185454546,
+                    "appliedTotal": 220.43474040000004,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 30,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 108,
+                  "totalRating": 152.0
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          },
+          {
+            "acquisitionDate": 1535224433376,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 16,
+            "pendingTransactionIds": null,
+            "playerId": -16014,
+            "playerPoolEntry": {
+              "appliedStatTotal": 19.0,
+              "id": -16014,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 10,
+              "player": {
+                "defaultPositionId": 16,
+                "eligibleSlots": [
+                  16,
+                  20,
+                  21
+                ],
+                "fullName": "Rams D/ST",
+                "id": -16014,
+                "injured": false,
+                "ownership": {
+                  "auctionValueAverage": 3.6574500768049156,
+                  "averageDraftPosition": 95.6,
+                  "percentChange": 0.136446886447,
+                  "percentOwned": 95.809523809523,
+                  "percentStarted": 75.238095238095
+                },
+                "proTeamId": 14,
+                "stats": [
+                  {
+                    "appliedAverage": 12.691763677125,
+                    "appliedTotal": 203.068218834,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 19.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 13.029019343000002,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 13.0,
+                    "appliedTotal": 208.0,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 0.8464764612500001,
+                    "appliedTotal": 13.543623380000001,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 4,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 4,
+                  "totalRating": 208.0
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          }
+        ]
+      },
+      "tradeBlock": {},
+      "transactionCounter": {
+        "acquisitionBudgetSpent": 0,
+        "acquisitions": 17,
+        "drops": 20,
+        "matchupAcquisitionTotals": {
+          "1": 0,
+          "2": 0,
+          "3": 2,
+          "4": 1,
+          "5": 5,
+          "6": 0,
+          "7": 2,
+          "8": 0,
+          "9": 0,
+          "10": 2,
+          "11": 1,
+          "12": 1,
+          "13": 0,
+          "14": 0,
+          "15": 3,
+          "16": 0
+        },
+        "misc": 0,
+        "moveToActive": 54,
+        "moveToIR": 0,
+        "paid": 0.0,
+        "teamCharges": 0.0,
+        "trades": 3
+      },
+      "waiverRank": 6
+    },
+    {
+      "abbrev": "HARR",
+      "currentProjectedRank": 1,
+      "divisionId": 0,
+      "draftDayProjectedRank": 0,
+      "draftStrategy": {},
+      "id": 11,
+      "isActive": false,
+      "location": "Perscription",
+      "logo": "https://images.livemixtapes.com/artists/nodj/gucci_mane_zaytoven-lean/cover.jpg",
+      "logoType": "CUSTOM_VALID",
+      "nickname": "Mixon",
+      "owners": [],
+      "playoffSeed": 1,
+      "points": 2097.92,
+      "pointsAdjusted": 0.0,
+      "pointsDelta": 0.0,
+      "primaryOwner": "{61E5E7DB-8FF9-413B-BC45-10AB6DDA15D6}",
+      "rankCalculatedFinal": 4,
+      "rankFinal": 0,
+      "record": {
+        "away": {
+          "gamesBack": 0.0,
+          "losses": 3,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 4
+        },
+        "division": {
+          "gamesBack": 0.0,
+          "losses": 4,
+          "percentage": 0.6923076923076923,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 9
+        },
+        "home": {
+          "gamesBack": 0.0,
+          "losses": 1,
+          "percentage": 0.0,
+          "pointsAgainst": 0.0,
+          "pointsFor": 0.0,
+          "streakLength": 0,
+          "streakType": "NONE",
+          "ties": 0,
+          "wins": 5
+        },
+        "overall": {
+          "gamesBack": 0.0,
+          "losses": 4,
+          "percentage": 0.6923076923076923,
+          "pointsAgainst": 1624.96,
+          "pointsFor": 1863.5600000000002,
+          "streakLength": 1,
+          "streakType": "LOSS",
+          "ties": 0,
+          "wins": 9
+        }
+      },
+      "roster": {
+        "entries": [
+          {
+            "acquisitionDate": 1535224994882,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 2,
+            "pendingTransactionIds": null,
+            "playerId": 2576434,
+            "playerPoolEntry": {
+              "appliedStatTotal": 9.600000000000001,
+              "id": 2576434,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 11,
+              "player": {
+                "defaultPositionId": 2,
+                "eligibleSlots": [
+                  2,
+                  3,
+                  7,
+                  20,
+                  21,
+                  23
+                ],
+                "fullName": "Melvin Gordon",
+                "id": 2576434,
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": {
+                  "auctionValueAverage": 44.7325,
+                  "averageDraftPosition": 15.8,
+                  "percentChange": -0.060428969189,
+                  "percentOwned": 99.489795918367,
+                  "percentStarted": 87.244897959183
+                },
+                "proTeamId": 24,
+                "stats": [
+                  {
+                    "appliedAverage": 22.03631266383334,
+                    "appliedTotal": 264.43575196600005,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 19.671754274,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 9.600000000000001,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 22.958333333333332,
+                    "appliedTotal": 275.5,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 27.913331,
+                    "appliedTotal": 334.959972,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 8,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 36,
+                  "totalRating": 275.5
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          },
+          {
+            "acquisitionDate": 1535224994883,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "lineupSlotId": 16,
+            "pendingTransactionIds": null,
+            "playerId": -16034,
+            "playerPoolEntry": {
+              "appliedStatTotal": 20.0,
+              "id": -16034,
+              "keeperValue": 0,
+              "keeperValueFuture": 0,
+              "lineupLocked": true,
+              "onTeamId": 11,
+              "player": {
+                "defaultPositionId": 16,
+                "eligibleSlots": [
+                  16,
+                  20,
+                  21
+                ],
+                "fullName": "Texans D/ST",
+                "id": -16034,
+                "injured": false,
+                "ownership": {
+                  "auctionValueAverage": 1.666494579246257,
+                  "averageDraftPosition": 128.2,
+                  "percentChange": -0.541495668035,
+                  "percentOwned": 90.931372549019,
+                  "percentStarted": 69.85294117647
+                },
+                "proTeamId": 34,
+                "stats": [
+                  {
+                    "appliedAverage": 12.656083902874999,
+                    "appliedTotal": 202.49734244599998,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedTotal": 20.0,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedTotal": 16.908488285,
+                    "scoringPeriodId": 17,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 1
+                  },
+                  {
+                    "appliedAverage": 13.1875,
+                    "appliedTotal": 211.0,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 0,
+                    "statSplitTypeId": 0
+                  },
+                  {
+                    "appliedAverage": 0.70222119625,
+                    "appliedTotal": 11.23553914,
+                    "scoringPeriodId": 0,
+                    "seasonId": 2018,
+                    "statSourceId": 1,
+                    "statSplitTypeId": 3
+                  }
+                ]
+              },
+              "ratings": {
+                "0": {
+                  "positionalRanking": 3,
+                  "statCategoryRanking": 0,
+                  "totalRanking": 3,
+                  "totalRating": 211.0
+                }
+              },
+              "rosterLocked": true,
+              "status": "ONTEAM",
+              "tradeLocked": false
+            },
+            "status": "NORMAL"
+          }
+        ]
+      },
+      "tradeBlock": {},
+      "transactionCounter": {
+        "acquisitionBudgetSpent": 0,
+        "acquisitions": 17,
+        "drops": 17,
+        "matchupAcquisitionTotals": {
+          "1": 0,
+          "2": 1,
+          "3": 1,
+          "4": 2,
+          "5": 2,
+          "6": 2,
+          "7": 1,
+          "8": 1,
+          "9": 2,
+          "10": 1,
+          "11": 1,
+          "12": 0,
+          "13": 0,
+          "14": 1,
+          "15": 0,
+          "16": 1
+        },
+        "misc": 0,
+        "moveToActive": 54,
+        "moveToIR": 0,
+        "paid": 0.0,
+        "teamCharges": 0.0,
+        "trades": 1
+      },
+      "waiverRank": 7
+    }
+  ]
+}

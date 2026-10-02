@@ -1,0 +1,10 @@
+{
+  "generator": "scripts/generate_parity_fixtures.py",
+  "source_sha256": {
+    "tests/football/unit/data/league_2015_data.json": "39bc2a266daf86e7c344e035d2bea6d46ed28362daf2870423fe3b2bb6e79217",
+    "tests/football/unit/data/league_matchupScore_2015.json": "c3363cd4810cdd7a994c79cb5492909b4d4de09f40988aa61c122abaf3962f97",
+    "tests/football/unit/data/league_2018_data.json": "17679700ac9de114501429c9e30103e835f589422ab1a504d3d945d1fd0ecd46",
+    "tests/football/unit/data/league_matchupScore_2018.json": "6892d59911ae48be9eb954acc72263ad27e75321d2379ce585a2a6e490da906a"
+  },
+  "normalization": "Representative roster entries; all teams/schedule; bye self-reference and absent scoreboard sides become null. Actual/projected totals and averages retain Python rounding."
+}

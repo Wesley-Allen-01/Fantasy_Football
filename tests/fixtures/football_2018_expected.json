@@ -1,0 +1,2035 @@
+{
+  "league_id": 368876,
+  "season": 2018,
+  "current_week": 16,
+  "nfl_week": 18,
+  "current_matchup_period": 16,
+  "scoring_period": 18,
+  "first_scoring_period": 1,
+  "final_scoring_period": 16,
+  "previous_seasons": [
+    2015,
+    2016,
+    2017
+  ],
+  "settings": {
+    "name": "FXBG League",
+    "team_count": 10,
+    "scoring_type": "H2H_POINTS",
+    "regular_season_matchup_count": 13,
+    "playoff_team_count": 6,
+    "playoff_seed_tie_rule": "TOTAL_POINTS_SCORED",
+    "median_scoring": false
+  },
+  "teams": [
+    {
+      "id": 1,
+      "name": "Goin' HAM Newton",
+      "abbreviation": "GHN",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1937.52,
+      "points_against": 1640.6,
+      "standing": 2,
+      "final_standing": 3,
+      "roster": [
+        {
+          "id": 13934,
+          "name": "Antonio Brown",
+          "position": "WR",
+          "pro_team": "PIT",
+          "eligible_slots": [
+            "RB/WR",
+            "WR",
+            "WR/TE",
+            "OP",
+            "BE",
+            "IR",
+            "RB/WR/TE"
+          ],
+          "total_points": 323.7,
+          "projected_total_points": 400.4,
+          "avg_points": 21.58,
+          "projected_avg_points": 26.69,
+          "stats": {
+            "0": {
+              "points": 323.7,
+              "avg_points": 21.58,
+              "projected_points": 400.4,
+              "projected_avg_points": 26.69
+            },
+            "17": {
+              "points": 0.0,
+              "avg_points": 0,
+              "projected_points": 0.02,
+              "projected_avg_points": 0
+            }
+          }
+        },
+        {
+          "id": -16003,
+          "name": "Bears D/ST",
+          "position": "D/ST",
+          "pro_team": "CHI",
+          "eligible_slots": [
+            "D/ST",
+            "BE",
+            "IR"
+          ],
+          "total_points": 275.0,
+          "projected_total_points": 12.42,
+          "avg_points": 17.19,
+          "projected_avg_points": 0.78,
+          "stats": {
+            "0": {
+              "points": 275.0,
+              "avg_points": 17.19,
+              "projected_points": 12.42,
+              "projected_avg_points": 0.78
+            },
+            "17": {
+              "points": 16.0,
+              "avg_points": 0,
+              "projected_points": 12.46,
+              "projected_avg_points": 0
+            }
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "period": 1,
+          "opponent": 7,
+          "score": 75.54,
+          "outcome": "L",
+          "margin": -40.44
+        },
+        {
+          "period": 2,
+          "opponent": 8,
+          "score": 148.1,
+          "outcome": "W",
+          "margin": 2.1999999999999886
+        },
+        {
+          "period": 3,
+          "opponent": 5,
+          "score": 128.5,
+          "outcome": "L",
+          "margin": -15.039999999999992
+        },
+        {
+          "period": 4,
+          "opponent": 3,
+          "score": 155.26,
+          "outcome": "W",
+          "margin": 25.28
+        },
+        {
+          "period": 5,
+          "opponent": 2,
+          "score": 152.38,
+          "outcome": "W",
+          "margin": 49.19999999999999
+        },
+        {
+          "period": 6,
+          "opponent": 11,
+          "score": 143.6,
+          "outcome": "L",
+          "margin": -29.080000000000013
+        },
+        {
+          "period": 7,
+          "opponent": 4,
+          "score": 118.86,
+          "outcome": "L",
+          "margin": -24.239999999999995
+        },
+        {
+          "period": 8,
+          "opponent": 9,
+          "score": 159.86,
+          "outcome": "W",
+          "margin": 23.580000000000013
+        },
+        {
+          "period": 9,
+          "opponent": 10,
+          "score": 187.68,
+          "outcome": "W",
+          "margin": 80.46000000000001
+        },
+        {
+          "period": 10,
+          "opponent": 7,
+          "score": 180.32,
+          "outcome": "W",
+          "margin": 93.25999999999999
+        },
+        {
+          "period": 11,
+          "opponent": 8,
+          "score": 182.88,
+          "outcome": "W",
+          "margin": 71.0
+        },
+        {
+          "period": 12,
+          "opponent": 5,
+          "score": 148.14,
+          "outcome": "L",
+          "margin": -0.7800000000000011
+        },
+        {
+          "period": 13,
+          "opponent": 3,
+          "score": 156.4,
+          "outcome": "W",
+          "margin": 61.52000000000001
+        },
+        {
+          "period": 14,
+          "opponent": null,
+          "score": 112.4,
+          "outcome": "U",
+          "margin": null
+        },
+        {
+          "period": 15,
+          "opponent": 2,
+          "score": 120.14,
+          "outcome": "L",
+          "margin": -10.279999999999987
+        },
+        {
+          "period": 16,
+          "opponent": 11,
+          "score": 181.48,
+          "outcome": "W",
+          "margin": 84.13999999999999
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Rollin' With Mahomies",
+      "abbreviation": "RWM",
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1866.26,
+      "points_against": 1927.48,
+      "standing": 6,
+      "final_standing": 2,
+      "roster": [
+        {
+          "id": 2976316,
+          "name": "Michael Thomas",
+          "position": "WR",
+          "pro_team": "NO",
+          "eligible_slots": [
+            "RB/WR",
+            "WR",
+            "WR/TE",
+            "OP",
+            "BE",
+            "IR",
+            "RB/WR/TE"
+          ],
+          "total_points": 315.5,
+          "projected_total_points": 233.45,
+          "avg_points": 19.72,
+          "projected_avg_points": 14.59,
+          "stats": {
+            "0": {
+              "points": 315.5,
+              "avg_points": 19.72,
+              "projected_points": 233.45,
+              "projected_avg_points": 14.59
+            },
+            "17": {
+              "points": 7.9,
+              "avg_points": 0,
+              "projected_points": 2.89,
+              "projected_avg_points": 0
+            }
+          }
+        },
+        {
+          "id": -16030,
+          "name": "Jaguars D/ST",
+          "position": "D/ST",
+          "pro_team": "JAX",
+          "eligible_slots": [
+            "D/ST",
+            "BE",
+            "IR"
+          ],
+          "total_points": 192.0,
+          "projected_total_points": 11.85,
+          "avg_points": 12.0,
+          "projected_avg_points": 0.74,
+          "stats": {
+            "0": {
+              "points": 192.0,
+              "avg_points": 12.0,
+              "projected_points": 11.85,
+              "projected_avg_points": 0.74
+            },
+            "17": {
+              "points": 14.0,
+              "avg_points": 0,
+              "projected_points": 8.03,
+              "projected_avg_points": 0
+            }
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "period": 1,
+          "opponent": 8,
+          "score": 160.64,
+          "outcome": "W",
+          "margin": 15.079999999999984
+        },
+        {
+          "period": 2,
+          "opponent": 5,
+          "score": 165.84,
+          "outcome": "W",
+          "margin": 24.580000000000013
+        },
+        {
+          "period": 3,
+          "opponent": 3,
+          "score": 135.66,
+          "outcome": "L",
+          "margin": -21.080000000000013
+        },
+        {
+          "period": 4,
+          "opponent": 11,
+          "score": 147.66,
+          "outcome": "W",
+          "margin": 14.960000000000008
+        },
+        {
+          "period": 5,
+          "opponent": 1,
+          "score": 103.18,
+          "outcome": "L",
+          "margin": -49.19999999999999
+        },
+        {
+          "period": 6,
+          "opponent": 4,
+          "score": 111.1,
+          "outcome": "L",
+          "margin": -41.06
+        },
+        {
+          "period": 7,
+          "opponent": 9,
+          "score": 140.12,
+          "outcome": "W",
+          "margin": 41.06
+        },
+        {
+          "period": 8,
+          "opponent": 10,
+          "score": 118.72,
+          "outcome": "L",
+          "margin": -36.78
+        },
+        {
+          "period": 9,
+          "opponent": 7,
+          "score": 192.2,
+          "outcome": "W",
+          "margin": 57.339999999999975
+        },
+        {
+          "period": 10,
+          "opponent": 8,
+          "score": 143.26,
+          "outcome": "L",
+          "margin": -41.18000000000001
+        },
+        {
+          "period": 11,
+          "opponent": 5,
+          "score": 146.72,
+          "outcome": "L",
+          "margin": -65.56
+        },
+        {
+          "period": 12,
+          "opponent": 3,
+          "score": 149.36,
+          "outcome": "W",
+          "margin": 16.82000000000002
+        },
+        {
+          "period": 13,
+          "opponent": 11,
+          "score": 151.8,
+          "outcome": "W",
+          "margin": 23.80000000000001
+        },
+        {
+          "period": 14,
+          "opponent": 9,
+          "score": 172.98,
+          "outcome": "W",
+          "margin": 34.099999999999994
+        },
+        {
+          "period": 15,
+          "opponent": 1,
+          "score": 130.42,
+          "outcome": "W",
+          "margin": 10.279999999999987
+        },
+        {
+          "period": 16,
+          "opponent": 5,
+          "score": 161.12,
+          "outcome": "L",
+          "margin": -13.439999999999998
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Feel the  Brees",
+      "abbreviation": "FtB",
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1615.6399999999999,
+      "points_against": 1801.0,
+      "standing": 9,
+      "final_standing": 10,
+      "roster": [
+        {
+          "id": 2580,
+          "name": "Drew Brees",
+          "position": "QB",
+          "pro_team": "NO",
+          "eligible_slots": [
+            "QB",
+            "OP",
+            "BE",
+            "IR"
+          ],
+          "total_points": 368.98,
+          "projected_total_points": 6.39,
+          "avg_points": 24.6,
+          "projected_avg_points": 0.43,
+          "stats": {
+            "0": {
+              "points": 368.98,
+              "avg_points": 24.6,
+              "projected_points": 6.39,
+              "projected_avg_points": 0.43
+            },
+            "17": {
+              "points": 0.0,
+              "avg_points": 0,
+              "projected_points": 0.0,
+              "projected_avg_points": 0
+            }
+          }
+        },
+        {
+          "id": -16016,
+          "name": "Vikings D/ST",
+          "position": "D/ST",
+          "pro_team": "MIN",
+          "eligible_slots": [
+            "D/ST",
+            "BE",
+            "IR"
+          ],
+          "total_points": 205.0,
+          "projected_total_points": 13.09,
+          "avg_points": 12.81,
+          "projected_avg_points": 0.82,
+          "stats": {
+            "0": {
+              "points": 205.0,
+              "avg_points": 12.81,
+              "projected_points": 13.09,
+              "projected_avg_points": 0.82
+            },
+            "17": {
+              "points": 4.0,
+              "avg_points": 0,
+              "projected_points": 11.67,
+              "projected_avg_points": 0
+            }
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "period": 1,
+          "opponent": 5,
+          "score": 185.06,
+          "outcome": "W",
+          "margin": 50.19999999999999
+        },
+        {
+          "period": 2,
+          "opponent": 11,
+          "score": 110.42,
+          "outcome": "L",
+          "margin": -13.120000000000005
+        },
+        {
+          "period": 3,
+          "opponent": 2,
+          "score": 156.74,
+          "outcome": "W",
+          "margin": 21.080000000000013
+        },
+        {
+          "period": 4,
+          "opponent": 1,
+          "score": 129.98,
+          "outcome": "L",
+          "margin": -25.28
+        },
+        {
+          "period": 5,
+          "opponent": 4,
+          "score": 96.02,
+          "outcome": "L",
+          "margin": -15.200000000000003
+        },
+        {
+          "period": 6,
+          "opponent": 9,
+          "score": 101.36,
+          "outcome": "L",
+          "margin": -82.04
+        },
+        {
+          "period": 7,
+          "opponent": 10,
+          "score": 150.8,
+          "outcome": "W",
+          "margin": 12.52000000000001
+        },
+        {
+          "period": 8,
+          "opponent": 7,
+          "score": 80.1,
+          "outcome": "L",
+          "margin": -77.16
+        },
+        {
+          "period": 9,
+          "opponent": 8,
+          "score": 124.92,
+          "outcome": "W",
+          "margin": 19.36
+        },
+        {
+          "period": 10,
+          "opponent": 5,
+          "score": 147.8,
+          "outcome": "W",
+          "margin": 39.040000000000006
+        },
+        {
+          "period": 11,
+          "opponent": 11,
+          "score": 105.02,
+          "outcome": "L",
+          "margin": -36.42
+        },
+        {
+          "period": 12,
+          "opponent": 2,
+          "score": 132.54,
+          "outcome": "L",
+          "margin": -16.82000000000002
+        },
+        {
+          "period": 13,
+          "opponent": 1,
+          "score": 94.88,
+          "outcome": "L",
+          "margin": -61.52000000000001
+        },
+        {
+          "period": 14,
+          "opponent": 10,
+          "score": 101.74,
+          "outcome": "L",
+          "margin": -2.160000000000011
+        },
+        {
+          "period": 15,
+          "opponent": 8,
+          "score": 87.22,
+          "outcome": "L",
+          "margin": -36.64
+        },
+        {
+          "period": 16,
+          "opponent": 10,
+          "score": 108.64,
+          "outcome": "L",
+          "margin": 5.299999999999997
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Its always Sony in NE",
+      "abbreviation": "SINE",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1771.36,
+      "points_against": 1712.58,
+      "standing": 4,
+      "final_standing": 6,
+      "roster": [
+        {
+          "id": 3051392,
+          "name": "Ezekiel Elliott",
+          "position": "RB",
+          "pro_team": "DAL",
+          "eligible_slots": [
+            "RB",
+            "RB/WR",
+            "OP",
+            "BE",
+            "IR",
+            "RB/WR/TE"
+          ],
+          "total_points": 329.1,
+          "projected_total_points": 322.38,
+          "avg_points": 21.94,
+          "projected_avg_points": 21.49,
+          "stats": {
+            "0": {
+              "points": 329.1,
+              "avg_points": 21.94,
+              "projected_points": 322.38,
+              "projected_avg_points": 21.49
+            },
+            "17": {
+              "points": 0.0,
+              "avg_points": 0,
+              "projected_points": 0.0,
+              "projected_avg_points": 0
+            }
+          }
+        },
+        {
+          "id": -16033,
+          "name": "Ravens D/ST",
+          "position": "D/ST",
+          "pro_team": "BAL",
+          "eligible_slots": [
+            "D/ST",
+            "BE",
+            "IR"
+          ],
+          "total_points": 213.0,
+          "projected_total_points": 13.0,
+          "avg_points": 13.31,
+          "projected_avg_points": 0.81,
+          "stats": {
+            "0": {
+              "points": 213.0,
+              "avg_points": 13.31,
+              "projected_points": 13.0,
+              "projected_avg_points": 0.81
+            },
+            "17": {
+              "points": 6.0,
+              "avg_points": 0,
+              "projected_points": 10.92,
+              "projected_avg_points": 0
+            }
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "period": 1,
+          "opponent": 10,
+          "score": 139.34,
+          "outcome": "L",
+          "margin": -0.9000000000000057
+        },
+        {
+          "period": 2,
+          "opponent": 7,
+          "score": 150.64,
+          "outcome": "L",
+          "margin": -3.5400000000000205
+        },
+        {
+          "period": 3,
+          "opponent": 8,
+          "score": 132.94,
+          "outcome": "W",
+          "margin": 1.0
+        },
+        {
+          "period": 4,
+          "opponent": 5,
+          "score": 170.92,
+          "outcome": "W",
+          "margin": 25.639999999999986
+        },
+        {
+          "period": 5,
+          "opponent": 3,
+          "score": 111.22,
+          "outcome": "W",
+          "margin": 15.200000000000003
+        },
+        {
+          "period": 6,
+          "opponent": 2,
+          "score": 152.16,
+          "outcome": "W",
+          "margin": 41.06
+        },
+        {
+          "period": 7,
+          "opponent": 1,
+          "score": 143.1,
+          "outcome": "W",
+          "margin": 24.239999999999995
+        },
+        {
+          "period": 8,
+          "opponent": 11,
+          "score": 135.9,
+          "outcome": "L",
+          "margin": -27.539999999999992
+        },
+        {
+          "period": 9,
+          "opponent": 9,
+          "score": 102.7,
+          "outcome": "L",
+          "margin": -60.89999999999999
+        },
+        {
+          "period": 10,
+          "opponent": 10,
+          "score": 128.1,
+          "outcome": "W",
+          "margin": 7.739999999999995
+        },
+        {
+          "period": 11,
+          "opponent": 7,
+          "score": 127.6,
+          "outcome": "L",
+          "margin": -0.21999999999999886
+        },
+        {
+          "period": 12,
+          "opponent": 8,
+          "score": 159.8,
+          "outcome": "W",
+          "margin": 29.080000000000013
+        },
+        {
+          "period": 13,
+          "opponent": 5,
+          "score": 116.94,
+          "outcome": "W",
+          "margin": 7.920000000000002
+        },
+        {
+          "period": 14,
+          "opponent": 5,
+          "score": 93.7,
+          "outcome": "L",
+          "margin": -71.93999999999998
+        },
+        {
+          "period": 15,
+          "opponent": 9,
+          "score": 96.8,
+          "outcome": "W",
+          "margin": 0.7000000000000028
+        },
+        {
+          "period": 16,
+          "opponent": 9,
+          "score": 149.64,
+          "outcome": "L",
+          "margin": -2.3600000000000136
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Watch What  You Saquon",
+      "abbreviation": "SAQU",
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1889.08,
+      "points_against": 1826.22,
+      "standing": 5,
+      "final_standing": 1,
+      "roster": [
+        {
+          "id": 3929630,
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "pro_team": "NYG",
+          "eligible_slots": [
+            "RB",
+            "RB/WR",
+            "OP",
+            "BE",
+            "IR",
+            "RB/WR/TE"
+          ],
+          "total_points": 385.8,
+          "projected_total_points": 370.15,
+          "avg_points": 24.11,
+          "projected_avg_points": 23.13,
+          "stats": {
+            "0": {
+              "points": 385.8,
+              "avg_points": 24.11,
+              "projected_points": 370.15,
+              "projected_avg_points": 23.13
+            },
+            "17": {
+              "points": 24.2,
+              "avg_points": 0,
+              "projected_points": 22.7,
+              "projected_avg_points": 0
+            }
+          }
+        },
+        {
+          "id": -16010,
+          "name": "Titans D/ST",
+          "position": "D/ST",
+          "pro_team": "TEN",
+          "eligible_slots": [
+            "D/ST",
+            "BE",
+            "IR"
+          ],
+          "total_points": 192.0,
+          "projected_total_points": 10.94,
+          "avg_points": 12.0,
+          "projected_avg_points": 0.68,
+          "stats": {
+            "0": {
+              "points": 192.0,
+              "avg_points": 12.0,
+              "projected_points": 10.94,
+              "projected_avg_points": 0.68
+            },
+            "17": {
+              "points": 10.0,
+              "avg_points": 0,
+              "projected_points": 8.09,
+              "projected_avg_points": 0
+            }
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "period": 1,
+          "opponent": 3,
+          "score": 134.86,
+          "outcome": "L",
+          "margin": -50.19999999999999
+        },
+        {
+          "period": 2,
+          "opponent": 2,
+          "score": 141.26,
+          "outcome": "L",
+          "margin": -24.580000000000013
+        },
+        {
+          "period": 3,
+          "opponent": 1,
+          "score": 143.54,
+          "outcome": "W",
+          "margin": 15.039999999999992
+        },
+        {
+          "period": 4,
+          "opponent": 4,
+          "score": 145.28,
+          "outcome": "L",
+          "margin": -25.639999999999986
+        },
+        {
+          "period": 5,
+          "opponent": 9,
+          "score": 137.0,
+          "outcome": "L",
+          "margin": -36.80000000000001
+        },
+        {
+          "period": 6,
+          "opponent": 10,
+          "score": 142.58,
+          "outcome": "W",
+          "margin": 88.24000000000001
+        },
+        {
+          "period": 7,
+          "opponent": 7,
+          "score": 177.26,
+          "outcome": "W",
+          "margin": 28.47999999999999
+        },
+        {
+          "period": 8,
+          "opponent": 8,
+          "score": 171.56,
+          "outcome": "W",
+          "margin": 38.599999999999994
+        },
+        {
+          "period": 9,
+          "opponent": 11,
+          "score": 116.76,
+          "outcome": "W",
+          "margin": 10.340000000000003
+        },
+        {
+          "period": 10,
+          "opponent": 3,
+          "score": 108.76,
+          "outcome": "L",
+          "margin": -39.040000000000006
+        },
+        {
+          "period": 11,
+          "opponent": 2,
+          "score": 212.28,
+          "outcome": "W",
+          "margin": 65.56
+        },
+        {
+          "period": 12,
+          "opponent": 1,
+          "score": 148.92,
+          "outcome": "W",
+          "margin": 0.7800000000000011
+        },
+        {
+          "period": 13,
+          "opponent": 4,
+          "score": 109.02,
+          "outcome": "L",
+          "margin": -7.920000000000002
+        },
+        {
+          "period": 14,
+          "opponent": 4,
+          "score": 165.64,
+          "outcome": "W",
+          "margin": 71.93999999999998
+        },
+        {
+          "period": 15,
+          "opponent": 11,
+          "score": 145.76,
+          "outcome": "W",
+          "margin": 8.73999999999998
+        },
+        {
+          "period": 16,
+          "opponent": 2,
+          "score": 174.56,
+          "outcome": "W",
+          "margin": 13.439999999999998
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "THE White House",
+      "abbreviation": "TWH",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1735.3399999999997,
+      "points_against": 1901.32,
+      "standing": 7,
+      "final_standing": 7,
+      "roster": [
+        {
+          "id": 15795,
+          "name": "DeAndre Hopkins",
+          "position": "WR",
+          "pro_team": "HOU",
+          "eligible_slots": [
+            "RB/WR",
+            "WR",
+            "WR/TE",
+            "OP",
+            "BE",
+            "IR",
+            "RB/WR/TE"
+          ],
+          "total_points": 333.5,
+          "projected_total_points": 240.63,
+          "avg_points": 20.84,
+          "projected_avg_points": 15.04,
+          "stats": {
+            "0": {
+              "points": 333.5,
+              "avg_points": 20.84,
+              "projected_points": 240.63,
+              "projected_avg_points": 15.04
+            },
+            "17": {
+              "points": 26.7,
+              "avg_points": 0,
+              "projected_points": 19.0,
+              "projected_avg_points": 0
+            }
+          }
+        },
+        {
+          "id": -16002,
+          "name": "Bills D/ST",
+          "position": "D/ST",
+          "pro_team": "BUF",
+          "eligible_slots": [
+            "D/ST",
+            "BE",
+            "IR"
+          ],
+          "total_points": 192.0,
+          "projected_total_points": 11.55,
+          "avg_points": 12.0,
+          "projected_avg_points": 0.72,
+          "stats": {
+            "0": {
+              "points": 192.0,
+              "avg_points": 12.0,
+              "projected_points": 11.55,
+              "projected_avg_points": 0.72
+            },
+            "17": {
+              "points": 23.0,
+              "avg_points": 0,
+              "projected_points": 15.91,
+              "projected_avg_points": 0
+            }
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "period": 1,
+          "opponent": 1,
+          "score": 115.98,
+          "outcome": "W",
+          "margin": 40.44
+        },
+        {
+          "period": 2,
+          "opponent": 4,
+          "score": 154.18,
+          "outcome": "W",
+          "margin": 3.5400000000000205
+        },
+        {
+          "period": 3,
+          "opponent": 9,
+          "score": 92.92,
+          "outcome": "L",
+          "margin": -75.44000000000001
+        },
+        {
+          "period": 4,
+          "opponent": 10,
+          "score": 187.16,
+          "outcome": "W",
+          "margin": 36.359999999999985
+        },
+        {
+          "period": 5,
+          "opponent": 11,
+          "score": 134.74,
+          "outcome": "L",
+          "margin": -31.919999999999987
+        },
+        {
+          "period": 6,
+          "opponent": 8,
+          "score": 117.2,
+          "outcome": "L",
+          "margin": -17.719999999999985
+        },
+        {
+          "period": 7,
+          "opponent": 5,
+          "score": 148.78,
+          "outcome": "L",
+          "margin": -28.47999999999999
+        },
+        {
+          "period": 8,
+          "opponent": 3,
+          "score": 157.26,
+          "outcome": "W",
+          "margin": 77.16
+        },
+        {
+          "period": 9,
+          "opponent": 2,
+          "score": 134.86,
+          "outcome": "L",
+          "margin": -57.339999999999975
+        },
+        {
+          "period": 10,
+          "opponent": 1,
+          "score": 87.06,
+          "outcome": "L",
+          "margin": -93.25999999999999
+        },
+        {
+          "period": 11,
+          "opponent": 4,
+          "score": 127.82,
+          "outcome": "W",
+          "margin": 0.21999999999999886
+        },
+        {
+          "period": 12,
+          "opponent": 9,
+          "score": 121.52,
+          "outcome": "L",
+          "margin": -38.36
+        },
+        {
+          "period": 13,
+          "opponent": 10,
+          "score": 155.86,
+          "outcome": "W",
+          "margin": 18.82000000000002
+        },
+        {
+          "period": 14,
+          "opponent": 8,
+          "score": 124.7,
+          "outcome": "W",
+          "margin": 15.980000000000004
+        },
+        {
+          "period": 15,
+          "opponent": 10,
+          "score": 98.44,
+          "outcome": "L",
+          "margin": -12.820000000000007
+        },
+        {
+          "period": 16,
+          "opponent": 8,
+          "score": 125.54,
+          "outcome": "W",
+          "margin": 0.35999999999999943
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Lutz Get Weird",
+      "abbreviation": "LUTZ",
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1725.8400000000001,
+      "points_against": 1875.06,
+      "standing": 8,
+      "final_standing": 8,
+      "roster": [
+        {
+          "id": 2977644,
+          "name": "Todd Gurley II",
+          "position": "RB",
+          "pro_team": "LAR",
+          "eligible_slots": [
+            "RB",
+            "RB/WR",
+            "OP",
+            "BE",
+            "IR",
+            "RB/WR/TE"
+          ],
+          "total_points": 372.1,
+          "projected_total_points": 524.07,
+          "avg_points": 26.58,
+          "projected_avg_points": 37.43,
+          "stats": {
+            "0": {
+              "points": 372.1,
+              "avg_points": 26.58,
+              "projected_points": 524.07,
+              "projected_avg_points": 37.43
+            },
+            "17": {
+              "points": 0.0,
+              "avg_points": 0,
+              "projected_points": 0.0,
+              "projected_avg_points": 0
+            }
+          }
+        },
+        {
+          "id": -16006,
+          "name": "Cowboys D/ST",
+          "position": "D/ST",
+          "pro_team": "DAL",
+          "eligible_slots": [
+            "D/ST",
+            "BE",
+            "IR"
+          ],
+          "total_points": 169.0,
+          "projected_total_points": 9.63,
+          "avg_points": 10.56,
+          "projected_avg_points": 0.6,
+          "stats": {
+            "0": {
+              "points": 169.0,
+              "avg_points": 10.56,
+              "projected_points": 9.63,
+              "projected_avg_points": 0.6
+            },
+            "17": {
+              "points": 3.0,
+              "avg_points": 0,
+              "projected_points": 9.52,
+              "projected_avg_points": 0
+            }
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "period": 1,
+          "opponent": 2,
+          "score": 145.56,
+          "outcome": "L",
+          "margin": -15.079999999999984
+        },
+        {
+          "period": 2,
+          "opponent": 1,
+          "score": 145.9,
+          "outcome": "L",
+          "margin": -2.1999999999999886
+        },
+        {
+          "period": 3,
+          "opponent": 4,
+          "score": 131.94,
+          "outcome": "L",
+          "margin": -1.0
+        },
+        {
+          "period": 4,
+          "opponent": 9,
+          "score": 142.68,
+          "outcome": "W",
+          "margin": 12.819999999999993
+        },
+        {
+          "period": 5,
+          "opponent": 10,
+          "score": 121.34,
+          "outcome": "W",
+          "margin": 6.52000000000001
+        },
+        {
+          "period": 6,
+          "opponent": 7,
+          "score": 134.92,
+          "outcome": "W",
+          "margin": 17.719999999999985
+        },
+        {
+          "period": 7,
+          "opponent": 11,
+          "score": 136.64,
+          "outcome": "W",
+          "margin": 2.0999999999999943
+        },
+        {
+          "period": 8,
+          "opponent": 5,
+          "score": 132.96,
+          "outcome": "L",
+          "margin": -38.599999999999994
+        },
+        {
+          "period": 9,
+          "opponent": 3,
+          "score": 105.56,
+          "outcome": "L",
+          "margin": -19.36
+        },
+        {
+          "period": 10,
+          "opponent": 2,
+          "score": 184.44,
+          "outcome": "W",
+          "margin": 41.18000000000001
+        },
+        {
+          "period": 11,
+          "opponent": 1,
+          "score": 111.88,
+          "outcome": "L",
+          "margin": -71.0
+        },
+        {
+          "period": 12,
+          "opponent": 4,
+          "score": 130.72,
+          "outcome": "L",
+          "margin": -29.080000000000013
+        },
+        {
+          "period": 13,
+          "opponent": 9,
+          "score": 101.3,
+          "outcome": "L",
+          "margin": -53.239999999999995
+        },
+        {
+          "period": 14,
+          "opponent": 7,
+          "score": 108.72,
+          "outcome": "L",
+          "margin": -15.980000000000004
+        },
+        {
+          "period": 15,
+          "opponent": 3,
+          "score": 123.86,
+          "outcome": "W",
+          "margin": 36.64
+        },
+        {
+          "period": 16,
+          "opponent": 7,
+          "score": 125.18,
+          "outcome": "L",
+          "margin": -0.35999999999999943
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Misunderstood  Mistfits ",
+      "abbreviation": "LEAG",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1912.62,
+      "points_against": 1684.94,
+      "standing": 3,
+      "final_standing": 5,
+      "roster": [
+        {
+          "id": 3115364,
+          "name": "Leonard Fournette",
+          "position": "RB",
+          "pro_team": "JAX",
+          "eligible_slots": [
+            "RB",
+            "RB/WR",
+            "OP",
+            "BE",
+            "IR",
+            "RB/WR/TE"
+          ],
+          "total_points": 120.4,
+          "projected_total_points": 268.29,
+          "avg_points": 15.05,
+          "projected_avg_points": 33.54,
+          "stats": {
+            "0": {
+              "points": 120.4,
+              "avg_points": 15.05,
+              "projected_points": 268.29,
+              "projected_avg_points": 33.54
+            },
+            "17": {
+              "points": 0.0,
+              "avg_points": 0,
+              "projected_points": 0.0,
+              "projected_avg_points": 0
+            }
+          }
+        },
+        {
+          "id": -16007,
+          "name": "Broncos D/ST",
+          "position": "D/ST",
+          "pro_team": "DEN",
+          "eligible_slots": [
+            "D/ST",
+            "BE",
+            "IR"
+          ],
+          "total_points": 182.0,
+          "projected_total_points": 12.59,
+          "avg_points": 11.38,
+          "projected_avg_points": 0.79,
+          "stats": {
+            "0": {
+              "points": 182.0,
+              "avg_points": 11.38,
+              "projected_points": 12.59,
+              "projected_avg_points": 0.79
+            },
+            "17": {
+              "points": 18.0,
+              "avg_points": 0,
+              "projected_points": 8.75,
+              "projected_avg_points": 0
+            }
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "period": 1,
+          "opponent": 11,
+          "score": 125.5,
+          "outcome": "L",
+          "margin": -38.06
+        },
+        {
+          "period": 2,
+          "opponent": 10,
+          "score": 146.68,
+          "outcome": "W",
+          "margin": 18.80000000000001
+        },
+        {
+          "period": 3,
+          "opponent": 7,
+          "score": 168.36,
+          "outcome": "W",
+          "margin": 75.44000000000001
+        },
+        {
+          "period": 4,
+          "opponent": 8,
+          "score": 129.86,
+          "outcome": "L",
+          "margin": -12.819999999999993
+        },
+        {
+          "period": 5,
+          "opponent": 5,
+          "score": 173.8,
+          "outcome": "W",
+          "margin": 36.80000000000001
+        },
+        {
+          "period": 6,
+          "opponent": 3,
+          "score": 183.4,
+          "outcome": "W",
+          "margin": 82.04
+        },
+        {
+          "period": 7,
+          "opponent": 2,
+          "score": 99.06,
+          "outcome": "L",
+          "margin": -41.06
+        },
+        {
+          "period": 8,
+          "opponent": 1,
+          "score": 136.28,
+          "outcome": "L",
+          "margin": -23.580000000000013
+        },
+        {
+          "period": 9,
+          "opponent": 4,
+          "score": 163.6,
+          "outcome": "W",
+          "margin": 60.89999999999999
+        },
+        {
+          "period": 10,
+          "opponent": 11,
+          "score": 133.8,
+          "outcome": "L",
+          "margin": -42.51999999999998
+        },
+        {
+          "period": 11,
+          "opponent": 10,
+          "score": 137.86,
+          "outcome": "W",
+          "margin": 20.140000000000015
+        },
+        {
+          "period": 12,
+          "opponent": 7,
+          "score": 159.88,
+          "outcome": "W",
+          "margin": 38.36
+        },
+        {
+          "period": 13,
+          "opponent": 8,
+          "score": 154.54,
+          "outcome": "W",
+          "margin": 53.239999999999995
+        },
+        {
+          "period": 14,
+          "opponent": 2,
+          "score": 138.88,
+          "outcome": "L",
+          "margin": -34.099999999999994
+        },
+        {
+          "period": 15,
+          "opponent": 4,
+          "score": 96.1,
+          "outcome": "L",
+          "margin": -0.7000000000000028
+        },
+        {
+          "period": 16,
+          "opponent": 4,
+          "score": 152.0,
+          "outcome": "W",
+          "margin": 2.3600000000000136
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Jacking Goff  On Sundays",
+      "abbreviation": "TheD",
+      "wins": 2,
+      "losses": 11,
+      "ties": 0,
+      "points_for": 1547.32,
+      "points_against": 1870.38,
+      "standing": 10,
+      "final_standing": 9,
+      "roster": [
+        {
+          "id": 3116593,
+          "name": "Dalvin Cook",
+          "position": "RB",
+          "pro_team": "MIN",
+          "eligible_slots": [
+            "RB",
+            "RB/WR",
+            "OP",
+            "BE",
+            "IR",
+            "RB/WR/TE"
+          ],
+          "total_points": 152.0,
+          "projected_total_points": 220.43,
+          "avg_points": 13.82,
+          "projected_avg_points": 20.04,
+          "stats": {
+            "0": {
+              "points": 152.0,
+              "avg_points": 13.82,
+              "projected_points": 220.43,
+              "projected_avg_points": 20.04
+            },
+            "17": {
+              "points": 10.0,
+              "avg_points": 0,
+              "projected_points": 14.59,
+              "projected_avg_points": 0
+            }
+          }
+        },
+        {
+          "id": -16014,
+          "name": "Rams D/ST",
+          "position": "D/ST",
+          "pro_team": "LAR",
+          "eligible_slots": [
+            "D/ST",
+            "BE",
+            "IR"
+          ],
+          "total_points": 208.0,
+          "projected_total_points": 13.54,
+          "avg_points": 13.0,
+          "projected_avg_points": 0.85,
+          "stats": {
+            "0": {
+              "points": 208.0,
+              "avg_points": 13.0,
+              "projected_points": 13.54,
+              "projected_avg_points": 0.85
+            },
+            "17": {
+              "points": 19.0,
+              "avg_points": 0,
+              "projected_points": 13.03,
+              "projected_avg_points": 0
+            }
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "period": 1,
+          "opponent": 4,
+          "score": 140.24,
+          "outcome": "W",
+          "margin": 0.9000000000000057
+        },
+        {
+          "period": 2,
+          "opponent": 9,
+          "score": 127.88,
+          "outcome": "L",
+          "margin": -18.80000000000001
+        },
+        {
+          "period": 3,
+          "opponent": 11,
+          "score": 83.38,
+          "outcome": "L",
+          "margin": -10.920000000000002
+        },
+        {
+          "period": 4,
+          "opponent": 7,
+          "score": 150.8,
+          "outcome": "L",
+          "margin": -36.359999999999985
+        },
+        {
+          "period": 5,
+          "opponent": 8,
+          "score": 114.82,
+          "outcome": "L",
+          "margin": -6.52000000000001
+        },
+        {
+          "period": 6,
+          "opponent": 5,
+          "score": 54.34,
+          "outcome": "L",
+          "margin": -88.24000000000001
+        },
+        {
+          "period": 7,
+          "opponent": 3,
+          "score": 138.28,
+          "outcome": "L",
+          "margin": -12.52000000000001
+        },
+        {
+          "period": 8,
+          "opponent": 2,
+          "score": 155.5,
+          "outcome": "W",
+          "margin": 36.78
+        },
+        {
+          "period": 9,
+          "opponent": 1,
+          "score": 107.22,
+          "outcome": "L",
+          "margin": -80.46000000000001
+        },
+        {
+          "period": 10,
+          "opponent": 4,
+          "score": 120.36,
+          "outcome": "L",
+          "margin": -7.739999999999995
+        },
+        {
+          "period": 11,
+          "opponent": 9,
+          "score": 117.72,
+          "outcome": "L",
+          "margin": -20.140000000000015
+        },
+        {
+          "period": 12,
+          "opponent": 11,
+          "score": 99.74,
+          "outcome": "L",
+          "margin": -60.22000000000001
+        },
+        {
+          "period": 13,
+          "opponent": 7,
+          "score": 137.04,
+          "outcome": "L",
+          "margin": -18.82000000000002
+        },
+        {
+          "period": 14,
+          "opponent": 3,
+          "score": 103.9,
+          "outcome": "W",
+          "margin": 2.160000000000011
+        },
+        {
+          "period": 15,
+          "opponent": 7,
+          "score": 111.26,
+          "outcome": "W",
+          "margin": 12.820000000000007
+        },
+        {
+          "period": 16,
+          "opponent": 3,
+          "score": 103.34,
+          "outcome": "W",
+          "margin": -5.299999999999997
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Perscription Mixon",
+      "abbreviation": "HARR",
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1863.5600000000002,
+      "points_against": 1624.96,
+      "standing": 1,
+      "final_standing": 4,
+      "roster": [
+        {
+          "id": 2576434,
+          "name": "Melvin Gordon",
+          "position": "RB",
+          "pro_team": "LAC",
+          "eligible_slots": [
+            "RB",
+            "RB/WR",
+            "OP",
+            "BE",
+            "IR",
+            "RB/WR/TE"
+          ],
+          "total_points": 275.5,
+          "projected_total_points": 334.96,
+          "avg_points": 22.96,
+          "projected_avg_points": 27.91,
+          "stats": {
+            "0": {
+              "points": 275.5,
+              "avg_points": 22.96,
+              "projected_points": 334.96,
+              "projected_avg_points": 27.91
+            },
+            "17": {
+              "points": 9.6,
+              "avg_points": 0,
+              "projected_points": 19.67,
+              "projected_avg_points": 0
+            }
+          }
+        },
+        {
+          "id": -16034,
+          "name": "Texans D/ST",
+          "position": "D/ST",
+          "pro_team": "HOU",
+          "eligible_slots": [
+            "D/ST",
+            "BE",
+            "IR"
+          ],
+          "total_points": 211.0,
+          "projected_total_points": 11.24,
+          "avg_points": 13.19,
+          "projected_avg_points": 0.7,
+          "stats": {
+            "0": {
+              "points": 211.0,
+              "avg_points": 13.19,
+              "projected_points": 11.24,
+              "projected_avg_points": 0.7
+            },
+            "17": {
+              "points": 20.0,
+              "avg_points": 0,
+              "projected_points": 16.91,
+              "projected_avg_points": 0
+            }
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "period": 1,
+          "opponent": 9,
+          "score": 163.56,
+          "outcome": "W",
+          "margin": 38.06
+        },
+        {
+          "period": 2,
+          "opponent": 3,
+          "score": 123.54,
+          "outcome": "W",
+          "margin": 13.120000000000005
+        },
+        {
+          "period": 3,
+          "opponent": 10,
+          "score": 94.3,
+          "outcome": "W",
+          "margin": 10.920000000000002
+        },
+        {
+          "period": 4,
+          "opponent": 2,
+          "score": 132.7,
+          "outcome": "L",
+          "margin": -14.960000000000008
+        },
+        {
+          "period": 5,
+          "opponent": 7,
+          "score": 166.66,
+          "outcome": "W",
+          "margin": 31.919999999999987
+        },
+        {
+          "period": 6,
+          "opponent": 1,
+          "score": 172.68,
+          "outcome": "W",
+          "margin": 29.080000000000013
+        },
+        {
+          "period": 7,
+          "opponent": 8,
+          "score": 134.54,
+          "outcome": "L",
+          "margin": -2.0999999999999943
+        },
+        {
+          "period": 8,
+          "opponent": 4,
+          "score": 163.44,
+          "outcome": "W",
+          "margin": 27.539999999999992
+        },
+        {
+          "period": 9,
+          "opponent": 5,
+          "score": 106.42,
+          "outcome": "L",
+          "margin": -10.340000000000003
+        },
+        {
+          "period": 10,
+          "opponent": 9,
+          "score": 176.32,
+          "outcome": "W",
+          "margin": 42.51999999999998
+        },
+        {
+          "period": 11,
+          "opponent": 3,
+          "score": 141.44,
+          "outcome": "W",
+          "margin": 36.42
+        },
+        {
+          "period": 12,
+          "opponent": 10,
+          "score": 159.96,
+          "outcome": "W",
+          "margin": 60.22000000000001
+        },
+        {
+          "period": 13,
+          "opponent": 2,
+          "score": 128.0,
+          "outcome": "L",
+          "margin": -23.80000000000001
+        },
+        {
+          "period": 14,
+          "opponent": null,
+          "score": 139.4,
+          "outcome": "U",
+          "margin": null
+        },
+        {
+          "period": 15,
+          "opponent": 5,
+          "score": 137.02,
+          "outcome": "L",
+          "margin": -8.73999999999998
+        },
+        {
+          "period": 16,
+          "opponent": 1,
+          "score": 97.34,
+          "outcome": "L",
+          "margin": -84.13999999999999
+        }
+      ]
+    }
+  ],
+  "standings": [
+    5,
+    2,
+    1,
+    11,
+    9,
+    4,
+    7,
+    8,
+    10,
+    3
+  ],
+  "scoreboards": {
+    "1": [
+      {
+        "period": 1,
+        "home_team": 9,
+        "away_team": 11,
+        "home_score": 125.5,
+        "away_score": 163.56,
+        "winner": "AWAY",
+        "matchup_type": "NONE",
+        "is_playoff": false
+      },
+      {
+        "period": 1,
+        "home_team": 5,
+        "away_team": 3,
+        "home_score": 134.86,
+        "away_score": 185.06,
+        "winner": "AWAY",
+        "matchup_type": "NONE",
+        "is_playoff": false
+      },
+      {
+        "period": 1,
+        "home_team": 4,
+        "away_team": 10,
+        "home_score": 139.34,
+        "away_score": 140.24,
+        "winner": "AWAY",
+        "matchup_type": "NONE",
+        "is_playoff": false
+      },
+      {
+        "period": 1,
+        "home_team": 8,
+        "away_team": 2,
+        "home_score": 145.56,
+        "away_score": 160.64,
+        "winner": "AWAY",
+        "matchup_type": "NONE",
+        "is_playoff": false
+      },
+      {
+        "period": 1,
+        "home_team": 1,
+        "away_team": 7,
+        "home_score": 75.54,
+        "away_score": 115.98,
+        "winner": "AWAY",
+        "matchup_type": "NONE",
+        "is_playoff": false
+      }
+    ],
+    "16": [
+      {
+        "period": 16,
+        "home_team": 5,
+        "away_team": 2,
+        "home_score": 174.56,
+        "away_score": 161.12,
+        "winner": "HOME",
+        "matchup_type": "WINNERS_BRACKET",
+        "is_playoff": true
+      },
+      {
+        "period": 16,
+        "home_team": 11,
+        "away_team": 1,
+        "home_score": 97.34,
+        "away_score": 181.48,
+        "winner": "AWAY",
+        "matchup_type": "WINNERS_CONSOLATION_LADDER",
+        "is_playoff": true
+      },
+      {
+        "period": 16,
+        "home_team": 9,
+        "away_team": 4,
+        "home_score": 152,
+        "away_score": 149.64,
+        "winner": "HOME",
+        "matchup_type": "WINNERS_CONSOLATION_LADDER",
+        "is_playoff": true
+      },
+      {
+        "period": 16,
+        "home_team": 8,
+        "away_team": 7,
+        "home_score": 125.18,
+        "away_score": 125.54,
+        "winner": "AWAY",
+        "matchup_type": "LOSERS_CONSOLATION_LADDER",
+        "is_playoff": true
+      },
+      {
+        "period": 16,
+        "home_team": 10,
+        "away_team": 3,
+        "home_score": 103.34,
+        "away_score": 108.64,
+        "winner": "HOME",
+        "matchup_type": "LOSERS_CONSOLATION_LADDER",
+        "is_playoff": true
+      }
+    ]
+  }
+}

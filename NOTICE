@@ -1,0 +1,6 @@
+This project is based on investigation of espn-api by Christian Wendt,
+version 0.46.0, licensed under the MIT License.
+
+Football labels and scoring metadata, representative JSON fixtures, and
+Python-derived expected behavior are derived from that reference package.
+The upstream copyright and permission notice are retained in LICENSE.
