@@ -1,0 +1,478 @@
+{
+  "cases": [
+    {
+      "requested_week": 7,
+      "resolved_scoring_period": 7,
+      "resolved_matchup_period": 4,
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "mMatchupScore",
+              "mScoreboard"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": {
+            "schedule": {
+              "filterMatchupPeriodIds": {
+                "value": [
+                  "4"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024",
+          "query": {
+            "view": [
+              "proTeamSchedules_wl"
+            ]
+          },
+          "fantasy_filter": null
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "mPositionalRatings"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": null
+        }
+      ],
+      "output": {
+        "season": 2024,
+        "scoring_period": 7,
+        "matchup_period": 4,
+        "matchups": [
+          {
+            "id": 101,
+            "home": {
+              "team_id": 1,
+              "score": 95.99,
+              "projected": 24.69,
+              "lineup": [
+                {
+                  "id": 1001,
+                  "name": "Synthetic Player 1001",
+                  "slot_position": "WR",
+                  "pro_team": "IND",
+                  "pro_opponent": "KC",
+                  "pro_pos_rank": 4,
+                  "game_date_unix_ms": 1728219600000,
+                  "game_played": 0,
+                  "on_bye_week": false,
+                  "points": 18.57,
+                  "projected_points": 20.25,
+                  "breakdown": {
+                    "receivingTouchdowns": 1,
+                    "receiving2PtConversions": 1
+                  },
+                  "points_breakdown": {
+                    "receivingTouchdowns": 6,
+                    "receiving2PtConversions": 2
+                  },
+                  "projected_breakdown": {
+                    "receivingTouchdowns": 2,
+                    "receiving2PtConversions": 2
+                  },
+                  "projected_points_breakdown": {
+                    "receivingTouchdowns": 12,
+                    "receiving2PtConversions": 4
+                  }
+                },
+                {
+                  "id": 1002,
+                  "name": "Synthetic Player 1002",
+                  "slot_position": "BE",
+                  "pro_team": "MIN",
+                  "pro_opponent": "IND",
+                  "pro_pos_rank": 0,
+                  "game_date_unix_ms": 1728219601000,
+                  "game_played": 0,
+                  "on_bye_week": false,
+                  "points": 4,
+                  "projected_points": 99,
+                  "breakdown": {
+                    "receivingTouchdowns": 1,
+                    "receiving2PtConversions": 1
+                  },
+                  "points_breakdown": {
+                    "receivingTouchdowns": 6,
+                    "receiving2PtConversions": 2
+                  },
+                  "projected_breakdown": {
+                    "receivingTouchdowns": 2,
+                    "receiving2PtConversions": 2
+                  },
+                  "projected_points_breakdown": {
+                    "receivingTouchdowns": 12,
+                    "receiving2PtConversions": 4
+                  }
+                },
+                {
+                  "id": 1003,
+                  "name": "Synthetic Player 1003",
+                  "slot_position": "IR",
+                  "pro_team": "NE",
+                  "pro_opponent": null,
+                  "pro_pos_rank": null,
+                  "game_date_unix_ms": null,
+                  "game_played": 100,
+                  "on_bye_week": true,
+                  "points": 0,
+                  "projected_points": 88,
+                  "breakdown": {},
+                  "points_breakdown": {},
+                  "projected_breakdown": {
+                    "receivingTouchdowns": 2,
+                    "receiving2PtConversions": 2
+                  },
+                  "projected_points_breakdown": {
+                    "receivingTouchdowns": 12,
+                    "receiving2PtConversions": 4
+                  }
+                },
+                {
+                  "id": 1004,
+                  "name": "Synthetic Player 1004",
+                  "slot_position": "RB/WR/TE",
+                  "pro_team": "KC",
+                  "pro_opponent": "IND",
+                  "pro_pos_rank": 0,
+                  "game_date_unix_ms": 1728219600000,
+                  "game_played": 0,
+                  "on_bye_week": false,
+                  "points": 2,
+                  "projected_points": 4.44,
+                  "breakdown": {
+                    "receivingTouchdowns": 1,
+                    "receiving2PtConversions": 1
+                  },
+                  "points_breakdown": {
+                    "receivingTouchdowns": 6,
+                    "receiving2PtConversions": 2
+                  },
+                  "projected_breakdown": {
+                    "receivingTouchdowns": 2,
+                    "receiving2PtConversions": 2
+                  },
+                  "projected_points_breakdown": {
+                    "receivingTouchdowns": 12,
+                    "receiving2PtConversions": 4
+                  }
+                }
+              ]
+            },
+            "away": null,
+            "matchup_type": "WINNERS_BRACKET",
+            "is_playoff": true
+          }
+        ],
+        "history": {
+          "1001": 11,
+          "1002": 16,
+          "1004": 12
+        }
+      }
+    },
+    {
+      "requested_week": null,
+      "resolved_scoring_period": 8,
+      "resolved_matchup_period": 4,
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "mMatchupScore",
+              "mScoreboard"
+            ],
+            "scoringPeriodId": [
+              "8"
+            ]
+          },
+          "fantasy_filter": {
+            "schedule": {
+              "filterMatchupPeriodIds": {
+                "value": [
+                  4
+                ]
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024",
+          "query": {
+            "view": [
+              "proTeamSchedules_wl"
+            ]
+          },
+          "fantasy_filter": null
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "mPositionalRatings"
+            ],
+            "scoringPeriodId": [
+              "8"
+            ]
+          },
+          "fantasy_filter": null
+        }
+      ],
+      "output": {
+        "season": 2024,
+        "scoring_period": 8,
+        "matchup_period": 4,
+        "matchups": [
+          {
+            "id": 101,
+            "home": {
+              "team_id": 1,
+              "score": 95.99,
+              "projected": 0,
+              "lineup": [
+                {
+                  "id": 1001,
+                  "name": "Synthetic Player 1001",
+                  "slot_position": "WR",
+                  "pro_team": "MIN",
+                  "pro_opponent": null,
+                  "pro_pos_rank": null,
+                  "game_date_unix_ms": null,
+                  "game_played": 100,
+                  "on_bye_week": true,
+                  "points": 0,
+                  "projected_points": 0,
+                  "breakdown": {},
+                  "points_breakdown": {},
+                  "projected_breakdown": {},
+                  "projected_points_breakdown": {}
+                },
+                {
+                  "id": 1002,
+                  "name": "Synthetic Player 1002",
+                  "slot_position": "BE",
+                  "pro_team": "MIN",
+                  "pro_opponent": null,
+                  "pro_pos_rank": null,
+                  "game_date_unix_ms": null,
+                  "game_played": 100,
+                  "on_bye_week": true,
+                  "points": 0,
+                  "projected_points": 0,
+                  "breakdown": {},
+                  "points_breakdown": {},
+                  "projected_breakdown": {},
+                  "projected_points_breakdown": {}
+                },
+                {
+                  "id": 1003,
+                  "name": "Synthetic Player 1003",
+                  "slot_position": "IR",
+                  "pro_team": "NE",
+                  "pro_opponent": null,
+                  "pro_pos_rank": null,
+                  "game_date_unix_ms": null,
+                  "game_played": 100,
+                  "on_bye_week": true,
+                  "points": 0,
+                  "projected_points": 0,
+                  "breakdown": {},
+                  "points_breakdown": {},
+                  "projected_breakdown": {},
+                  "projected_points_breakdown": {}
+                },
+                {
+                  "id": 1004,
+                  "name": "Synthetic Player 1004",
+                  "slot_position": "RB/WR/TE",
+                  "pro_team": "KC",
+                  "pro_opponent": "IND",
+                  "pro_pos_rank": 0,
+                  "game_date_unix_ms": 1728219600000,
+                  "game_played": 0,
+                  "on_bye_week": false,
+                  "points": 0,
+                  "projected_points": 0,
+                  "breakdown": {},
+                  "points_breakdown": {},
+                  "projected_breakdown": {},
+                  "projected_points_breakdown": {}
+                }
+              ]
+            },
+            "away": null,
+            "matchup_type": "WINNERS_BRACKET",
+            "is_playoff": true
+          }
+        ],
+        "history": {}
+      }
+    },
+    {
+      "requested_week": 99,
+      "resolved_scoring_period": 8,
+      "resolved_matchup_period": 4,
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "mMatchupScore",
+              "mScoreboard"
+            ],
+            "scoringPeriodId": [
+              "8"
+            ]
+          },
+          "fantasy_filter": {
+            "schedule": {
+              "filterMatchupPeriodIds": {
+                "value": [
+                  4
+                ]
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024",
+          "query": {
+            "view": [
+              "proTeamSchedules_wl"
+            ]
+          },
+          "fantasy_filter": null
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "mPositionalRatings"
+            ],
+            "scoringPeriodId": [
+              "8"
+            ]
+          },
+          "fantasy_filter": null
+        }
+      ],
+      "output": {
+        "season": 2024,
+        "scoring_period": 8,
+        "matchup_period": 4,
+        "matchups": [
+          {
+            "id": 101,
+            "home": {
+              "team_id": 1,
+              "score": 95.99,
+              "projected": 0,
+              "lineup": [
+                {
+                  "id": 1001,
+                  "name": "Synthetic Player 1001",
+                  "slot_position": "WR",
+                  "pro_team": "MIN",
+                  "pro_opponent": null,
+                  "pro_pos_rank": null,
+                  "game_date_unix_ms": null,
+                  "game_played": 100,
+                  "on_bye_week": true,
+                  "points": 0,
+                  "projected_points": 0,
+                  "breakdown": {},
+                  "points_breakdown": {},
+                  "projected_breakdown": {},
+                  "projected_points_breakdown": {}
+                },
+                {
+                  "id": 1002,
+                  "name": "Synthetic Player 1002",
+                  "slot_position": "BE",
+                  "pro_team": "MIN",
+                  "pro_opponent": null,
+                  "pro_pos_rank": null,
+                  "game_date_unix_ms": null,
+                  "game_played": 100,
+                  "on_bye_week": true,
+                  "points": 0,
+                  "projected_points": 0,
+                  "breakdown": {},
+                  "points_breakdown": {},
+                  "projected_breakdown": {},
+                  "projected_points_breakdown": {}
+                },
+                {
+                  "id": 1003,
+                  "name": "Synthetic Player 1003",
+                  "slot_position": "IR",
+                  "pro_team": "NE",
+                  "pro_opponent": null,
+                  "pro_pos_rank": null,
+                  "game_date_unix_ms": null,
+                  "game_played": 100,
+                  "on_bye_week": true,
+                  "points": 0,
+                  "projected_points": 0,
+                  "breakdown": {},
+                  "points_breakdown": {},
+                  "projected_breakdown": {},
+                  "projected_points_breakdown": {}
+                },
+                {
+                  "id": 1004,
+                  "name": "Synthetic Player 1004",
+                  "slot_position": "RB/WR/TE",
+                  "pro_team": "KC",
+                  "pro_opponent": "IND",
+                  "pro_pos_rank": 0,
+                  "game_date_unix_ms": 1728219600000,
+                  "game_played": 0,
+                  "on_bye_week": false,
+                  "points": 0,
+                  "projected_points": 0,
+                  "breakdown": {},
+                  "points_breakdown": {},
+                  "projected_breakdown": {},
+                  "projected_points_breakdown": {}
+                }
+              ]
+            },
+            "away": null,
+            "matchup_type": "WINNERS_BRACKET",
+            "is_playoff": true
+          }
+        ],
+        "history": {}
+      }
+    }
+  ],
+  "historical_gate": {
+    "season": 2018,
+    "error": "Cant use box score before 2019",
+    "request_count": 0
+  }
+}

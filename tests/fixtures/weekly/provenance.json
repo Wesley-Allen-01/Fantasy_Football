@@ -1,0 +1,16 @@
+{
+  "generator": "scripts/generate_box_score_fixtures.py",
+  "clock_timezone": "UTC",
+  "source": "tests/football/unit/data/league_boxscore_2018.json",
+  "source_sha256": "9ac1f43aa8d57ee4a534987342ccb320a2946b9ea03aabf2aba00006ddd7ab02",
+  "historical_selection": "First matchup, all 30 lineup entries; direct model characterization; no 2018 schedule/rank capture; modern cases synthetic",
+  "normalization": "Absent sides/opponents/dates/ranks=>null; missing rank0 versus explicit rank0 distinguished by raw mapping. Duplicate stat-label aliases excluded from label comparison; numeric IDs remain authoritative in Rust.",
+  "excluded_duplicate_stat_labels": [
+    "defensive2PtReturns",
+    "defensivePointsAllowed",
+    "passingYards",
+    "receivingReceptions",
+    "receivingYards",
+    "rushingYards"
+  ]
+}

@@ -1,8 +1,12 @@
 use crate::football::scoreboard_from_value;
 use crate::transport::EspnTransport;
-use crate::{Error, LeagueId, LeagueSnapshot, Matchup, MatchupPeriod, Result, Season};
+use crate::weekly_request::WeeklyRequest;
+use crate::{
+    BoxScoreContext, Error, LeagueId, LeagueSnapshot, Matchup, MatchupPeriod, PlayerTeamHistory,
+    Result, ScoringPeriod, Season, WeeklyBoxScores,
+};
 use std::fmt;
-use std::time::Duration;
+use std::time::{Duration, SystemTime, UNIX_EPOCH};
 
 const BASE_URL: &str = "https://lm-api-reads.fantasy.espn.com/apis/v3/games/";
 const LEAGUE_VIEWS: &[&str] = &["mTeam", "mRoster", "mMatchup", "mSettings", "mStandings"];
@@ -231,6 +235,75 @@ impl LeagueHandle {
             .league_get(&["mMatchupScore"], None, None, "")
             .await?;
         scoreboard_from_value(&response, period)
+    }
+
+    /// Fetch weekly lineups, actual/projected points and NFL game context.
+    ///
+    /// Load a snapshot first. Seasons before 2019 and an explicit zero week
+    /// return configuration errors. Future weeks use the loaded current week,
+    /// matching Python. This does not replace the loaded roster or snapshot.
+    ///
+    /// ```no_run
+    /// use espn_fantasy_football::{Client, LeagueId, ScoringPeriod, Season, TeamId};
+    /// # async fn example() -> espn_fantasy_football::Result<()> {
+    /// let mut league = Client::builder().build()?.league(LeagueId(394172912), Season(2026))?;
+    /// league.fetch().await?;
+    /// let weekly = league.box_scores(Some(ScoringPeriod(4))).await?;
+    /// if let Some(matchup) = weekly.for_team(TeamId(1)) {
+    ///     println!("{matchup:#?}");
+    /// }
+    /// # Ok(())
+    /// # }
+    /// ```
+    pub async fn box_scores(&mut self, week: Option<ScoringPeriod>) -> Result<WeeklyBoxScores> {
+        let mut history = PlayerTeamHistory::new(self.season);
+        self.box_scores_with_history(week, &mut history).await
+    }
+
+    /// Fetch weekly box scores using explicit historical NFL team evidence.
+    ///
+    /// Reuse a history while reading weeks chronologically to resolve traded
+    /// players with no actual statistics during a bye. Only actual team
+    /// evidence updates it. A failed request or parse leaves history unchanged.
+    /// Without this method, each call starts with empty history.
+    pub async fn box_scores_with_history(
+        &mut self,
+        week: Option<ScoringPeriod>,
+        history: &mut PlayerTeamHistory,
+    ) -> Result<WeeklyBoxScores> {
+        if self.season.0 < 2019 {
+            return Err(Error::Configuration(
+                "football box scores require a season of 2019 or later".into(),
+            ));
+        }
+        if history.season() != self.season {
+            return Err(Error::Configuration(
+                "player team history belongs to a different season".into(),
+            ));
+        }
+        let snapshot = self.snapshot.as_ref().ok_or_else(|| {
+            Error::Configuration("load the league before requesting weekly box scores".into())
+        })?;
+        let request = WeeklyRequest::resolve(snapshot, week)?;
+        let payloads = request.fetch(&mut self.transport).await?;
+        let now_unix_ms = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
+            .map_err(|_| Error::Configuration("system clock precedes the Unix epoch".into()))?
+            .as_millis()
+            .try_into()
+            .map_err(|_| Error::Configuration("system timestamp is out of range".into()))?;
+        WeeklyBoxScores::from_values(
+            &payloads.box_scores,
+            &payloads.pro_schedule,
+            &payloads.positional_ratings,
+            BoxScoreContext {
+                season: self.season,
+                scoring_period: request.scoring_period,
+                matchup_period: request.matchup_period,
+                now_unix_ms,
+                history,
+            },
+        )
     }
 }
 

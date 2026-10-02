@@ -1,6 +1,6 @@
 # Football compatibility ledger
 
-This first slice preserves league metadata, football settings, team and roster identity, actual/projected fantasy statistics, ID-linked schedules, completed-season standings and remote scoreboards. It is a read-only foundation. Draft enrichment, NFL schedules, box scores, free agents, transactions, weekly standings and power rankings remain deferred.
+The foundation preserves league metadata, football settings, team and roster identity, actual/projected fantasy statistics, ID-linked schedules, completed-season standings and remote scoreboards. The weekly slice adds box scores, lineups, NFL schedule context and opponent positional rankings. Draft enrichment, historical roster loading, free agents, transactions, weekly standings and power rankings remain deferred.
 
 ## Preserved behaviors
 
@@ -64,4 +64,32 @@ Use `--reference /path/to/reference` or `ESPN_PYTHON_REFERENCE` to locate anothe
 
 ## Limits
 
-The two old fixture seasons give concrete historical parity evidence, not a guarantee about every current ESPN response. The current-season/private-league release gate remains later work. Raw and applied stat breakdowns, injury/ownership fields, member records, and complete roster coverage are not asserted by these selected goldens and need additional targeted coverage. Transport tests establish request behavior separately from fixture/model parity. No live ESPN request is needed for the offline suite.
+The two old league fixture seasons give concrete historical parity evidence, not a guarantee about every current ESPN response. The current-season/private-league release gate remains later work. The foundation goldens do not assert raw/applied stat breakdowns, injury/ownership fields, member records or complete roster coverage; additional targeted coverage remains necessary. Weekly breakdown coverage is described below. Transport tests establish request behavior separately from fixture/model parity. No live ESPN request is needed for the offline suite.
+
+## Weekly matchup slice
+
+| Preserved behavior | Evidence |
+| --- | --- |
+| HTTP box scores require season 2019 or later; default and future weeks use loaded current week/current matchup, while explicit available weeks map through matchup_periods | Closed-mock real Python League.box_scores request traces; request and client tests |
+| Main request uses repeated mMatchupScore/mScoreboard views, scoringPeriodId and schedule.filterMatchupPeriodIds; schedules are season-level; ratings are league-level with the chosen week | Python request trace compared against Rust requests, including ordering and mapped-key string versus default numeric filter values |
+| totalPointsLive overrides totalPoints; live team projection is used when available, otherwise sum player projections excluding bench/IR | Frozen-time Python goldens and targeted model tests |
+| Preserve actual/projected points and raw/applied breakdowns per selected week, lineup order, scoring rounding and playoff tier | Six synthetic modern cases and one complete historical matchup with all 30 lineup entries; model tests |
+| Historical NFL team uses first matching-week actual nonzero proTeamId, then explicit history, then current player team; projections never update history | Python goldens and model tests for stale-season/split evidence, stat filtering and cache updates |
+| First NFL game in the scoring period determines opponent and kickoff; positional rank uses default position; opponent is present only when the position map exists | Synthetic schedules/rankings in frozen-time goldens; model regressions |
+| game_played is 100 strictly after kickoff plus three hours, 0 otherwise; missing schedule means bye and the Python default 100 | Fixed epoch-millisecond clock, strict boundary and overflow regressions |
+
+| Deliberate difference | Rust behavior / evidence |
+| --- | --- |
+| Python's explicit week 0 defaults through falsiness | Explicit zero is rejected before weekly requests; omitted preseason current week 0 remains allowed |
+| Missing fantasy side synthesizes zero score/projection and an empty lineup | Whole BoxTeam side is None, normalized explicitly in the oracle |
+| Missing rank uses sentinel 0 | Missing rank is None; an explicit upstream rank 0 is retained |
+| Caller cache has no season boundary and may partially mutate on failed parsing | PlayerTeamHistory is scoped to a season; complete successful conversion commits staged evidence atomically |
+| Season-level GET reuses the league status handler, which can attempt a league-route fallback on 401 | Season-level reads return Http for non-200 responses and never mutate league routing; mocked error and array-response regressions |
+| Recursive player identity/metadata lookup accepts inconsistent wrapper identities | Known wrapper paths, nested player precedence, explicit metadata fallback and identity validation; conflicting IDs are rejected |
+| Naive local game datetime and ambient now | Raw kickoff epoch milliseconds and an explicit conversion clock; public client uses system time |
+
+`scripts/generate_box_score_fixtures.py` generates six checked-in files in `tests/fixtures/weekly/`, with real HTTP disabled and a fixed UTC clock. The 2018 source fixture is used only for direct model characterization: the supported-season HTTP gate is never bypassed by the public client. Its selected first matchup includes all 30 lineup entries, and full-versus-compact Python projections must match. Modern cases are synthetic, not fresh ESPN captures. Python and Rust comparisons use exact binary numeric values without an epsilon.
+
+The provenance explicitly lists duplicate Python stat-label aliases excluded from label-level comparison. Rust retains numeric-ID breakdowns, including these aliases; targeted numeric-ID model tests cover their preservation. Historical fixture compaction drops those ambiguous alias fields rather than asserting Python's lossy overwrite as the desired Rust behavior.
+
+Verify the generator with `PYTHONDONTWRITEBYTECODE=1 python scripts/generate_box_score_fixtures.py --reference /path/to/reference --check`. Enable both full-input Rust comparisons with `ESPN_PYTHON_REFERENCE=/path/to/reference cargo test --locked --all-targets`. Private/current-season live access remains pending; the managed cloud only allows package-manager hosts, so ESPN has not been reached in this session.

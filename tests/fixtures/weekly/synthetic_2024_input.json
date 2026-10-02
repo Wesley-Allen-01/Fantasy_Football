@@ -1,0 +1,1694 @@
+{
+  "cases": [
+    {
+      "name": "starter_fallback_at_three_hours",
+      "evidence": "synthetic modern model characterization",
+      "context": {
+        "season": 2024,
+        "scoring_period": 7,
+        "matchup_period": 4,
+        "now_unix_ms": 1728230400000,
+        "initial_history": {}
+      },
+      "box_scores": {
+        "schedule": [
+          {
+            "id": 101,
+            "matchupPeriodId": 4,
+            "playoffTierType": "WINNERS_BRACKET",
+            "home": {
+              "teamId": 1,
+              "totalPoints": 100.123,
+              "rosterForCurrentScoringPeriod": {
+                "entries": [
+                  {
+                    "playerId": 1001,
+                    "lineupSlotId": 4,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 1001,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 1001,
+                        "fullName": "Synthetic Player 1001",
+                        "proTeamId": 16,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 0,
+                            "proTeamId": 11,
+                            "appliedTotal": 18.567,
+                            "appliedAverage": 18.567,
+                            "stats": {
+                              "43": 1,
+                              "44": 1
+                            },
+                            "appliedStats": {
+                              "43": 6,
+                              "44": 2
+                            }
+                          },
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 16,
+                            "appliedTotal": 20.255,
+                            "appliedAverage": 20.255,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "playerId": 1002,
+                    "lineupSlotId": 20,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 1002,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 1002,
+                        "fullName": "Synthetic Player 1002",
+                        "proTeamId": 16,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 0,
+                            "proTeamId": 16,
+                            "appliedTotal": 4,
+                            "appliedAverage": 4,
+                            "stats": {
+                              "43": 1,
+                              "44": 1
+                            },
+                            "appliedStats": {
+                              "43": 6,
+                              "44": 2
+                            }
+                          },
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 16,
+                            "appliedTotal": 99,
+                            "appliedAverage": 99,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "playerId": 1003,
+                    "lineupSlotId": 21,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 1003,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 1003,
+                        "fullName": "Synthetic Player 1003",
+                        "proTeamId": 17,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 17,
+                            "appliedTotal": 88,
+                            "appliedAverage": 88,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "playerId": 1004,
+                    "lineupSlotId": 23,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 1004,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 1004,
+                        "fullName": "Synthetic Player 1004",
+                        "proTeamId": 12,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 0,
+                            "proTeamId": 12,
+                            "appliedTotal": 2,
+                            "appliedAverage": 2,
+                            "stats": {
+                              "43": 1,
+                              "44": 1
+                            },
+                            "appliedStats": {
+                              "43": 6,
+                              "44": 2
+                            }
+                          },
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 12,
+                            "appliedTotal": 4.444,
+                            "appliedAverage": 4.444,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "totalPointsLive": 95.987
+            },
+            "winner": "UNDECIDED"
+          }
+        ]
+      },
+      "pro_schedule": {
+        "settings": {
+          "proTeams": [
+            {
+              "id": 11,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  },
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 16,
+                    "date": 1728219700000
+                  }
+                ],
+                "8": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 12,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ],
+                "8": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 16,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 16,
+                    "awayProTeamId": 11,
+                    "date": 1728219601000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 0,
+              "proGamesByScoringPeriod": {}
+            }
+          ]
+        }
+      },
+      "positional_ratings": {
+        "positionAgainstOpponent": {
+          "positionalRatings": {
+            "3": {
+              "ratingsByOpponent": {
+                "12": {
+                  "rank": 4
+                },
+                "11": {
+                  "rank": 0
+                }
+              }
+            },
+            "2": {
+              "ratingsByOpponent": {}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "starter_fallback_after_three_hours",
+      "evidence": "synthetic modern model characterization",
+      "context": {
+        "season": 2024,
+        "scoring_period": 7,
+        "matchup_period": 4,
+        "now_unix_ms": 1728230400001,
+        "initial_history": {}
+      },
+      "box_scores": {
+        "schedule": [
+          {
+            "id": 101,
+            "matchupPeriodId": 4,
+            "playoffTierType": "WINNERS_BRACKET",
+            "home": {
+              "teamId": 1,
+              "totalPoints": 100.123,
+              "rosterForCurrentScoringPeriod": {
+                "entries": [
+                  {
+                    "playerId": 1001,
+                    "lineupSlotId": 4,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 1001,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 1001,
+                        "fullName": "Synthetic Player 1001",
+                        "proTeamId": 16,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 0,
+                            "proTeamId": 11,
+                            "appliedTotal": 18.567,
+                            "appliedAverage": 18.567,
+                            "stats": {
+                              "43": 1,
+                              "44": 1
+                            },
+                            "appliedStats": {
+                              "43": 6,
+                              "44": 2
+                            }
+                          },
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 16,
+                            "appliedTotal": 20.255,
+                            "appliedAverage": 20.255,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "playerId": 1002,
+                    "lineupSlotId": 20,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 1002,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 1002,
+                        "fullName": "Synthetic Player 1002",
+                        "proTeamId": 16,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 0,
+                            "proTeamId": 16,
+                            "appliedTotal": 4,
+                            "appliedAverage": 4,
+                            "stats": {
+                              "43": 1,
+                              "44": 1
+                            },
+                            "appliedStats": {
+                              "43": 6,
+                              "44": 2
+                            }
+                          },
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 16,
+                            "appliedTotal": 99,
+                            "appliedAverage": 99,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "playerId": 1003,
+                    "lineupSlotId": 21,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 1003,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 1003,
+                        "fullName": "Synthetic Player 1003",
+                        "proTeamId": 17,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 17,
+                            "appliedTotal": 88,
+                            "appliedAverage": 88,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "playerId": 1004,
+                    "lineupSlotId": 23,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 1004,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 1004,
+                        "fullName": "Synthetic Player 1004",
+                        "proTeamId": 12,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 0,
+                            "proTeamId": 12,
+                            "appliedTotal": 2,
+                            "appliedAverage": 2,
+                            "stats": {
+                              "43": 1,
+                              "44": 1
+                            },
+                            "appliedStats": {
+                              "43": 6,
+                              "44": 2
+                            }
+                          },
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 12,
+                            "appliedTotal": 4.444,
+                            "appliedAverage": 4.444,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "totalPointsLive": 95.987
+            },
+            "winner": "UNDECIDED"
+          }
+        ]
+      },
+      "pro_schedule": {
+        "settings": {
+          "proTeams": [
+            {
+              "id": 11,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  },
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 16,
+                    "date": 1728219700000
+                  }
+                ],
+                "8": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 12,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ],
+                "8": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 16,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 16,
+                    "awayProTeamId": 11,
+                    "date": 1728219601000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 0,
+              "proGamesByScoringPeriod": {}
+            }
+          ]
+        }
+      },
+      "positional_ratings": {
+        "positionAgainstOpponent": {
+          "positionalRatings": {
+            "3": {
+              "ratingsByOpponent": {
+                "12": {
+                  "rank": 4
+                },
+                "11": {
+                  "rank": 0
+                }
+              }
+            },
+            "2": {
+              "ratingsByOpponent": {}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "live_totals_override_and_missing_rank",
+      "evidence": "synthetic modern model characterization",
+      "context": {
+        "season": 2024,
+        "scoring_period": 7,
+        "matchup_period": 4,
+        "now_unix_ms": 1728230400000,
+        "initial_history": {}
+      },
+      "box_scores": {
+        "schedule": [
+          {
+            "id": 102,
+            "matchupPeriodId": 4,
+            "home": {
+              "teamId": 1,
+              "totalPoints": 200,
+              "rosterForCurrentScoringPeriod": {
+                "entries": [
+                  {
+                    "playerId": 1001,
+                    "lineupSlotId": 4,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 1001,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 1001,
+                        "fullName": "Synthetic Player 1001",
+                        "proTeamId": 16,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 0,
+                            "proTeamId": 11,
+                            "appliedTotal": 18.567,
+                            "appliedAverage": 18.567,
+                            "stats": {
+                              "43": 1,
+                              "44": 1
+                            },
+                            "appliedStats": {
+                              "43": 6,
+                              "44": 2
+                            }
+                          },
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 16,
+                            "appliedTotal": 20.255,
+                            "appliedAverage": 20.255,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "playerId": 1002,
+                    "lineupSlotId": 20,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 1002,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 1002,
+                        "fullName": "Synthetic Player 1002",
+                        "proTeamId": 16,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 0,
+                            "proTeamId": 16,
+                            "appliedTotal": 4,
+                            "appliedAverage": 4,
+                            "stats": {
+                              "43": 1,
+                              "44": 1
+                            },
+                            "appliedStats": {
+                              "43": 6,
+                              "44": 2
+                            }
+                          },
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 16,
+                            "appliedTotal": 99,
+                            "appliedAverage": 99,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "playerId": 1003,
+                    "lineupSlotId": 21,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 1003,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 1003,
+                        "fullName": "Synthetic Player 1003",
+                        "proTeamId": 17,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 17,
+                            "appliedTotal": 88,
+                            "appliedAverage": 88,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "playerId": 1004,
+                    "lineupSlotId": 23,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 1004,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 1004,
+                        "fullName": "Synthetic Player 1004",
+                        "proTeamId": 12,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 0,
+                            "proTeamId": 12,
+                            "appliedTotal": 2,
+                            "appliedAverage": 2,
+                            "stats": {
+                              "43": 1,
+                              "44": 1
+                            },
+                            "appliedStats": {
+                              "43": 6,
+                              "44": 2
+                            }
+                          },
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 12,
+                            "appliedTotal": 4.444,
+                            "appliedAverage": 4.444,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "totalPointsLive": 100.125,
+              "totalProjectedPointsLive": 110.555
+            },
+            "away": {
+              "teamId": 2,
+              "totalPoints": 35.555,
+              "rosterForCurrentScoringPeriod": {
+                "entries": [
+                  {
+                    "playerId": 2001,
+                    "lineupSlotId": 4,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 2001,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 2001,
+                        "fullName": "Synthetic Player 2001",
+                        "proTeamId": 16,
+                        "defaultPositionId": 2,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 0,
+                            "proTeamId": 16,
+                            "appliedTotal": 5.555,
+                            "appliedAverage": 5.555,
+                            "stats": {
+                              "43": 1,
+                              "44": 1
+                            },
+                            "appliedStats": {
+                              "43": 6,
+                              "44": 2
+                            }
+                          },
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 16,
+                            "appliedTotal": 9.999,
+                            "appliedAverage": 9.999,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "totalProjectedPointsLive": 999
+            },
+            "winner": "HOME"
+          }
+        ]
+      },
+      "pro_schedule": {
+        "settings": {
+          "proTeams": [
+            {
+              "id": 11,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  },
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 16,
+                    "date": 1728219700000
+                  }
+                ],
+                "8": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 12,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ],
+                "8": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 16,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 16,
+                    "awayProTeamId": 11,
+                    "date": 1728219601000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 0,
+              "proGamesByScoringPeriod": {}
+            }
+          ]
+        }
+      },
+      "positional_ratings": {
+        "positionAgainstOpponent": {
+          "positionalRatings": {
+            "3": {
+              "ratingsByOpponent": {
+                "12": {
+                  "rank": 4
+                },
+                "11": {
+                  "rank": 0
+                }
+              }
+            },
+            "2": {
+              "ratingsByOpponent": {}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "projected_only_uses_history_without_updating",
+      "evidence": "synthetic modern model characterization",
+      "context": {
+        "season": 2024,
+        "scoring_period": 7,
+        "matchup_period": 4,
+        "now_unix_ms": 1728230400000,
+        "initial_history": {
+          "1001": 11
+        }
+      },
+      "box_scores": {
+        "schedule": [
+          {
+            "id": 103,
+            "matchupPeriodId": 4,
+            "away": {
+              "teamId": 2,
+              "totalPoints": 25.555,
+              "rosterForCurrentScoringPeriod": {
+                "entries": [
+                  {
+                    "playerId": 1001,
+                    "lineupSlotId": 4,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 1001,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 1001,
+                        "fullName": "Synthetic Player 1001",
+                        "proTeamId": 34,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 34,
+                            "appliedTotal": 13.456,
+                            "appliedAverage": 13.456,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "winner": "UNDECIDED"
+          }
+        ]
+      },
+      "pro_schedule": {
+        "settings": {
+          "proTeams": [
+            {
+              "id": 11,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  },
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 16,
+                    "date": 1728219700000
+                  }
+                ],
+                "8": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 12,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ],
+                "8": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 16,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 16,
+                    "awayProTeamId": 11,
+                    "date": 1728219601000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 0,
+              "proGamesByScoringPeriod": {}
+            }
+          ]
+        }
+      },
+      "positional_ratings": {
+        "positionAgainstOpponent": {
+          "positionalRatings": {
+            "3": {
+              "ratingsByOpponent": {
+                "12": {
+                  "rank": 4
+                },
+                "11": {
+                  "rank": 0
+                }
+              }
+            },
+            "2": {
+              "ratingsByOpponent": {}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "actual_team_overrides_history",
+      "evidence": "synthetic modern model characterization",
+      "context": {
+        "season": 2024,
+        "scoring_period": 7,
+        "matchup_period": 4,
+        "now_unix_ms": 1728230400000,
+        "initial_history": {
+          "1001": 11
+        }
+      },
+      "box_scores": {
+        "schedule": [
+          {
+            "id": 104,
+            "matchupPeriodId": 4,
+            "home": {
+              "teamId": 1,
+              "totalPoints": 25.555,
+              "rosterForCurrentScoringPeriod": {
+                "entries": [
+                  {
+                    "playerId": 1001,
+                    "lineupSlotId": 4,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 1001,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 1001,
+                        "fullName": "Synthetic Player 1001",
+                        "proTeamId": 16,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 0,
+                            "proTeamId": 12,
+                            "appliedTotal": 3,
+                            "appliedAverage": 3,
+                            "stats": {
+                              "43": 1,
+                              "44": 1
+                            },
+                            "appliedStats": {
+                              "43": 6,
+                              "44": 2
+                            }
+                          },
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 16,
+                            "appliedTotal": 12.345,
+                            "appliedAverage": 12.345,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "winner": "HOME"
+          }
+        ]
+      },
+      "pro_schedule": {
+        "settings": {
+          "proTeams": [
+            {
+              "id": 11,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  },
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 16,
+                    "date": 1728219700000
+                  }
+                ],
+                "8": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 12,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ],
+                "8": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 16,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 16,
+                    "awayProTeamId": 11,
+                    "date": 1728219601000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 0,
+              "proGamesByScoringPeriod": {}
+            }
+          ]
+        }
+      },
+      "positional_ratings": {
+        "positionAgainstOpponent": {
+          "positionalRatings": {
+            "3": {
+              "ratingsByOpponent": {
+                "12": {
+                  "rank": 4
+                },
+                "11": {
+                  "rank": 0
+                }
+              }
+            },
+            "2": {
+              "ratingsByOpponent": {}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "actual_team_search_and_stat_filters",
+      "evidence": "synthetic modern model characterization",
+      "context": {
+        "season": 2024,
+        "scoring_period": 7,
+        "matchup_period": 4,
+        "now_unix_ms": 1728230400000,
+        "initial_history": {}
+      },
+      "box_scores": {
+        "schedule": [
+          {
+            "id": 105,
+            "matchupPeriodId": 4,
+            "home": {
+              "teamId": 1,
+              "totalPoints": 25.555,
+              "rosterForCurrentScoringPeriod": {
+                "entries": [
+                  {
+                    "playerId": 3001,
+                    "lineupSlotId": 4,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 3001,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 3001,
+                        "fullName": "Synthetic Player 3001",
+                        "proTeamId": 16,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2023,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 0,
+                            "proTeamId": 11,
+                            "appliedTotal": 50,
+                            "appliedAverage": 50,
+                            "stats": {
+                              "43": 1,
+                              "44": 1
+                            },
+                            "appliedStats": {
+                              "43": 6,
+                              "44": 2
+                            }
+                          },
+                          {
+                            "seasonId": 2024,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 16,
+                            "appliedTotal": 17.777,
+                            "stats": {
+                              "43": 2
+                            },
+                            "appliedStats": {
+                              "43": 12
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "playerId": 3002,
+                    "lineupSlotId": 4,
+                    "acquisitionType": "DRAFT",
+                    "playerPoolEntry": {
+                      "id": 3002,
+                      "onTeamId": 1,
+                      "player": {
+                        "id": 3002,
+                        "fullName": "Synthetic Player 3002",
+                        "proTeamId": 16,
+                        "defaultPositionId": 3,
+                        "eligibleSlots": [
+                          4,
+                          20,
+                          21,
+                          23
+                        ],
+                        "injuryStatus": "ACTIVE",
+                        "injured": false,
+                        "ownership": {
+                          "percentOwned": 80,
+                          "percentStarted": 50
+                        },
+                        "stats": [
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 2,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 0,
+                            "proTeamId": 0,
+                            "appliedTotal": 7,
+                            "appliedAverage": 7,
+                            "stats": {
+                              "43": 1,
+                              "44": 1
+                            },
+                            "appliedStats": {
+                              "43": 6,
+                              "44": 2
+                            }
+                          },
+                          {
+                            "seasonId": 2024,
+                            "statSplitTypeId": 1,
+                            "scoringPeriodId": 7,
+                            "statSourceId": 1,
+                            "proTeamId": 16,
+                            "appliedTotal": 8,
+                            "appliedAverage": 8,
+                            "stats": {
+                              "43": 2,
+                              "44": 2
+                            },
+                            "appliedStats": {
+                              "43": 12,
+                              "44": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "winner": "TIE"
+          }
+        ]
+      },
+      "pro_schedule": {
+        "settings": {
+          "proTeams": [
+            {
+              "id": 11,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  },
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 16,
+                    "date": 1728219700000
+                  }
+                ],
+                "8": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 12,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ],
+                "8": [
+                  {
+                    "homeProTeamId": 11,
+                    "awayProTeamId": 12,
+                    "date": 1728219600000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 16,
+              "proGamesByScoringPeriod": {
+                "7": [
+                  {
+                    "homeProTeamId": 16,
+                    "awayProTeamId": 11,
+                    "date": 1728219601000
+                  }
+                ]
+              }
+            },
+            {
+              "id": 0,
+              "proGamesByScoringPeriod": {}
+            }
+          ]
+        }
+      },
+      "positional_ratings": {
+        "positionAgainstOpponent": {
+          "positionalRatings": {
+            "3": {
+              "ratingsByOpponent": {
+                "12": {
+                  "rank": 4
+                },
+                "11": {
+                  "rank": 0
+                }
+              }
+            },
+            "2": {
+              "ratingsByOpponent": {}
+            }
+          }
+        }
+      }
+    }
+  ]
+}

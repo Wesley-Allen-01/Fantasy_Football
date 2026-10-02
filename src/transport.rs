@@ -103,6 +103,29 @@ impl EspnTransport {
         }
     }
 
+    /// Season resources have their own status semantics and never participate
+    /// in league-route discovery. In particular, a season array is not a
+    /// historical league wrapper and must remain an array.
+    pub(crate) async fn season_get(
+        &self,
+        views: &[&str],
+        scoring_period: Option<ScoringPeriod>,
+        filter: Option<&Value>,
+    ) -> Result<Value> {
+        let mut url = self.base_url.clone();
+        url.path_segments_mut()
+            .map_err(|_| Error::Configuration("base URL does not support path segments".into()))?
+            .pop_if_empty()
+            .extend(["ffl", "seasons", &self.season.to_string()]);
+        let response = self.send_url(url, views, scoring_period, filter).await?;
+        if response.status() != StatusCode::OK {
+            return Err(Error::Http {
+                status: response.status().as_u16(),
+            });
+        }
+        Ok(serde_json::from_slice(&response.bytes().await?)?)
+    }
+
     async fn send(
         &self,
         route: LeagueRoute,
@@ -137,11 +160,22 @@ impl EspnTransport {
                 path.extend(extension[1..].split('/'));
             }
         }
-        {
+        if matches!(route, LeagueRoute::History) {
+            url.query_pairs_mut()
+                .append_pair("seasonId", &self.season.to_string());
+        }
+        self.send_url(url, views, scoring_period, filter).await
+    }
+
+    async fn send_url(
+        &self,
+        mut url: Url,
+        views: &[&str],
+        scoring_period: Option<ScoringPeriod>,
+        filter: Option<&Value>,
+    ) -> Result<reqwest::Response> {
+        if !views.is_empty() || scoring_period.is_some() {
             let mut query = url.query_pairs_mut();
-            if matches!(route, LeagueRoute::History) {
-                query.append_pair("seasonId", &self.season.to_string());
-            }
             for view in views {
                 query.append_pair("view", view);
             }
@@ -591,6 +625,99 @@ mod tests {
                 ),
                 Err(Error::Configuration(_))
             ));
+        }
+    }
+
+    #[tokio::test]
+    async fn season_get_preserves_arrays_and_does_not_change_historical_route() {
+        for value in [
+            serde_json::json!([]),
+            serde_json::json!([{"id": 1}, {"id": 2}]),
+        ] {
+            let server = MockServer::start().await;
+            Mock::given(path("/apis/v3/games/ffl/seasons/2017"))
+                .respond_with(ResponseTemplate::new(200).set_body_json(&value))
+                .expect(1)
+                .mount(&server)
+                .await;
+            Mock::given(path(HISTORY_PATH))
+                .respond_with(
+                    ResponseTemplate::new(200).set_body_json(serde_json::json!([{"id": 123}])),
+                )
+                .expect(1)
+                .mount(&server)
+                .await;
+            let mut transport =
+                transport(&server, 2017, Some(Credentials::new("s2", "swid").unwrap()));
+            let filter = serde_json::json!({"players": {"limit": 40}});
+            assert_eq!(
+                transport
+                    .season_get(&["a", "b"], Some(ScoringPeriod(5)), Some(&filter))
+                    .await
+                    .unwrap(),
+                value
+            );
+            assert!(matches!(transport.route, LeagueRoute::History));
+            assert_eq!(
+                transport.league_get(&[], None, None, "").await.unwrap(),
+                serde_json::json!({"id": 123})
+            );
+            let requests = server.received_requests().await.unwrap();
+            let query: Vec<_> = requests[0].url.query_pairs().collect();
+            assert_eq!(
+                query
+                    .iter()
+                    .filter(|(key, _)| key == "view")
+                    .map(|(_, value)| value.as_ref())
+                    .collect::<Vec<_>>(),
+                vec!["a", "b"]
+            );
+            assert!(
+                query
+                    .iter()
+                    .any(|(key, value)| key == "scoringPeriodId" && value == "5")
+            );
+            assert!(!query.iter().any(|(key, _)| key == "seasonId"));
+            assert_eq!(requests[0].headers["cookie"], "espn_s2=s2; SWID=swid");
+            assert_eq!(
+                serde_json::from_slice::<Value>(requests[0].headers["x-fantasy-filter"].as_bytes())
+                    .unwrap(),
+                filter
+            );
+        }
+    }
+
+    #[tokio::test]
+    async fn season_status_and_decode_errors_never_fallback_or_mutate_route() {
+        for (status, body) in [(401, ""), (404, ""), (500, ""), (200, "<html>")] {
+            let server = MockServer::start().await;
+            Mock::given(path("/apis/v3/games/ffl/seasons/2017"))
+                .respond_with(ResponseTemplate::new(status).set_body_string(body))
+                .expect(1)
+                .mount(&server)
+                .await;
+            Mock::given(path(HISTORY_PATH))
+                .respond_with(
+                    ResponseTemplate::new(200).set_body_json(serde_json::json!([{"id": 123}])),
+                )
+                .expect(1)
+                .mount(&server)
+                .await;
+            let mut transport = transport(&server, 2017, None);
+            let error = transport
+                .season_get(&["proTeamSchedules_wl"], None, None)
+                .await
+                .unwrap_err();
+            if status == 200 {
+                assert!(matches!(error, Error::Decode(_)));
+            } else {
+                assert!(
+                    matches!(error, Error::Http { status: error_status } if error_status == status)
+                );
+            }
+            assert!(matches!(transport.route, LeagueRoute::History));
+            assert!(transport.league_get(&[], None, None, "").await.is_ok());
+            assert_eq!(server.received_requests().await.unwrap().len(), 2);
         }
     }
 }

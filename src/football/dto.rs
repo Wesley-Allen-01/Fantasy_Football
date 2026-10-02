@@ -278,3 +278,85 @@ pub(super) struct ScoreboardSide {
     pub team_id: TeamId,
     pub total_points: f64,
 }
+
+#[derive(Deserialize)]
+pub(super) struct WeeklySchedule {
+    pub schedule: Vec<WeeklyMatchup>,
+}
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub(super) struct WeeklyMatchup {
+    pub id: Option<u64>,
+    pub playoff_tier_type: Option<String>,
+    pub home: Option<Value>,
+    pub away: Option<Value>,
+}
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub(super) struct WeeklySide {
+    pub team_id: TeamId,
+    pub roster_for_current_scoring_period: WeeklyRoster,
+}
+#[derive(Deserialize)]
+pub(super) struct WeeklyRoster {
+    pub entries: Vec<Value>,
+}
+#[derive(Deserialize)]
+pub(super) struct ProSchedule {
+    pub settings: ProSettings,
+}
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub(super) struct ProSettings {
+    pub pro_teams: Vec<ProTeamSchedule>,
+}
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub(super) struct ProTeamSchedule {
+    pub id: ProTeamId,
+    #[serde(default)]
+    pub pro_games_by_scoring_period: BTreeMap<ScoringPeriod, Vec<Value>>,
+}
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub(super) struct ProGame {
+    pub home_pro_team_id: ProTeamId,
+    pub away_pro_team_id: ProTeamId,
+    pub date: i64,
+}
+#[derive(Deserialize, Default)]
+#[serde(rename_all = "camelCase")]
+pub(super) struct PositionalRatings {
+    #[serde(default)]
+    pub position_against_opponent: PositionAgainstOpponent,
+}
+#[derive(Deserialize, Default)]
+#[serde(rename_all = "camelCase")]
+pub(super) struct PositionAgainstOpponent {
+    #[serde(default)]
+    pub positional_ratings: BTreeMap<u32, PositionRatings>,
+}
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub(super) struct PositionRatings {
+    pub ratings_by_opponent: BTreeMap<ProTeamId, OpponentRating>,
+}
+#[derive(Deserialize)]
+pub(super) struct OpponentRating {
+    pub rank: u32,
+}
+
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub(super) struct WeeklyPlayerMetadata {
+    pub default_position_id: Option<u32>,
+    #[serde(default)]
+    pub stats: Vec<WeeklyTeamEvidence>,
+}
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub(super) struct WeeklyTeamEvidence {
+    pub scoring_period_id: Option<ScoringPeriod>,
+    pub stat_source_id: Option<u32>,
+    pub pro_team_id: Option<ProTeamId>,
+}

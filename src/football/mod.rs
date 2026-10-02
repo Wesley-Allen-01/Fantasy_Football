@@ -2,7 +2,11 @@
 //!
 //! ESPN's numeric slot/stat IDs remain authoritative. Labels are optional and
 //! unknown IDs survive decoding. Conversion performs no I/O or enrichment.
+mod box_score;
 mod dto;
+pub use box_score::{
+    BoxPlayer, BoxScore, BoxScoreContext, BoxTeam, PlayerTeamHistory, WeeklyBoxScores,
+};
 mod labels;
 pub use labels::{pro_team_abbreviation, slot_label, stat_label};
 
