@@ -48,6 +48,14 @@ A runnable example reads optional `ESPN_S2` and `ESPN_SWID` environment variable
 cargo run --example league -- 123456 2026
 ```
 
+Append a team ID to print only that team's roster, without requesting the scoreboard:
+
+```sh
+cargo run --example league -- 123456 2026 1
+```
+
+The team is selected locally from the loaded league snapshot. An unknown team ID returns an error.
+
 The example contacts ESPN; the verification commands below use local fixtures and mock HTTP only. Current-season and successful private-league access have not yet been verified against live ESPN.
 
 ## Verify
