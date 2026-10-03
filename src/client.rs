@@ -1,9 +1,11 @@
 use crate::football::scoreboard_from_value;
+use crate::player_request::{FreeAgentRequest, fetch_player_cards, fetch_player_directory};
 use crate::transport::EspnTransport;
 use crate::weekly_request::WeeklyRequest;
 use crate::{
-    BoxScoreContext, Error, LeagueId, LeagueSnapshot, Matchup, MatchupPeriod, PlayerTeamHistory,
-    Result, ScoringPeriod, Season, WeeklyBoxScores,
+    BoxScoreContext, Error, FreeAgentContext, FreeAgentOptions, FreeAgentPage, LeagueId,
+    LeagueSnapshot, Matchup, MatchupPeriod, PlayerCard, PlayerDirectory, PlayerId,
+    PlayerTeamHistory, Result, ScoringPeriod, Season, WeeklyBoxScores,
 };
 use std::fmt;
 use std::time::{Duration, SystemTime, UNIX_EPOCH};
@@ -286,12 +288,7 @@ impl LeagueHandle {
         })?;
         let request = WeeklyRequest::resolve(snapshot, week)?;
         let payloads = request.fetch(&mut self.transport).await?;
-        let now_unix_ms = SystemTime::now()
-            .duration_since(UNIX_EPOCH)
-            .map_err(|_| Error::Configuration("system clock precedes the Unix epoch".into()))?
-            .as_millis()
-            .try_into()
-            .map_err(|_| Error::Configuration("system timestamp is out of range".into()))?;
+        let now_unix_ms = unix_now_ms()?;
         WeeklyBoxScores::from_values(
             &payloads.box_scores,
             &payloads.pro_schedule,
@@ -305,6 +302,125 @@ impl LeagueHandle {
             },
         )
     }
+}
+
+impl LeagueHandle {
+    /// Read one page of free agents and waiver players with weekly statistics.
+    /// Load a snapshot first. Defaults match Python: current week, 50 players,
+    /// all slots, descending ownership. Explicit future weeks are preserved.
+    /// Pagination is caller-controlled; this method never loops over pages.
+    /// No query replaces the loaded roster or snapshot.
+    ///
+    /// ```no_run
+    /// use espn_fantasy_football::{Client, FreeAgentOptions, LeagueId, Season, SlotId};
+    /// # async fn example() -> espn_fantasy_football::Result<()> {
+    /// let mut league = Client::builder().build()?.league(LeagueId(394172912), Season(2026))?;
+    /// league.fetch().await?;
+    /// let quarterbacks = league.free_agents(FreeAgentOptions {
+    ///     slots: vec![SlotId(0)], ..Default::default()
+    /// }).await?;
+    /// println!("{} available quarterbacks", quarterbacks.players.len());
+    /// # Ok(())
+    /// # }
+    /// ```
+    pub async fn free_agents(&mut self, options: FreeAgentOptions) -> Result<FreeAgentPage> {
+        let snapshot = self.snapshot.as_ref().ok_or_else(|| {
+            Error::Configuration("load the league before requesting free agents".into())
+        })?;
+        let request = FreeAgentRequest::resolve(snapshot, &options)?;
+        let payloads = request.fetch(&mut self.transport).await?;
+        FreeAgentPage::from_values(
+            &payloads.players,
+            &payloads.pro_schedule,
+            &payloads.positional_ratings,
+            FreeAgentContext {
+                season: self.season,
+                scoring_period: request.scoring_period,
+                now_unix_ms: unix_now_ms()?,
+                offset: options.offset,
+                limit: options.limit,
+            },
+        )
+    }
+
+    /// Fetch one player by ESPN ID. A valid empty response returns None.
+    pub async fn player_by_id(&mut self, id: PlayerId) -> Result<Option<PlayerCard>> {
+        Ok(self.players_by_ids(&[id]).await?.into_iter().next())
+    }
+
+    /// Fetch player cards in batches of at most 40 IDs, preserving server
+    /// response order within each batch. Duplicate requested IDs are removed;
+    /// missing players are omitted. Empty input performs no network requests.
+    /// A nonempty query needs a loaded snapshot for the final stat period.
+    pub async fn players_by_ids(&mut self, ids: &[PlayerId]) -> Result<Vec<PlayerCard>> {
+        if ids.is_empty() {
+            return Ok(Vec::new());
+        }
+        if ids.iter().any(|id| id.0 == 0) {
+            return Err(Error::Configuration("player IDs must be nonzero".into()));
+        }
+        let final_period = self
+            .snapshot
+            .as_ref()
+            .ok_or_else(|| {
+                Error::Configuration("load the league before requesting player cards".into())
+            })?
+            .final_scoring_period;
+        let payloads =
+            fetch_player_cards(&mut self.transport, self.season, ids, final_period).await?;
+        let cards =
+            PlayerCard::from_values(&payloads.players, &payloads.pro_schedule, self.season)?;
+        if cards.iter().any(|card| !ids.contains(&card.player.id)) {
+            return Err(Error::InvalidResponse {
+                context: "player-card response contains an ID that was not requested".into(),
+            });
+        }
+        Ok(cards)
+    }
+
+    /// Explicitly fetch the active season player directory; no league load is
+    /// needed. The returned directory can be reused for local exact-name queries.
+    pub async fn player_directory(&self) -> Result<PlayerDirectory> {
+        let value = fetch_player_directory(&self.transport).await?;
+        PlayerDirectory::from_value(&value, self.season)
+    }
+
+    /// Resolve an exact, case-sensitive name to every matching active player ID
+    /// and fetch its cards. This explicitly reloads the directory each time.
+    /// An unknown name returns an empty list without card or schedule requests.
+    ///
+    /// ```no_run
+    /// use espn_fantasy_football::{Client, LeagueId, PlayerId, Season};
+    /// # async fn example() -> espn_fantasy_football::Result<()> {
+    /// let mut league = Client::builder().build()?.league(LeagueId(394172912), Season(2026))?;
+    /// league.fetch().await?;
+    /// let card = league.player_by_id(PlayerId(3117251)).await?;
+    /// let matching_cards = league.players_named("Exact Player Name").await?;
+    /// println!("{card:#?} {} name matches", matching_cards.len());
+    /// # Ok(())
+    /// # }
+    /// ```
+    pub async fn players_named(&mut self, name: &str) -> Result<Vec<PlayerCard>> {
+        if name.trim().is_empty() {
+            return Err(Error::Configuration("player name must not be blank".into()));
+        }
+        if self.snapshot.is_none() {
+            return Err(Error::Configuration(
+                "load the league before requesting player cards".into(),
+            ));
+        }
+        let directory = self.player_directory().await?;
+        self.players_by_ids(&directory.ids_named(name)).await
+    }
+}
+
+fn unix_now_ms() -> Result<i64> {
+    SystemTime::now()
+        .duration_since(UNIX_EPOCH)
+        .map_err(|_| Error::Configuration("system clock precedes the Unix epoch".into()))?
+        .as_millis()
+        .try_into()
+        .map_err(|_| Error::Configuration("system timestamp is out of range".into()))
 }
 
 impl fmt::Debug for LeagueHandle {

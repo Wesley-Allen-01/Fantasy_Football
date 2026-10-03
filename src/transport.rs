@@ -112,11 +112,29 @@ impl EspnTransport {
         scoring_period: Option<ScoringPeriod>,
         filter: Option<&Value>,
     ) -> Result<Value> {
+        self.season_resource_get(views, scoring_period, filter, "")
+            .await
+    }
+
+    pub(crate) async fn season_resource_get(
+        &self,
+        views: &[&str],
+        scoring_period: Option<ScoringPeriod>,
+        filter: Option<&Value>,
+        extension: &str,
+    ) -> Result<Value> {
+        validate_extension(extension)?;
         let mut url = self.base_url.clone();
-        url.path_segments_mut()
-            .map_err(|_| Error::Configuration("base URL does not support path segments".into()))?
-            .pop_if_empty()
-            .extend(["ffl", "seasons", &self.season.to_string()]);
+        {
+            let mut path = url.path_segments_mut().map_err(|_| {
+                Error::Configuration("base URL does not support path segments".into())
+            })?;
+            path.pop_if_empty()
+                .extend(["ffl", "seasons", &self.season.to_string()]);
+            if !extension.is_empty() {
+                path.extend(extension[1..].split('/'));
+            }
+        }
         let response = self.send_url(url, views, scoring_period, filter).await?;
         if response.status() != StatusCode::OK {
             return Err(Error::Http {
@@ -719,5 +737,27 @@ mod tests {
             assert!(transport.league_get(&[], None, None, "").await.is_ok());
             assert_eq!(server.received_requests().await.unwrap().len(), 2);
         }
+    }
+
+    #[tokio::test]
+    async fn season_resource_rejects_invalid_suffixes_before_io() {
+        let server = MockServer::start().await;
+        let transport = transport(&server, 2024, None);
+        for extension in [
+            "players",
+            "/../players",
+            "/%2fplayers",
+            "/players?view=x",
+            "/players#fragment",
+            "//other-host",
+        ] {
+            assert!(matches!(
+                transport
+                    .season_resource_get(&["players_wl"], None, None, extension)
+                    .await,
+                Err(Error::Configuration(_))
+            ));
+        }
+        assert!(server.received_requests().await.unwrap().is_empty());
     }
 }

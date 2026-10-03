@@ -1,0 +1,46 @@
+{
+  "season": 2024,
+  "input": [
+    {
+      "id": 7002,
+      "fullName": "Alex Doe"
+    },
+    {
+      "id": 7001,
+      "fullName": "Alex Doe"
+    },
+    {
+      "id": -16011,
+      "fullName": "Colts D/ST"
+    },
+    {
+      "id": 7002,
+      "fullName": "Alex Doe"
+    }
+  ],
+  "expected": [
+    {
+      "id": 7002,
+      "name": "Alex Doe"
+    },
+    {
+      "id": 7001,
+      "name": "Alex Doe"
+    },
+    {
+      "id": -16011,
+      "name": "Colts D/ST"
+    }
+  ],
+  "queries": {
+    "Alex Doe": [
+      7002,
+      7001
+    ],
+    "Colts D/ST": [
+      -16011
+    ],
+    "alex doe": [],
+    "Unknown": []
+  }
+}

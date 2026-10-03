@@ -1,0 +1,445 @@
+[
+  {
+    "player": {
+      "id": 3045147,
+      "name": "James Conner",
+      "position": "RB",
+      "eligible_slots": [
+        "RB",
+        "RB/WR",
+        "RB/WR/TE",
+        "OP",
+        "BE",
+        "IR"
+      ],
+      "pro_team": "PIT",
+      "positional_rank": 35,
+      "jersey": "30",
+      "acquisition_type": null,
+      "on_team_id": 4,
+      "lineup_slot": null,
+      "injury_status": "ACTIVE",
+      "injured": false,
+      "percent_owned": 96.73,
+      "percent_started": 73.87,
+      "active_status": "active",
+      "total_points": 145.5,
+      "projected_total_points": 0,
+      "avg_points": 14.55,
+      "projected_avg_points": 0,
+      "stats": {
+        "0": {
+          "actual": {
+            "points": 145.5,
+            "average_points": 14.55,
+            "breakdown": {
+              "rushingAttempts": 116.0,
+              "rushingTouchdowns": 4.0,
+              "27": 90.0,
+              "28": 44.0,
+              "29": 20.0,
+              "30": 13.0,
+              "31": 3.0,
+              "32": 1.0,
+              "33": 20.0,
+              "34": 8.0,
+              "rushing100To199YardGame": 1.0,
+              "rushingYardsPerAttempt": 4.0,
+              "receivingTouchdowns": 3.0,
+              "47": 46.0,
+              "48": 21.0,
+              "49": 9.0,
+              "50": 7.0,
+              "51": 2.0,
+              "54": 2.0,
+              "receivingTargets": 38.0,
+              "receivingYardsAfterCatch": 298.0,
+              "receivingYardsPerReception": 7.38235294,
+              "66": 1.0,
+              "fumbles": 1.0,
+              "70": 1.0,
+              "lostFumbles": 1.0,
+              "turnovers": 1.0,
+              "teamWin": 3.0,
+              "teamLoss": 7.0,
+              "pointsScored": 42.0,
+              "179": 3.0,
+              "180": 1.0,
+              "184": 1.0,
+              "185": 2.0,
+              "210": 10.0
+            },
+            "points_breakdown": {
+              "lostFumbles": -2.0,
+              "rushingTouchdowns": 24.0,
+              "receivingTouchdowns": 18.0
+            }
+          }
+        },
+        "1": {
+          "actual": {
+            "points": 10.5,
+            "average_points": 0,
+            "breakdown": {
+              "rushingAttempts": 10.0,
+              "27": 4.0,
+              "28": 2.0,
+              "29": 1.0,
+              "33": 2.0,
+              "34": 1.0,
+              "rushingYardsPerAttempt": 2.1,
+              "47": 8.0,
+              "48": 4.0,
+              "49": 2.0,
+              "50": 1.0,
+              "receivingTargets": 4.0,
+              "receivingYardsAfterCatch": 41.0,
+              "receivingYardsPerReception": 11.0,
+              "teamLoss": 1.0,
+              "210": 1.0
+            },
+            "points_breakdown": {}
+          }
+        },
+        "2": {
+          "actual": {
+            "points": 13.5,
+            "average_points": 0,
+            "breakdown": {
+              "rushingAttempts": 11.0,
+              "rushingTouchdowns": 1.0,
+              "27": 6.0,
+              "28": 3.0,
+              "29": 1.0,
+              "30": 1.0,
+              "33": 2.0,
+              "34": 1.0,
+              "rushingYardsPerAttempt": 3.0,
+              "47": 2.0,
+              "48": 1.0,
+              "receivingTargets": 4.0,
+              "receivingYardsAfterCatch": 19.0,
+              "receivingYardsPerReception": 4.0,
+              "teamLoss": 1.0,
+              "pointsScored": 6.0,
+              "179": 1.0,
+              "210": 1.0
+            },
+            "points_breakdown": {
+              "rushingTouchdowns": 6.0
+            }
+          }
+        },
+        "3": {
+          "actual": {
+            "points": 7.7,
+            "average_points": 0,
+            "breakdown": {
+              "rushingAttempts": 13.0,
+              "27": 8.0,
+              "28": 4.0,
+              "29": 2.0,
+              "30": 1.0,
+              "33": 2.0,
+              "34": 1.0,
+              "rushingYardsPerAttempt": 3.308,
+              "47": 2.0,
+              "48": 1.0,
+              "receivingTargets": 4.0,
+              "receivingYardsAfterCatch": 19.0,
+              "receivingYardsPerReception": 3.5,
+              "66": 1.0,
+              "fumbles": 1.0,
+              "70": 1.0,
+              "lostFumbles": 1.0,
+              "turnovers": 1.0,
+              "teamLoss": 1.0,
+              "210": 1.0
+            },
+            "points_breakdown": {
+              "lostFumbles": -2.0
+            }
+          }
+        },
+        "4": {
+          "actual": {
+            "points": 26.5,
+            "average_points": 0,
+            "breakdown": {
+              "rushingAttempts": 10.0,
+              "27": 8.0,
+              "28": 4.0,
+              "29": 2.0,
+              "30": 1.0,
+              "33": 2.0,
+              "34": 1.0,
+              "rushingYardsPerAttempt": 4.2,
+              "receivingTouchdowns": 1.0,
+              "47": 16.0,
+              "48": 8.0,
+              "49": 4.0,
+              "50": 3.0,
+              "51": 1.0,
+              "54": 1.0,
+              "receivingTargets": 8.0,
+              "receivingYardsAfterCatch": 92.0,
+              "receivingYardsPerReception": 10.375,
+              "teamWin": 1.0,
+              "pointsScored": 6.0,
+              "185": 1.0,
+              "210": 1.0
+            },
+            "points_breakdown": {
+              "receivingTouchdowns": 6.0
+            }
+          }
+        },
+        "5": {
+          "actual": {
+            "points": 11.5,
+            "average_points": 0,
+            "breakdown": {
+              "rushingAttempts": 14.0,
+              "rushingTouchdowns": 1.0,
+              "27": 11.0,
+              "28": 5.0,
+              "29": 2.0,
+              "30": 2.0,
+              "31": 1.0,
+              "33": 2.0,
+              "34": 1.0,
+              "rushingYardsPerAttempt": 3.929,
+              "teamLoss": 1.0,
+              "pointsScored": 6.0,
+              "179": 1.0,
+              "210": 1.0
+            },
+            "points_breakdown": {
+              "rushingTouchdowns": 6.0
+            }
+          }
+        },
+        "6": {
+          "actual": {
+            "points": 30.9,
+            "average_points": 0,
+            "breakdown": {
+              "rushingAttempts": 16.0,
+              "rushingTouchdowns": 1.0,
+              "27": 8.0,
+              "28": 4.0,
+              "29": 2.0,
+              "30": 1.0,
+              "33": 3.0,
+              "34": 1.0,
+              "rushingYardsPerAttempt": 2.563,
+              "receivingTouchdowns": 1.0,
+              "47": 15.0,
+              "48": 7.0,
+              "49": 3.0,
+              "50": 3.0,
+              "51": 1.0,
+              "54": 1.0,
+              "receivingTargets": 7.0,
+              "receivingYardsAfterCatch": 88.0,
+              "receivingYardsPerReception": 11.143,
+              "teamWin": 1.0,
+              "pointsScored": 12.0,
+              "180": 1.0,
+              "185": 1.0,
+              "210": 1.0
+            },
+            "points_breakdown": {
+              "rushingTouchdowns": 6.0,
+              "receivingTouchdowns": 6.0
+            }
+          }
+        },
+        "8": {
+          "actual": {
+            "points": 24.0,
+            "average_points": 0,
+            "breakdown": {
+              "rushingAttempts": 23.0,
+              "rushingTouchdowns": 1.0,
+              "27": 29.0,
+              "28": 14.0,
+              "29": 7.0,
+              "30": 5.0,
+              "31": 2.0,
+              "32": 1.0,
+              "33": 4.0,
+              "34": 2.0,
+              "rushing100To199YardGame": 1.0,
+              "rushingYardsPerAttempt": 6.304,
+              "47": 1.0,
+              "receivingTargets": 4.0,
+              "receivingYardsAfterCatch": 12.0,
+              "receivingYardsPerReception": 1.667,
+              "teamWin": 1.0,
+              "pointsScored": 6.0,
+              "179": 1.0,
+              "210": 1.0
+            },
+            "points_breakdown": {
+              "rushingTouchdowns": 6.0
+            }
+          }
+        },
+        "9": {
+          "actual": {
+            "points": 0.0,
+            "average_points": 0,
+            "breakdown": {},
+            "points_breakdown": {}
+          }
+        },
+        "10": {
+          "actual": {
+            "points": 0.0,
+            "average_points": 0,
+            "breakdown": {},
+            "points_breakdown": {}
+          }
+        },
+        "11": {
+          "actual": {
+            "points": 2.6,
+            "average_points": 0,
+            "breakdown": {
+              "rushingAttempts": 5.0,
+              "27": 2.0,
+              "28": 1.0,
+              "33": 1.0,
+              "rushingYardsPerAttempt": 2.0,
+              "47": 1.0,
+              "receivingTargets": 2.0,
+              "receivingYardsAfterCatch": 6.0,
+              "receivingYardsPerReception": 6.0,
+              "teamLoss": 1.0,
+              "210": 1.0
+            },
+            "points_breakdown": {}
+          }
+        },
+        "12": {
+          "actual": {
+            "points": 0.0,
+            "average_points": 0,
+            "breakdown": {},
+            "points_breakdown": {}
+          }
+        },
+        "13": {
+          "actual": {
+            "points": 0.0,
+            "average_points": 0,
+            "breakdown": {},
+            "points_breakdown": {}
+          }
+        },
+        "14": {
+          "actual": {
+            "points": 0.0,
+            "average_points": 0,
+            "breakdown": {},
+            "points_breakdown": {}
+          }
+        },
+        "15": {
+          "actual": {
+            "points": 15.1,
+            "average_points": 0,
+            "breakdown": {
+              "rushingAttempts": 8.0,
+              "27": 8.0,
+              "28": 4.0,
+              "29": 2.0,
+              "30": 1.0,
+              "33": 1.0,
+              "rushingYardsPerAttempt": 5.25,
+              "receivingTouchdowns": 1.0,
+              "47": 1.0,
+              "receivingTargets": 5.0,
+              "receivingYardsAfterCatch": 21.0,
+              "receivingYardsPerReception": 2.25,
+              "teamLoss": 1.0,
+              "pointsScored": 6.0,
+              "184": 1.0,
+              "210": 1.0
+            },
+            "points_breakdown": {
+              "receivingTouchdowns": 6.0
+            }
+          }
+        },
+        "16": {
+          "actual": {
+            "points": 3.2,
+            "average_points": 0,
+            "breakdown": {
+              "rushingAttempts": 6.0,
+              "27": 6.0,
+              "28": 3.0,
+              "29": 1.0,
+              "30": 1.0,
+              "33": 1.0,
+              "rushingYardsPerAttempt": 5.333,
+              "teamLoss": 1.0,
+              "210": 1.0
+            },
+            "points_breakdown": {}
+          }
+        },
+        "17": {
+          "actual": {
+            "points": 0.0,
+            "average_points": 0,
+            "breakdown": {},
+            "points_breakdown": {}
+          }
+        }
+      }
+    },
+    "schedule": {
+      "1": {
+        "opponent": "NE",
+        "date_unix_ms": 1567976400000
+      },
+      "2": {
+        "opponent": "KC",
+        "date_unix_ms": 1568581200000
+      }
+    },
+    "raw_transactions": [
+      {
+        "bidAmount": 0,
+        "executionType": "EXECUTE",
+        "id": "c378cd54-4fcd-4249-8a70-0c70af8776ca",
+        "isActingAsTeamOwner": false,
+        "isLeagueManager": false,
+        "isPending": false,
+        "items": [
+          {
+            "fromLineupSlotId": -1,
+            "fromTeamId": 0,
+            "isKeeper": false,
+            "overallPickNumber": 50,
+            "playerId": 3045147,
+            "toLineupSlotId": 2,
+            "toTeamId": 4,
+            "type": "DRAFT"
+          }
+        ],
+        "proposedDate": 1594241363881,
+        "rating": 0,
+        "scoringPeriodId": 1,
+        "skipTransactionCounters": false,
+        "status": "EXECUTED",
+        "subOrder": 0,
+        "teamId": 4,
+        "type": "DRAFT"
+      }
+    ]
+  }
+]

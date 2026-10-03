@@ -8,7 +8,12 @@ pub use box_score::{
     BoxPlayer, BoxScore, BoxScoreContext, BoxTeam, PlayerTeamHistory, WeeklyBoxScores,
 };
 mod labels;
+mod players;
 pub use labels::{pro_team_abbreviation, slot_label, stat_label};
+pub use players::{
+    DirectoryPlayer, FreeAgentContext, FreeAgentOptions, FreeAgentPage, PlayerCard,
+    PlayerDirectory, PlayerGame,
+};
 
 use crate::{
     Error, LeagueId, MatchupPeriod, PlayerId, ProTeamId, Result, ScoringPeriod, Season, SlotId,

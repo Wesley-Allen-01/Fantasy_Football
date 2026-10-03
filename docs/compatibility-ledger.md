@@ -1,6 +1,6 @@
 # Football compatibility ledger
 
-The foundation preserves league metadata, football settings, team and roster identity, actual/projected fantasy statistics, ID-linked schedules, completed-season standings and remote scoreboards. The weekly slice adds box scores, lineups, NFL schedule context and opponent positional rankings. Draft enrichment, historical roster loading, free agents, transactions, weekly standings and power rankings remain deferred.
+The foundation preserves league metadata, football settings, team and roster identity, actual/projected fantasy statistics, ID-linked schedules, completed-season standings and remote scoreboards. The weekly slice adds box scores, lineups, NFL schedule context and opponent positional rankings. Player search adds free-agent pages, player cards and a season directory. Draft enrichment, historical roster loading, typed transactions, weekly standings and power rankings remain deferred.
 
 ## Preserved behaviors
 
@@ -92,4 +92,31 @@ The two old league fixture seasons give concrete historical parity evidence, not
 
 The provenance explicitly lists duplicate Python stat-label aliases excluded from label-level comparison. Rust retains numeric-ID breakdowns, including these aliases; targeted numeric-ID model tests cover their preservation. Historical fixture compaction drops those ambiguous alias fields rather than asserting Python's lossy overwrite as the desired Rust behavior.
 
-Verify the generator with `PYTHONDONTWRITEBYTECODE=1 python scripts/generate_box_score_fixtures.py --reference /path/to/reference --check`. Enable both full-input Rust comparisons with `ESPN_PYTHON_REFERENCE=/path/to/reference cargo test --locked --all-targets`. Private/current-season live access remains pending; the managed cloud only allows package-manager hosts, so ESPN has not been reached in this session.
+Verify the generator with `PYTHONDONTWRITEBYTECODE=1 python scripts/generate_box_score_fixtures.py --reference /path/to/reference --check`. Enable original full-input Rust comparisons with `ESPN_PYTHON_REFERENCE=/path/to/reference cargo test --locked --all-targets`. Private/current-season live access remains pending; the managed cloud only allows package-manager hosts, so ESPN has not been reached in this session.
+
+## Free agents and player lookup
+
+| Preserved behavior | Evidence |
+| --- | --- |
+| FA requests require 2019 or later, default to current_week/50, include FREEAGENT and WAIVERS, retain ownership/draft ordering, and do not clamp supplied future weeks | Real Python closed-mock request traces, exact Rust trace comparison and boundary tests |
+| FA reads fetch player data, NFL schedule, then positional ratings, including a valid empty result | Python request traces and Rust request/client tests |
+| Cards use kona_playercard/filterIds and final scoring period with season additionalValue strings | Scalar/multi/empty-result Python request traces; bounded batch tests |
+| Directory is season-level /players, view players_wl, filterActive=true | Real Python request trace and raw-array request tests |
+| Weekly FA identity, eligibility, injury, ownership, actual/projected stats, NFL opponent/rank and clock semantics follow BoxPlayer | Synthetic modern Python FA goldens; frozen UTC time; model tests |
+| Card season stats and current-NFL-team first-game schedules, injury/ownership/eligibility and wrapper metadata | Compact/full original 2019 card and synthetic card goldens; raw wrapper equality |
+| Positional rank falls back to known wrapper ratings['0'].positionalRanking; absent card schedule settings/proTeams means an empty schedule | Captured original card exposed rank fallback; explicit default-path tests without weakening weekly parsing |
+
+| Deliberate difference | Rust behavior / evidence |
+| --- | --- |
+| Player return type varies between Player/list/None | Single-ID query returns Option<PlayerCard>; multi-ID/name queries always return a vector |
+| Eager constructor loads the full name map; duplicate names select first ID | Explicit directory read; exact case-sensitive queries return all distinct matching IDs in response order; unknown names skip cards and schedules |
+| Python position_id=0 is ignored by falsiness | Typed numeric slots preserve QB/0; oracle request comparison accounts only for this explicit filter correction |
+| FA helper exposes one limit without offset pagination | Optional nonzero offset extension; advisory next_offset; no automatic looping or projection sorting; repeated/short/full/empty pages tested |
+| Empty ID list still makes card/schedule requests; large direct card list is unbounded | Empty input performs no requests, stable input deduplication and batches of at most 40; publish results only after every batch and schedule succeeds |
+| Recursive IDs or duplicate/inconsistent returned identities may be accepted | Known wrapper paths, identity validation, duplicate-result rejection and only-requested-ID check; negative defense IDs remain supported |
+| Empty card NFL game arrays can raise on first element indexing | Empty period means no scheduled game; nonempty selected first game stays strict |
+| Invalid zero inputs/overflow may reach ESPN | Explicit zero week/limit/ID, blank name and overflowing offsets are configuration errors before query requests |
+
+`scripts/generate_player_fixtures.py` emits nine JSON/provenance files with closed HTTP mocks and a fixed UTC clock. Four player parity tests compare synthetic modern FA/cards, directory/name normalization, and compact/full original 2019 player-card data. Compaction must preserve the Python projection before output. Duplicate-label stat aliases are excluded specifically from label comparison, with numeric IDs retained and tested in Rust; exact binary numeric comparisons use no blanket epsilon. Raw card transactions are retained unchanged, not parsed as typed transaction history. The card auxiliary defaults accept absent settings/proTeams and empty arrays/objects, while null or malformed values remain errors.
+
+Modern FA/card and supplemental NFL schedules are synthetic; the actual card fixture is 2019. No fresh current-season/private ESPN response is claimed. Offset support and service behavior must still be confirmed live. Player searches never replace the loaded snapshot; no cache, background refresh, account login, lineup submission or waiver recommendation is introduced.

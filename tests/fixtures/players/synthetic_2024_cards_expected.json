@@ -1,0 +1,255 @@
+[
+  {
+    "player": {
+      "id": 7002,
+      "name": "Alex Doe",
+      "position": "WR",
+      "eligible_slots": [
+        "RB/WR",
+        "WR",
+        "WR/TE",
+        "OP",
+        "BE",
+        "IR",
+        "RB/WR/TE"
+      ],
+      "pro_team": "MIN",
+      "positional_rank": 5,
+      "jersey": "18",
+      "acquisition_type": "FREEAGENT",
+      "on_team_id": 0,
+      "lineup_slot": null,
+      "injury_status": "QUESTIONABLE",
+      "injured": true,
+      "percent_owned": 97.56,
+      "percent_started": 25.12,
+      "active_status": "active",
+      "total_points": 200.34,
+      "projected_total_points": 225.68,
+      "avg_points": 100.17,
+      "projected_avg_points": 112.84,
+      "stats": {
+        "0": {
+          "actual": {
+            "points": 200.34,
+            "average_points": 100.17,
+            "breakdown": {
+              "receivingTouchdowns": 1,
+              "receiving2PtConversions": 1
+            },
+            "points_breakdown": {
+              "receivingTouchdowns": 6,
+              "receiving2PtConversions": 2
+            }
+          },
+          "projected": {
+            "points": 225.68,
+            "average_points": 112.84,
+            "breakdown": {
+              "receivingTouchdowns": 2,
+              "receiving2PtConversions": 1
+            },
+            "points_breakdown": {
+              "receivingTouchdowns": 12,
+              "receiving2PtConversions": 2
+            }
+          }
+        },
+        "7": {
+          "actual": {
+            "points": 18.57,
+            "average_points": 9.28,
+            "breakdown": {
+              "receivingTouchdowns": 1,
+              "receiving2PtConversions": 1
+            },
+            "points_breakdown": {
+              "receivingTouchdowns": 6,
+              "receiving2PtConversions": 2
+            }
+          },
+          "projected": {
+            "points": 20.25,
+            "average_points": 10.13,
+            "breakdown": {
+              "receivingTouchdowns": 2,
+              "receiving2PtConversions": 1
+            },
+            "points_breakdown": {
+              "receivingTouchdowns": 12,
+              "receiving2PtConversions": 2
+            }
+          }
+        }
+      }
+    },
+    "schedule": {
+      "7": {
+        "opponent": "KC",
+        "date_unix_ms": 1728219600000
+      },
+      "8": {
+        "opponent": "IND",
+        "date_unix_ms": 1728824400000
+      }
+    },
+    "raw_transactions": []
+  },
+  {
+    "player": {
+      "id": 7001,
+      "name": "Alex Doe",
+      "position": "QB",
+      "eligible_slots": [
+        "QB",
+        "OP",
+        "BE",
+        "IR"
+      ],
+      "pro_team": "MIN",
+      "positional_rank": 5,
+      "jersey": "18",
+      "acquisition_type": "FREEAGENT",
+      "on_team_id": 0,
+      "lineup_slot": null,
+      "injury_status": "ACTIVE",
+      "injured": false,
+      "percent_owned": 97.56,
+      "percent_started": 25.12,
+      "active_status": "active",
+      "total_points": 200.34,
+      "projected_total_points": 225.68,
+      "avg_points": 100.17,
+      "projected_avg_points": 112.84,
+      "stats": {
+        "0": {
+          "actual": {
+            "points": 200.34,
+            "average_points": 100.17,
+            "breakdown": {
+              "receivingTouchdowns": 1,
+              "receiving2PtConversions": 1
+            },
+            "points_breakdown": {
+              "receivingTouchdowns": 6,
+              "receiving2PtConversions": 2
+            }
+          },
+          "projected": {
+            "points": 225.68,
+            "average_points": 112.84,
+            "breakdown": {
+              "receivingTouchdowns": 2,
+              "receiving2PtConversions": 1
+            },
+            "points_breakdown": {
+              "receivingTouchdowns": 12,
+              "receiving2PtConversions": 2
+            }
+          }
+        },
+        "7": {
+          "projected": {
+            "points": 19.34,
+            "average_points": 9.67,
+            "breakdown": {
+              "receivingTouchdowns": 2,
+              "receiving2PtConversions": 1
+            },
+            "points_breakdown": {
+              "receivingTouchdowns": 12,
+              "receiving2PtConversions": 2
+            }
+          }
+        }
+      }
+    },
+    "schedule": {
+      "7": {
+        "opponent": "KC",
+        "date_unix_ms": 1728219600000
+      },
+      "8": {
+        "opponent": "IND",
+        "date_unix_ms": 1728824400000
+      }
+    },
+    "raw_transactions": []
+  },
+  {
+    "player": {
+      "id": -16011,
+      "name": "Colts D/ST",
+      "position": "D/ST",
+      "eligible_slots": [
+        "D/ST",
+        "BE",
+        "IR"
+      ],
+      "pro_team": "IND",
+      "positional_rank": 5,
+      "jersey": "18",
+      "acquisition_type": "FREEAGENT",
+      "on_team_id": 0,
+      "lineup_slot": null,
+      "injury_status": "ACTIVE",
+      "injured": false,
+      "percent_owned": 97.56,
+      "percent_started": 25.12,
+      "active_status": "active",
+      "total_points": 200.34,
+      "projected_total_points": 225.68,
+      "avg_points": 100.17,
+      "projected_avg_points": 112.84,
+      "stats": {
+        "0": {
+          "actual": {
+            "points": 200.34,
+            "average_points": 100.17,
+            "breakdown": {
+              "receivingTouchdowns": 1,
+              "receiving2PtConversions": 1
+            },
+            "points_breakdown": {
+              "receivingTouchdowns": 6,
+              "receiving2PtConversions": 2
+            }
+          },
+          "projected": {
+            "points": 225.68,
+            "average_points": 112.84,
+            "breakdown": {
+              "receivingTouchdowns": 2,
+              "receiving2PtConversions": 1
+            },
+            "points_breakdown": {
+              "receivingTouchdowns": 12,
+              "receiving2PtConversions": 2
+            }
+          }
+        },
+        "7": {
+          "actual": {
+            "points": 10.12,
+            "average_points": 5.06,
+            "breakdown": {
+              "receivingTouchdowns": 1,
+              "receiving2PtConversions": 1
+            },
+            "points_breakdown": {
+              "receivingTouchdowns": 6,
+              "receiving2PtConversions": 2
+            }
+          }
+        }
+      }
+    },
+    "schedule": {
+      "7": {
+        "opponent": "KC",
+        "date_unix_ms": 1728219599999
+      }
+    },
+    "raw_transactions": []
+  }
+]

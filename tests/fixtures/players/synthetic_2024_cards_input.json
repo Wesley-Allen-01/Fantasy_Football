@@ -1,0 +1,451 @@
+{
+  "season": 2024,
+  "cards": {
+    "players": [
+      {
+        "id": 7002,
+        "onTeamId": 0,
+        "acquisitionType": "FREEAGENT",
+        "player": {
+          "id": 7002,
+          "fullName": "Alex Doe",
+          "eligibleSlots": [
+            3,
+            4,
+            5,
+            7,
+            20,
+            21,
+            23
+          ],
+          "defaultPositionId": 3,
+          "proTeamId": 16,
+          "jersey": "18",
+          "positionalRanking": 5,
+          "injuryStatus": "QUESTIONABLE",
+          "injured": true,
+          "ownership": {
+            "percentOwned": 97.555,
+            "percentStarted": 25.125
+          },
+          "stats": [
+            {
+              "seasonId": 2024,
+              "scoringPeriodId": 0,
+              "statSplitTypeId": 1,
+              "statSourceId": 0,
+              "proTeamId": 16,
+              "appliedTotal": 200.345,
+              "appliedAverage": 100.1725,
+              "stats": {
+                "43": 1,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 6,
+                "44": 2
+              }
+            },
+            {
+              "seasonId": 2024,
+              "scoringPeriodId": 0,
+              "statSplitTypeId": 1,
+              "statSourceId": 1,
+              "proTeamId": 16,
+              "appliedTotal": 225.675,
+              "appliedAverage": 112.8375,
+              "stats": {
+                "43": 2,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 12,
+                "44": 2
+              }
+            },
+            {
+              "seasonId": 2024,
+              "scoringPeriodId": 7,
+              "statSplitTypeId": 1,
+              "statSourceId": 0,
+              "proTeamId": 11,
+              "appliedTotal": 18.567,
+              "appliedAverage": 9.2835,
+              "stats": {
+                "43": 1,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 6,
+                "44": 2
+              }
+            },
+            {
+              "seasonId": 2024,
+              "scoringPeriodId": 7,
+              "statSplitTypeId": 1,
+              "statSourceId": 1,
+              "proTeamId": 16,
+              "appliedTotal": 20.255,
+              "appliedAverage": 10.1275,
+              "stats": {
+                "43": 2,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 12,
+                "44": 2
+              }
+            },
+            {
+              "seasonId": 2024,
+              "scoringPeriodId": 7,
+              "statSplitTypeId": 2,
+              "statSourceId": 0,
+              "proTeamId": 16,
+              "appliedTotal": 9999,
+              "appliedAverage": 4999.5,
+              "stats": {
+                "43": 1,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 6,
+                "44": 2
+              }
+            },
+            {
+              "seasonId": 2023,
+              "scoringPeriodId": 1,
+              "statSplitTypeId": 1,
+              "statSourceId": 0,
+              "proTeamId": 16,
+              "appliedTotal": 8888,
+              "appliedAverage": 4444.0,
+              "stats": {
+                "43": 1,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 6,
+                "44": 2
+              }
+            }
+          ]
+        },
+        "status": "FREEAGENT",
+        "transactions": []
+      },
+      {
+        "id": 7001,
+        "onTeamId": 0,
+        "acquisitionType": "FREEAGENT",
+        "player": {
+          "id": 7001,
+          "fullName": "Alex Doe",
+          "eligibleSlots": [
+            0,
+            7,
+            20,
+            21
+          ],
+          "defaultPositionId": 1,
+          "proTeamId": 16,
+          "jersey": "18",
+          "positionalRanking": 5,
+          "injuryStatus": "ACTIVE",
+          "injured": false,
+          "ownership": {
+            "percentOwned": 97.555,
+            "percentStarted": 25.125
+          },
+          "stats": [
+            {
+              "seasonId": 2024,
+              "scoringPeriodId": 0,
+              "statSplitTypeId": 1,
+              "statSourceId": 0,
+              "proTeamId": 16,
+              "appliedTotal": 200.345,
+              "appliedAverage": 100.1725,
+              "stats": {
+                "43": 1,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 6,
+                "44": 2
+              }
+            },
+            {
+              "seasonId": 2024,
+              "scoringPeriodId": 0,
+              "statSplitTypeId": 1,
+              "statSourceId": 1,
+              "proTeamId": 16,
+              "appliedTotal": 225.675,
+              "appliedAverage": 112.8375,
+              "stats": {
+                "43": 2,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 12,
+                "44": 2
+              }
+            },
+            {
+              "seasonId": 2024,
+              "scoringPeriodId": 7,
+              "statSplitTypeId": 1,
+              "statSourceId": 1,
+              "proTeamId": 16,
+              "appliedTotal": 19.345,
+              "appliedAverage": 9.6725,
+              "stats": {
+                "43": 2,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 12,
+                "44": 2
+              }
+            },
+            {
+              "seasonId": 2024,
+              "scoringPeriodId": 7,
+              "statSplitTypeId": 2,
+              "statSourceId": 0,
+              "proTeamId": 16,
+              "appliedTotal": 9999,
+              "appliedAverage": 4999.5,
+              "stats": {
+                "43": 1,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 6,
+                "44": 2
+              }
+            },
+            {
+              "seasonId": 2023,
+              "scoringPeriodId": 1,
+              "statSplitTypeId": 1,
+              "statSourceId": 0,
+              "proTeamId": 16,
+              "appliedTotal": 8888,
+              "appliedAverage": 4444.0,
+              "stats": {
+                "43": 1,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 6,
+                "44": 2
+              }
+            }
+          ]
+        },
+        "status": "FREEAGENT",
+        "transactions": []
+      },
+      {
+        "id": -16011,
+        "onTeamId": 0,
+        "acquisitionType": "FREEAGENT",
+        "player": {
+          "id": -16011,
+          "fullName": "Colts D/ST",
+          "eligibleSlots": [
+            16,
+            20,
+            21
+          ],
+          "defaultPositionId": 16,
+          "proTeamId": 11,
+          "jersey": "18",
+          "positionalRanking": 5,
+          "injuryStatus": "ACTIVE",
+          "injured": false,
+          "ownership": {
+            "percentOwned": 97.555,
+            "percentStarted": 25.125
+          },
+          "stats": [
+            {
+              "seasonId": 2024,
+              "scoringPeriodId": 0,
+              "statSplitTypeId": 1,
+              "statSourceId": 0,
+              "proTeamId": 11,
+              "appliedTotal": 200.345,
+              "appliedAverage": 100.1725,
+              "stats": {
+                "43": 1,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 6,
+                "44": 2
+              }
+            },
+            {
+              "seasonId": 2024,
+              "scoringPeriodId": 0,
+              "statSplitTypeId": 1,
+              "statSourceId": 1,
+              "proTeamId": 11,
+              "appliedTotal": 225.675,
+              "appliedAverage": 112.8375,
+              "stats": {
+                "43": 2,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 12,
+                "44": 2
+              }
+            },
+            {
+              "seasonId": 2024,
+              "scoringPeriodId": 7,
+              "statSplitTypeId": 1,
+              "statSourceId": 0,
+              "proTeamId": 11,
+              "appliedTotal": 10.125,
+              "appliedAverage": 5.0625,
+              "stats": {
+                "43": 1,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 6,
+                "44": 2
+              }
+            },
+            {
+              "seasonId": 2024,
+              "scoringPeriodId": 7,
+              "statSplitTypeId": 2,
+              "statSourceId": 0,
+              "proTeamId": 11,
+              "appliedTotal": 9999,
+              "appliedAverage": 4999.5,
+              "stats": {
+                "43": 1,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 6,
+                "44": 2
+              }
+            },
+            {
+              "seasonId": 2023,
+              "scoringPeriodId": 1,
+              "statSplitTypeId": 1,
+              "statSourceId": 0,
+              "proTeamId": 11,
+              "appliedTotal": 8888,
+              "appliedAverage": 4444.0,
+              "stats": {
+                "43": 1,
+                "44": 1
+              },
+              "appliedStats": {
+                "43": 6,
+                "44": 2
+              }
+            }
+          ]
+        },
+        "status": "FREEAGENT",
+        "transactions": []
+      }
+    ]
+  },
+  "pro_schedule": {
+    "settings": {
+      "proTeams": [
+        {
+          "id": 16,
+          "proGamesByScoringPeriod": {
+            "7": [
+              {
+                "homeProTeamId": 16,
+                "awayProTeamId": 12,
+                "date": 1728219600000
+              }
+            ],
+            "8": [
+              {
+                "homeProTeamId": 16,
+                "awayProTeamId": 11,
+                "date": 1728824400000
+              }
+            ]
+          }
+        },
+        {
+          "id": 11,
+          "proGamesByScoringPeriod": {
+            "7": [
+              {
+                "homeProTeamId": 11,
+                "awayProTeamId": 12,
+                "date": 1728219599999
+              },
+              {
+                "homeProTeamId": 11,
+                "awayProTeamId": 16,
+                "date": 1728219605000
+              }
+            ]
+          }
+        },
+        {
+          "id": 12,
+          "proGamesByScoringPeriod": {
+            "7": [
+              {
+                "homeProTeamId": 11,
+                "awayProTeamId": 12,
+                "date": 1728219599999
+              }
+            ]
+          }
+        },
+        {
+          "id": 23,
+          "proGamesByScoringPeriod": {
+            "1": [
+              {
+                "homeProTeamId": 23,
+                "awayProTeamId": 17,
+                "date": 1567976400000
+              }
+            ],
+            "2": [
+              {
+                "homeProTeamId": 12,
+                "awayProTeamId": 23,
+                "date": 1568581200000
+              },
+              {
+                "homeProTeamId": 23,
+                "awayProTeamId": 16,
+                "date": 1568581300000
+              }
+            ]
+          }
+        },
+        {
+          "id": 0,
+          "proGamesByScoringPeriod": {}
+        }
+      ]
+    }
+  },
+  "evidence": "synthetic modern cards"
+}

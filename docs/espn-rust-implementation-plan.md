@@ -1,6 +1,6 @@
 # ESPN Fantasy Football Rust implementation investigation and plan
 
-Initial investigation: October 2, 2026. The league foundation and weekly box-score slice are now available; see [README](../README.md), [foundation contract](implementation-contract.md), [weekly matchup contract](weekly-matchup-contract.md) and [compatibility ledger](compatibility-ledger.md). Stage 3 is partially implemented: free agents and player lookup remain next. Historical roster loading and other enrichment from earlier stages remain incomplete; no full-stage completion or live current-season/private parity is claimed.
+Initial investigation: October 2, 2026. League foundation, weekly box scores, free-agent pages and player lookup are now available; see [README](../README.md), [foundation contract](implementation-contract.md), [weekly matchup contract](weekly-matchup-contract.md), [player search contract](player-search-contract.md) and [compatibility ledger](compatibility-ledger.md). The principal manager-facing Stage 3 features are implemented. Historical roster loading and other enrichment from earlier stages remain incomplete; no full-stage completion or live current-season/private parity is claimed. Draft/history and advanced analytics remain later milestones.
 
 ## Recommendation
 

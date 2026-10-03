@@ -1,0 +1,765 @@
+{
+  "cases": [
+    {
+      "name": "free_agents_default",
+      "arguments": {},
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "kona_player_info"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": {
+            "players": {
+              "filterStatus": {
+                "value": [
+                  "FREEAGENT",
+                  "WAIVERS"
+                ]
+              },
+              "filterSlotIds": {
+                "value": []
+              },
+              "limit": 50,
+              "sortPercOwned": {
+                "sortPriority": 1,
+                "sortAsc": false
+              },
+              "sortDraftRanks": {
+                "sortPriority": 100,
+                "sortAsc": true,
+                "value": "STANDARD"
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024",
+          "query": {
+            "view": [
+              "proTeamSchedules_wl"
+            ]
+          },
+          "fantasy_filter": null
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "mPositionalRatings"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": null
+        }
+      ],
+      "result_ids": [
+        7002,
+        7001,
+        -16011
+      ]
+    },
+    {
+      "name": "free_agents_filtered",
+      "arguments": {
+        "week": 7,
+        "size": 3,
+        "position": "WR",
+        "position_id": 23
+      },
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "kona_player_info"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": {
+            "players": {
+              "filterStatus": {
+                "value": [
+                  "FREEAGENT",
+                  "WAIVERS"
+                ]
+              },
+              "filterSlotIds": {
+                "value": [
+                  4,
+                  23
+                ]
+              },
+              "limit": 3,
+              "sortPercOwned": {
+                "sortPriority": 1,
+                "sortAsc": false
+              },
+              "sortDraftRanks": {
+                "sortPriority": 100,
+                "sortAsc": true,
+                "value": "STANDARD"
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024",
+          "query": {
+            "view": [
+              "proTeamSchedules_wl"
+            ]
+          },
+          "fantasy_filter": null
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "mPositionalRatings"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": null
+        }
+      ],
+      "result_ids": [
+        7002,
+        7001,
+        -16011
+      ]
+    },
+    {
+      "name": "free_agents_future",
+      "arguments": {
+        "week": 99
+      },
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "kona_player_info"
+            ],
+            "scoringPeriodId": [
+              "99"
+            ]
+          },
+          "fantasy_filter": {
+            "players": {
+              "filterStatus": {
+                "value": [
+                  "FREEAGENT",
+                  "WAIVERS"
+                ]
+              },
+              "filterSlotIds": {
+                "value": []
+              },
+              "limit": 50,
+              "sortPercOwned": {
+                "sortPriority": 1,
+                "sortAsc": false
+              },
+              "sortDraftRanks": {
+                "sortPriority": 100,
+                "sortAsc": true,
+                "value": "STANDARD"
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024",
+          "query": {
+            "view": [
+              "proTeamSchedules_wl"
+            ]
+          },
+          "fantasy_filter": null
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "mPositionalRatings"
+            ],
+            "scoringPeriodId": [
+              "99"
+            ]
+          },
+          "fantasy_filter": null
+        }
+      ],
+      "result_ids": [
+        7002,
+        7001,
+        -16011
+      ]
+    },
+    {
+      "name": "free_agents_explicit_qb_zero",
+      "arguments": {
+        "position_id": 0
+      },
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "kona_player_info"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": {
+            "players": {
+              "filterStatus": {
+                "value": [
+                  "FREEAGENT",
+                  "WAIVERS"
+                ]
+              },
+              "filterSlotIds": {
+                "value": []
+              },
+              "limit": 50,
+              "sortPercOwned": {
+                "sortPriority": 1,
+                "sortAsc": false
+              },
+              "sortDraftRanks": {
+                "sortPriority": 100,
+                "sortAsc": true,
+                "value": "STANDARD"
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024",
+          "query": {
+            "view": [
+              "proTeamSchedules_wl"
+            ]
+          },
+          "fantasy_filter": null
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "mPositionalRatings"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": null
+        }
+      ],
+      "result_ids": [
+        7002,
+        7001,
+        -16011
+      ]
+    },
+    {
+      "name": "free_agents_qb_label",
+      "arguments": {
+        "position": "QB"
+      },
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "kona_player_info"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": {
+            "players": {
+              "filterStatus": {
+                "value": [
+                  "FREEAGENT",
+                  "WAIVERS"
+                ]
+              },
+              "filterSlotIds": {
+                "value": [
+                  0
+                ]
+              },
+              "limit": 50,
+              "sortPercOwned": {
+                "sortPriority": 1,
+                "sortAsc": false
+              },
+              "sortDraftRanks": {
+                "sortPriority": 100,
+                "sortAsc": true,
+                "value": "STANDARD"
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024",
+          "query": {
+            "view": [
+              "proTeamSchedules_wl"
+            ]
+          },
+          "fantasy_filter": null
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "mPositionalRatings"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": null
+        }
+      ],
+      "result_ids": [
+        7002,
+        7001,
+        -16011
+      ]
+    },
+    {
+      "name": "free_agents_empty",
+      "arguments": {},
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "kona_player_info"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": {
+            "players": {
+              "filterStatus": {
+                "value": [
+                  "FREEAGENT",
+                  "WAIVERS"
+                ]
+              },
+              "filterSlotIds": {
+                "value": []
+              },
+              "limit": 50,
+              "sortPercOwned": {
+                "sortPriority": 1,
+                "sortAsc": false
+              },
+              "sortDraftRanks": {
+                "sortPriority": 100,
+                "sortAsc": true,
+                "value": "STANDARD"
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024",
+          "query": {
+            "view": [
+              "proTeamSchedules_wl"
+            ]
+          },
+          "fantasy_filter": null
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "mPositionalRatings"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": null
+        }
+      ],
+      "result_ids": []
+    },
+    {
+      "name": "player_directory",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/players",
+          "query": {
+            "view": [
+              "players_wl"
+            ]
+          },
+          "fantasy_filter": {
+            "filterActive": {
+              "value": true
+            }
+          }
+        }
+      ],
+      "python_first_name_id": 7002
+    },
+    {
+      "name": "player_card_id",
+      "arguments": {
+        "playerId": 7002
+      },
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "kona_playercard"
+            ]
+          },
+          "fantasy_filter": {
+            "players": {
+              "filterIds": {
+                "value": [
+                  7002
+                ]
+              },
+              "filterStatsForTopScoringPeriodIds": {
+                "value": 17,
+                "additionalValue": [
+                  "002024",
+                  "102024"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024",
+          "query": {
+            "view": [
+              "proTeamSchedules_wl"
+            ]
+          },
+          "fantasy_filter": null
+        }
+      ],
+      "result_ids": [
+        7002
+      ]
+    },
+    {
+      "name": "player_card_many",
+      "arguments": {
+        "playerId": [
+          7001,
+          -16011,
+          7002
+        ]
+      },
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "kona_playercard"
+            ]
+          },
+          "fantasy_filter": {
+            "players": {
+              "filterIds": {
+                "value": [
+                  7001,
+                  -16011,
+                  7002
+                ]
+              },
+              "filterStatsForTopScoringPeriodIds": {
+                "value": 17,
+                "additionalValue": [
+                  "002024",
+                  "102024"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024",
+          "query": {
+            "view": [
+              "proTeamSchedules_wl"
+            ]
+          },
+          "fantasy_filter": null
+        }
+      ],
+      "result_ids": [
+        7002,
+        7001,
+        -16011
+      ]
+    },
+    {
+      "name": "player_card_name",
+      "arguments": {
+        "name": "Alex Doe"
+      },
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "kona_playercard"
+            ]
+          },
+          "fantasy_filter": {
+            "players": {
+              "filterIds": {
+                "value": [
+                  7002
+                ]
+              },
+              "filterStatsForTopScoringPeriodIds": {
+                "value": 17,
+                "additionalValue": [
+                  "002024",
+                  "102024"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024",
+          "query": {
+            "view": [
+              "proTeamSchedules_wl"
+            ]
+          },
+          "fantasy_filter": null
+        }
+      ],
+      "result_ids": [
+        7002
+      ]
+    },
+    {
+      "name": "player_card_unknown_name",
+      "arguments": {
+        "name": "Unknown"
+      },
+      "requests": [],
+      "result_ids": []
+    },
+    {
+      "name": "player_card_case_sensitive_name",
+      "arguments": {
+        "name": "alex doe"
+      },
+      "requests": [],
+      "result_ids": []
+    },
+    {
+      "name": "player_card_empty",
+      "arguments": {
+        "playerId": 7002
+      },
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "kona_playercard"
+            ]
+          },
+          "fantasy_filter": {
+            "players": {
+              "filterIds": {
+                "value": [
+                  7002
+                ]
+              },
+              "filterStatsForTopScoringPeriodIds": {
+                "value": 17,
+                "additionalValue": [
+                  "002024",
+                  "102024"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024",
+          "query": {
+            "view": [
+              "proTeamSchedules_wl"
+            ]
+          },
+          "fantasy_filter": null
+        }
+      ],
+      "result_ids": []
+    },
+    {
+      "name": "shared_player_pool_pagination",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "kona_player_info"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": {
+            "players": {
+              "filterStatus": {
+                "value": [
+                  "FREEAGENT",
+                  "WAIVERS",
+                  "ONTEAM"
+                ]
+              },
+              "limit": 2,
+              "offset": 0,
+              "sortPercOwned": {
+                "sortPriority": 1,
+                "sortAsc": false
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "kona_player_info"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": {
+            "players": {
+              "filterStatus": {
+                "value": [
+                  "FREEAGENT",
+                  "WAIVERS",
+                  "ONTEAM"
+                ]
+              },
+              "limit": 2,
+              "offset": 2,
+              "sortPercOwned": {
+                "sortPriority": 1,
+                "sortAsc": false
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/apis/v3/games/ffl/seasons/2024/segments/0/leagues/123",
+          "query": {
+            "view": [
+              "kona_player_info"
+            ],
+            "scoringPeriodId": [
+              "7"
+            ]
+          },
+          "fantasy_filter": {
+            "players": {
+              "filterStatus": {
+                "value": [
+                  "FREEAGENT",
+                  "WAIVERS",
+                  "ONTEAM"
+                ]
+              },
+              "limit": 2,
+              "offset": 4,
+              "sortPercOwned": {
+                "sortPriority": 1,
+                "sortAsc": false
+              }
+            }
+          }
+        }
+      ],
+      "result_ids": [
+        7002,
+        7001,
+        -16011
+      ]
+    },
+    {
+      "name": "free_agents_historical_gate",
+      "season": 2018,
+      "requests": [],
+      "error": "Cant use free agents before 2019"
+    }
+  ],
+  "deviations": {
+    "explicit_qb_zero": "Python numeric position_id=0 is ignored; Rust explicit SlotId(0) filters QB. Python position='QB' already includes zero.",
+    "duplicate_names": "Python chooses first directory name ID 7002; Rust returns both distinct IDs 7002/7001 in response order.",
+    "pagination": "Football free_agents has no offset argument; Rust adds explicit pages. Captured player-pool pagination is shared request evidence, not an exact free-agent API match.",
+    "cards": "Python player_info sends its ID collection as one request; Rust deduplicates and batches 40 IDs. Raw transactions are retained by Rust, not modeled as typed transaction history."
+  }
+}

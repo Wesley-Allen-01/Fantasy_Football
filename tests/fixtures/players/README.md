@@ -1,0 +1,26 @@
+These fixtures characterize the unchanged Python football package using closed requests mocks, a fixed UTC clock, a supplied historical card fixture, and explicitly synthetic modern player responses. They do not establish current/private-league live ESPN compatibility.
+
+- `free_agents_input.json` and `free_agents_expected.json` cover a synthetic 2024 player page, empty response, and supplied future week 99. Response order is deliberately different from numeric ID order. Players include two distinct IDs sharing a name, a quarterback eligible for numeric slot zero, and a negative-ID defense. Exact checks cover eligibility, injury/ownership and rounding, season/stat-split filtering, actual versus projected availability, raw versus applied statistics, historical weekly NFL team resolution, opponent/rank presence, timestamps, and the three-hour game heuristic.
+- `historical_2019_cards_input.json` and `historical_2019_cards_expected.json` come from the original `league_2019_playerCard.json`: one James Conner card containing 20 statistics records and raw draft transactions. Rankings/news text outside the projection are compacted. Before generating the golden, the generator proves equal selected semantic projections from the full original and compact inputs. All statistics and raw transactions remain in the input. Supplemental NFL schedules are synthetic; no captured 2019 NFL schedule was supplied. Cards use the player's current NFL team and the first game in each period, without weekly historical-team substitution.
+- `synthetic_2024_cards_input.json` and `synthetic_2024_cards_expected.json` cover modern card models with the same representative players. The Rust test also asserts complete raw-wrapper retention, including unimplemented metadata. Retained raw transactions are not a claim of typed transaction-history compatibility.
+- `python_requests.json` records actual Python `League.free_agents`, `League.player_info`, directory loading and shared player-pool pagination calls. Each trace includes ordered request paths, repeated query values, parsed fantasy filters and result identity order. Free-agent traces cover defaults, WR/FLEX filters, a future supplied week, numeric versus label QB filtering, empty results, and the pre-2019 gate. Card traces cover single/list/name inputs, unknown/case-sensitive names, and empty results. Auxiliary reads are captured even for successful empty player responses. Pagination traces include overlapping IDs and an empty final page; this is shared helper evidence, because Python football `free_agents` has no offset parameter.
+- `directory.json` records the input directory and the deliberate Rust duplicate-name contract. Python's name map chooses the first ID for a name; Rust returns every distinct matching ID in response order and deduplicates repeated identical IDs. The Rust test checks the first returned ID against the actual Python trace and checks all explicit extension outputs separately.
+- `provenance.json` records source SHA-256, clock, timezone, normalization and evidence limits.
+
+Normalization is narrow and explicit. Python absent recursive fields represented as `[]` and absent slot labels represented as an empty string become null. Jerseys become text. Missing rank zero becomes null while an explicitly supplied rank zero remains zero. Python stat labels that alias different raw IDs are excluded from label comparison; their exact list is in provenance. Rust keeps every numeric ID, and synthetic raw/applied checks use distinct touchdown/conversion IDs. Scores and percentages compare exactly without a floating-point tolerance.
+
+The captured card exposed a required known-path positional-rank fallback: the 2019 wrapper's `ratings["0"].positionalRanking` is 35 while its nested player has no rank. Rust reads nested/top-level rank first and then that explicit ratings path, preserving the captured value without recursive key search.
+
+Deliberate extensions/corrections are documented in the request fixture and the migration ledger: explicit numeric QB slot zero remains a filter, duplicate names retain all distinct IDs, offset pages are explicit, cards deduplicate IDs and batch at 40, and invalid/conflicting identities are rejected. Empty card NFL game arrays are omitted as missing schedule periods in Rust; Python indexes the first element and raises. This empty-array correction is covered by model tests rather than fabricated Python parity outputs.
+
+Regenerate and verify:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 /tmp/espn-investigation-venv/bin/python scripts/generate_player_fixtures.py
+PYTHONDONTWRITEBYTECODE=1 /tmp/espn-investigation-venv/bin/python scripts/generate_player_fixtures.py --check
+source /workspace/.dev-tools/activate.sh
+cargo test --test player_parity
+ESPN_PYTHON_REFERENCE=/workspace/Fantasy_Football/reference cargo test --test player_parity
+```
+
+Use `--reference` or `ESPN_PYTHON_REFERENCE` for another frozen source checkout. Dependencies are `requests` and `requests-mock`; importing the source does not require an editable install. The Rust environment variable additionally tests the unchanged full historical card payload. The Python generator suppresses bytecode itself as well as through the command environment. Real HTTP is disabled; unregistered requests fail.

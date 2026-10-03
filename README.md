@@ -1,6 +1,6 @@
 # ESPN Fantasy Football in Rust
 
-An asynchronous, read-only Rust migration of the football API in `reference/`, based on Python `espn-api` 0.46.0. The reference is kept unchanged. League foundation and weekly matchups are implemented; complete football package parity remains in progress.
+An asynchronous, read-only Rust migration of the football API in `reference/`, based on Python `espn-api` 0.46.0. The reference is kept unchanged. League foundation, weekly matchups, free-agent pages and player lookup are implemented; complete football package parity remains in progress.
 
 ## Implemented
 
@@ -11,9 +11,12 @@ An asynchronous, read-only Rust migration of the football API in `reference/`, b
 - Remote scoreboards with the Python request filters and default period behavior.
 - Weekly box scores and both lineups, live score precedence, starter projection fallback, NFL schedules and opponent positional rankings.
 - Explicit season-scoped historical NFL team evidence for traded players, with atomic updates after a complete successful parse.
+- Free-agent and waiver pages with numeric eligibility filters, ownership ordering, injury/ownership metadata and weekly statistics.
+- Player cards by ID, an explicitly loaded active-player directory, and exact-name lookup preserving duplicate names.
+- Terminal examples for inspecting weekly matchups, comparing available players and looking up detailed player cards.
 - Offline Python-derived comparison fixtures and an optional comparison against full original payloads.
 
-Free agents, player-card lookup, historical roster loading, draft/history/reporting, weekly standings and power rankings are later milestones. Submitting lineups, claims or trades is outside the reference's read-only API scope. See the [migration plan](docs/espn-rust-implementation-plan.md) and [compatibility ledger](docs/compatibility-ledger.md) for preserved behaviors, intentional corrections and evidence gaps.
+Historical roster loading, draft/history/reporting, weekly standings and power rankings are later milestones. Submitting lineups, claims or trades is outside the reference's read-only API scope. See the [migration plan](docs/espn-rust-implementation-plan.md) and [compatibility ledger](docs/compatibility-ledger.md) for preserved behaviors, intentional corrections and evidence gaps.
 
 ## Use
 
@@ -93,6 +96,31 @@ For historical NFL trades, reuse `PlayerTeamHistory::new(season)` with `box_scor
 
 `BoxScoreContext` accepts an explicit `now_unix_ms` for pure offline conversion. `game_date_unix_ms` retains the kickoff instant; `game_played` reproduces Python's 0/100 kickoff-plus-three-hour heuristic and is not live game progress. NFL schedule parsing uses the first game in the requested period. For compatibility, an opponent is exposed only when the player's default-position ranking map exists; a missing rank is `None`. See [weekly acceptance and ownership](docs/weekly-matchup-contract.md).
 
+## Available players and lookup
+
+Inspect your selected weekly lineup alongside available replacements:
+
+```sh
+cargo run --locked --example compare -- 394172912 2026 1
+cargo run --locked --example compare -- 394172912 2026 1 current QB 20 0
+cargo run --locked --example compare -- 394172912 2026 1 4 WR 20 20
+```
+
+Arguments are league, season, team, optional week (`current` to default), eligibility slot, limit and offset. Slot accepts a numeric ID or known label, including QB/0, RB, WR, TE, D/ST and flex slots; `ALL` defaults to all slots. Both groups use the same effective box-score week, including its future-week fallback. The lineup includes bench and IR. Available players retain ESPN's ownership ordering; this example does not rank or recommend moves. Missing point/projection values display as `—`, distinguishing absence from a real zero. These reads do not change the loaded snapshot.
+
+`league.free_agents(FreeAgentOptions::default()).await?` loads one page of up to 50 free agents and waiver players at the loaded current week. Explicit weeks, including future weeks, are passed through. The result exposes `next_offset` only when a full page suggests another page might exist; this is advisory. Pages can change, repeat or be empty. The caller controls pagination and the library never automatically follows pages. Nonzero offsets add a filter extension to Python's default request; explicit zero weeks, zero limits and overflowing offsets fail before weekly requests. Duplicate response identities are errors.
+
+Look up a player ID or exact name:
+
+```sh
+cargo run --locked --example lookup -- 394172912 2026 id 3117251
+cargo run --locked --example lookup -- 394172912 2026 name "Exact Player Name"
+```
+
+`player_by_id` returns `Option<PlayerCard>`; `players_by_ids` and `players_named` return vectors consistently. ID queries remove repeated input IDs and fetch at most 40 per card request, preserving server response order within each batch. Empty input makes no request; ID zero is invalid, while negative defense IDs are supported. Player cards use the loaded final scoring period for stat filters and fetch NFL schedules once after card batches. Missing requested players are omitted; unexpected or duplicate response IDs are rejected. The `raw` card retains transactions and other fields without claiming typed transaction-history support.
+
+Name lookup is exact and case-sensitive and explicitly reloads the active season directory. Unlike Python's first-match behavior, duplicate names resolve to every distinct ID in response order. Unknown names return an empty vector without card or schedule reads. `player_directory()` works before a league load and returns a reusable object for local `ids_named` queries, so callers can choose when to refresh it. Card queries need a loaded league snapshot. There is no implicit directory fetch during construction and no default caching. See [player search contract](docs/player-search-contract.md) for verification scope.
+
 ## Verify
 
 Rust 1.85 or newer is required. Run:
@@ -110,13 +138,14 @@ Checked-in fixtures make the Rust suite independent of Python and of the large u
 ESPN_PYTHON_REFERENCE=/absolute/path/to/reference cargo test --locked --test parity
 ```
 
-The optional full-payload tests run only when that variable is supplied. League comparisons cover both 2015 and 2018, all fixture teams and schedule rows, selected roster players/statistics, settings/period metadata, standings and scoreboards. Weekly comparisons cover six synthetic modern cases and one complete historical matchup with all 30 lineup entries. These are selected semantic comparisons, not assertions of complete package or current-season parity. Include `--test weekly_parity` alongside `--test parity` to enable both full-input comparisons.
+The optional full-payload tests run only when that variable is supplied. League comparisons cover both 2015 and 2018, all fixture teams and schedule rows, selected roster players/statistics, settings/period metadata, standings and scoreboards. Weekly comparisons cover six synthetic modern cases and one complete historical matchup with all 30 lineup entries. Player comparisons cover the original 2019 card plus synthetic FA/card and directory cases. These are selected semantic comparisons, not assertions of complete package or current-season parity. Add `--test weekly_parity --test player_parity` alongside `--test parity`, or run `--all-targets`, to enable all three full-input comparisons.
 
 To regenerate or verify Python expected results, install `requests` and `requests-mock` in a separate virtual environment and use the frozen reference:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python scripts/generate_parity_fixtures.py --reference /absolute/path/to/reference --check
 PYTHONDONTWRITEBYTECODE=1 python scripts/generate_box_score_fixtures.py --reference /absolute/path/to/reference --check
+PYTHONDONTWRITEBYTECODE=1 python scripts/generate_player_fixtures.py --reference /absolute/path/to/reference --check
 ```
 
 Omit `--check` to regenerate, then review the fixture diff. The generator uses closed request mocks, checks that the full and compact inputs produce identical selected Python outputs, and records source hashes in `tests/fixtures/provenance.json`. It does not modify the reference.

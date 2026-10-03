@@ -21,6 +21,7 @@ pub mod client;
 pub mod error;
 pub mod football;
 pub mod ids;
+pub(crate) mod player_request;
 pub(crate) mod transport;
 pub(crate) mod weekly_request;
 
@@ -28,6 +29,10 @@ pub use client::{Client, ClientBuilder, Credentials, LeagueHandle};
 pub use error::{Error, Result};
 pub use football::{
     BoxPlayer, BoxScore, BoxScoreContext, BoxTeam, PlayerTeamHistory, WeeklyBoxScores,
+};
+pub use football::{
+    DirectoryPlayer, FreeAgentContext, FreeAgentOptions, FreeAgentPage, PlayerCard,
+    PlayerDirectory, PlayerGame,
 };
 pub use football::{LeagueSnapshot, Matchup, Player, Settings, Team};
 pub use ids::{

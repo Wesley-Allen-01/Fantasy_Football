@@ -154,8 +154,8 @@ impl WeeklyBoxScores {
     }
 }
 
-type ProGames = BTreeMap<ProTeamId, (ProTeamId, i64)>;
-fn parse_schedule(value: &Value, week: ScoringPeriod) -> Result<ProGames> {
+pub(super) type ProGames = BTreeMap<ProTeamId, (ProTeamId, i64)>;
+pub(super) fn parse_schedule(value: &Value, week: ScoringPeriod) -> Result<ProGames> {
     let data: dto::ProSchedule = serde_json::from_value(value.clone())?;
     let mut games = BTreeMap::new();
     for team in data.settings.pro_teams {
@@ -211,7 +211,11 @@ impl BoxTeam {
         let mut lineup = Vec::with_capacity(data.roster_for_current_scoring_period.entries.len());
         for value in data.roster_for_current_scoring_period.entries {
             lineup.push(BoxPlayer::from_value(
-                &value, schedule, ratings, context, history,
+                &value,
+                schedule,
+                ratings,
+                &PlayerWeekContext::from(context),
+                Some(history),
             )?);
         }
         if projected == -1.0 {
@@ -236,15 +240,33 @@ fn number(value: &Value, key: &str) -> Result<f64> {
     Ok(serde_json::from_value(value.clone())?)
 }
 
+pub(super) struct PlayerWeekContext {
+    pub season: Season,
+    pub scoring_period: ScoringPeriod,
+    pub now_unix_ms: i64,
+}
+impl From<&BoxScoreContext<'_>> for PlayerWeekContext {
+    fn from(context: &BoxScoreContext<'_>) -> Self {
+        Self {
+            season: context.season,
+            scoring_period: context.scoring_period,
+            now_unix_ms: context.now_unix_ms,
+        }
+    }
+}
+
 impl BoxPlayer {
-    fn from_value(
+    pub(super) fn from_value(
         value: &Value,
         schedule: &ProGames,
         ratings: &dto::PositionalRatings,
-        context: &BoxScoreContext<'_>,
-        history: &mut PlayerTeamHistory,
+        context: &PlayerWeekContext,
+        history: Option<&mut PlayerTeamHistory>,
     ) -> Result<Self> {
-        let (entry, metadata) = adapt_wrapper(value)?;
+        let canonical = canonical_wrapper(value)?;
+        let entry: dto::RosterEntry = serde_json::from_value(canonical.clone())?;
+        let metadata: dto::WeeklyPlayerMetadata =
+            serde_json::from_value(canonical["playerPoolEntry"]["player"].clone())?;
         let nested = &entry.player_pool_entry.player;
         let default_position = metadata.default_position_id;
         // Match Python: historical team evidence scans matching-week actual
@@ -259,12 +281,19 @@ impl BoxPlayer {
             })
             .and_then(|line| line.pro_team_id);
         let pro_team = evidence
-            .or_else(|| history.get(nested.id).filter(|team| team.0 != 0))
+            .or_else(|| {
+                history
+                    .as_ref()
+                    .and_then(|history| history.get(nested.id))
+                    .filter(|team| team.0 != 0)
+            })
             .unwrap_or(nested.pro_team_id);
         let mut player = Player::from_dto(entry, context.season)?;
         player.pro_team = pro_team;
         if evidence.is_some() {
-            history.insert(player.id, pro_team);
+            if let Some(history) = history {
+                history.insert(player.id, pro_team);
+            }
         }
         let mut pro_opponent = None;
         let mut pro_pos_rank = None;
@@ -324,7 +353,7 @@ impl BoxPlayer {
 /// Support roster-pool and direct-card wrappers through known paths. Identity
 /// and eligibility prefer the selected nested player, with explicit top-level
 /// fallback for sparse cards; statistics always come from the nested player.
-fn adapt_wrapper(value: &Value) -> Result<(dto::RosterEntry, dto::WeeklyPlayerMetadata)> {
+pub(super) fn canonical_wrapper(value: &Value) -> Result<Value> {
     let object = value
         .as_object()
         .ok_or_else(|| invalid("weekly player wrapper must be an object"))?;
@@ -353,6 +382,23 @@ fn adapt_wrapper(value: &Value) -> Result<(dto::RosterEntry, dto::WeeklyPlayerMe
             }
         }
     }
+    if !nested.contains_key("positionalRanking") {
+        // Player cards expose season positional rank at this known wrapper path.
+        // Keep nested/top-level metadata precedence and avoid recursive key search.
+        let ranking = pool
+            .and_then(|pool| pool.get("ratings"))
+            .and_then(|ratings| ratings.get("0"))
+            .and_then(|rating| rating.get("positionalRanking"))
+            .or_else(|| {
+                object
+                    .get("ratings")
+                    .and_then(|ratings| ratings.get("0"))
+                    .and_then(|rating| rating.get("positionalRanking"))
+            });
+        if let Some(ranking) = ranking {
+            nested.insert("positionalRanking".into(), ranking.clone());
+        }
+    }
     let mut selected_pool = pool.cloned().unwrap_or_default();
     // Direct card IDs carry the same identity contract as pool wrapper IDs.
     // Preserve both IDs so Player::from_dto rejects an inconsistent wrapper.
@@ -366,8 +412,6 @@ fn adapt_wrapper(value: &Value) -> Result<(dto::RosterEntry, dto::WeeklyPlayerMe
             selected_pool.insert("onTeamId".into(), value.clone());
         }
     }
-    let metadata: dto::WeeklyPlayerMetadata =
-        serde_json::from_value(Value::Object(nested.clone()))?;
     selected_pool.insert("player".into(), Value::Object(nested));
     let mut canonical = Map::new();
     for key in [
@@ -381,5 +425,5 @@ fn adapt_wrapper(value: &Value) -> Result<(dto::RosterEntry, dto::WeeklyPlayerMe
         }
     }
     canonical.insert("playerPoolEntry".into(), Value::Object(selected_pool));
-    Ok((serde_json::from_value(Value::Object(canonical))?, metadata))
+    Ok(Value::Object(canonical))
 }

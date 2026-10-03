@@ -1,0 +1,17 @@
+{
+  "generator": "scripts/generate_player_fixtures.py",
+  "clock_unix_ms": 1728230400000,
+  "timezone": "UTC",
+  "source": "tests/football/unit/data/league_2019_playerCard.json",
+  "source_sha256": "3addfb1a4109bc00f2500b64e6deae69d4335fb1d0e840eb654bd2e9a9ea9104",
+  "excluded_duplicate_stat_labels": [
+    "defensive2PtReturns",
+    "defensivePointsAllowed",
+    "passingYards",
+    "receivingReceptions",
+    "receivingYards",
+    "rushingYards"
+  ],
+  "normalization": "Python missing recursive fields [] / empty labels=>null; jersey=>text; ranks distinguish absent versus present zero; duplicate stat-label aliases excluded only from label comparisons; numeric IDs remain authoritative. Card transactions retained raw, not a typed history parity claim.",
+  "evidence_limits": "2019 card source; synthetic schedules and modern FA/cards; no live current/private ESPN response."
+}
