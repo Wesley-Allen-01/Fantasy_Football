@@ -63,6 +63,15 @@ The team is selected locally from the loaded league snapshot. An unknown team ID
 
 The example contacts ESPN; the verification commands below use local fixtures and mock HTTP only. Current-season and successful private-league access have not yet been verified against live ESPN.
 
+## Live validation workflow
+
+Capture your selected team's league, weekly lineups, available players and one
+player card through the actual Rust client, then compare Python and Rust against
+the same recorded bytes offline. Captures stay outside Git and do not include
+credentials. See [local capture and verification instructions](docs/live-validation.md).
+This workflow is implemented; successful current-season/private access is still
+a separate gate because this cloud cannot reach ESPN.
+
 ## Weekly matchups
 
 Load a league, then request a scoring week. Weeks and matchup periods are separate because some matchups span multiple weeks:

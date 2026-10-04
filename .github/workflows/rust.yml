@@ -12,9 +12,22 @@ jobs:
       - run: cargo clippy --locked --all-targets -- -D warnings
       - run: cargo test --locked --all-targets
       - run: cargo test --locked --doc
+  validation-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r scripts/requirements-validation.txt
+      - run: cargo build --locked --example validate
+      - run: python -m unittest discover -s scripts -p 'test_validate_live.py' -v
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
   msrv:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@1.85.0
-      - run: cargo check --locked --lib
+      - run: cargo check --locked --all-targets

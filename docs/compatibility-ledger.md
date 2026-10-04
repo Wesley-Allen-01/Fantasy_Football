@@ -2,6 +2,28 @@
 
 The foundation preserves league metadata, football settings, team and roster identity, actual/projected fantasy statistics, ID-linked schedules, completed-season standings and remote scoreboards. The weekly slice adds box scores, lineups, NFL schedule context and opponent positional rankings. Player search adds free-agent pages, player cards and a season directory. Draft enrichment, historical roster loading, typed transactions, weekly standings and power rankings remain deferred.
 
+## Current-season verification tooling
+
+The [capture/replay workflow](live-validation.md) records the actual Rust client's
+requests and exact response bytes, then compares selected full-roster, weekly,
+available-player and card semantics against closed-mock real Python operations.
+Responses have integrity hashes, both converters use the same UTC clock, and
+request paths/queries/filters are checked in order. The documented nonzero offset
+extension is the only request difference removed for Python comparison.
+
+Python initialization explicitly loads the core views and decodes teams, without
+its unrelated eager directory/draft/schedule requests. This is an intentional
+loading adaptation, not a claim of constructor request equivalence. Selected
+stat totals/averages are compared exactly, with availability separate from zero;
+raw/applied breakdowns remain covered by existing offline module tests.
+
+The workflow preserves the reference and keeps captures/reports outside Git.
+Network/access failures are recorded separately from parity; credential presence
+alone is not evidence of private access. Offline end-to-end tests use simulated
+responses and existing Python goldens. No current-season/private live pass is
+claimed: the cloud capture attempt for league 394172912 on October 4, 2026
+reported a network error before receiving an ESPN response.
+
 ## Preserved behaviors
 
 | Behavior | Reference location | Evidence |

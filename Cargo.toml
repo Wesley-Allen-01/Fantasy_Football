@@ -15,4 +15,5 @@ thiserror = "2"
 
 [dev-dependencies]
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
-wiremock = "0.6"
+# 0.6.5 uses let chains requiring Rust 1.88, including when building examples.
+wiremock = "=0.6.4"

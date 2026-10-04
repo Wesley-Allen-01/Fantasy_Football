@@ -2,6 +2,12 @@
 
 Initial investigation: October 2, 2026. League foundation, weekly box scores, free-agent pages and player lookup are now available; see [README](../README.md), [foundation contract](implementation-contract.md), [weekly matchup contract](weekly-matchup-contract.md), [player search contract](player-search-contract.md) and [compatibility ledger](compatibility-ledger.md). The principal manager-facing Stage 3 features are implemented. Historical roster loading and other enrichment from earlier stages remain incomplete; no full-stage completion or live current-season/private parity is claimed. Draft/history and advanced analytics remain later milestones.
 
+The next gate has a [local capture and offline comparison workflow](live-validation.md).
+It records the actual Rust client's roster, weekly, available-player and card
+reads, then checks the same bytes against Python with networking closed. This
+brings selected Stage 6 verification forward; the tooling's offline checks do
+not replace successful current/private access, which remains blocked here.
+
 ## Recommendation
 
 Build an asynchronous **football-only** ESPN fantasy library. Establish request and data compatibility through offline fixtures before expanding the football API. A useful football manager foundation is complete after stages 1–3 below; football package parity needs stages 4–5, followed by release validation in stage 6. The other sports below are background from the requested package investigation; they are excluded from implementation and acceptance criteria.
